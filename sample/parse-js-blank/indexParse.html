@@ -20,7 +20,7 @@
     <form id="signup">
         <p><input type="text" id="signup-firstName" placeholder="First Name"></p>
         <p><input type="text" id="signup-lastName" placeholder="Last Name"></p>
-        <p><input type="text" id="signup-email" placeholder="email"></p>
+        <p><input type="text" id="signup-email" placeholder="email@"></p>
         <p><input type="password"id="signup-password" placeholder="password"></p>
         <p><input type="submit" id="signup-submit" value="Sign Up"></p>
     </form>
@@ -29,7 +29,7 @@
     
 
   <script type="text/javascript">
-    Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
+  Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 $("#signup").submit(function(event){
   event.preventDefault();
@@ -42,7 +42,7 @@ $("#signup").submit(function(event){
   var user = new Parse.User();
   user.set("firstName", firstName);
   user.set("lastName", lastName);
-  user.set("email", email);//username can be the name and the email I just have to specify the in the value what I want
+  user.set("email", username);//username can be the name and the email I just have to specify the in the value what I want
   user.set("username", email);
   user.set("password", password);
   
@@ -51,7 +51,7 @@ $("#signup").submit(function(event){
       console.log(user);
 
     }, error: function (user, error){
-      console.log("signUp error:"+error.message)
+      console.log("signUp error:"+error.message);
 
     }
   });
@@ -67,7 +67,7 @@ $("#signup").submit(function(event){
       success: function() {
       },
       error: function(error) {
-       console.log("Error:"+error.message);
+       console.log("Error:"+error.message)
       }
     });
   </script>
