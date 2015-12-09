@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <title>signUp</title>
     <link rel="stysheet" href="./sample/parse-js-blank/indexParse.html">
-    
+    <link href="js/sample/parse-js-blank/indexParse.html">
+</head>
 
-</head>
-</head>
 <body>
-    <div id="signUp-container">
+<div id="signup-container">
     <h1>sign Up!<h1>
     <form id="signup">
-        <p><input id="signup-email" type="text"></p>
-        <p><input id="signup-password" type="password"></p>
-        <p><input id="signup-submit" type="submit"></p>
+        <div>
+            <input type="text" name="email" id="email" placeholder="someone@example.com">
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Your password">
+        </div>
+        
+        <div><button id="signupButton">Sign up</button type="submit" value="Sign Up">
+        </div>
     </form>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-<script src="js/signup.js"></script>
+    </div>
 
 </body>
 </html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
