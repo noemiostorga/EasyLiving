@@ -7,9 +7,26 @@
   }, false);
 
 };*/
+$.ajax({
+	url: "https://api.cloudinary.com/v1_1/easyliving",
+	method: 'POST',
+}),
+$.cloudinary.config({ cloud_name: 'easyliving', api_key: '563768875754372'})
 
 function myFunction() {
-    var x = document.getElementById("myFile");
-    x.disabled = true;
+    document.getElementById("myFile");
+ 	$('#upload_widget_opener').cloudinary_upload_widget(
+    { cloud_name: 'demo', upload_preset: 'a5vxnzbp', 
+      cropping: 'server', 'folder': 'user_photos' },
+    function(error, result) { console.log(error, result) });
 }
 
+console.log('red');
+
+var Range = Backbone.Model.extend({
+	initialize: function(){
+		if (a )
+
+	}
+
+})
