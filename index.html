@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<!--DESCRIPTION OF PLACE -->
+<label for="place_description">Description of place</label>
+	<form class="place_description">
+
+	<h3><button>amentities</button></h3><br>
+		<button>kitchen</button>
+		<button>tv</button>
+		<button>gym</button>
+		<button>internet</button>
+		<button>washer/dryer</button>
+		<button>pool</button> <br>
+
+	<h3>Price</h3><br>
+		<p> range bar will go here</p>
+		<br>
+	
+	<h3>Upload pics</h3>
+	<button>upload pics</button>
+	<h3> Description</h3>
+	<textarea placeholder="tell us about your space"></textarea>
+	<h3> House Rules</h3>
+
+		<h4> kids</h4><br>
+			<input type="radio" name="kids" value="yes"> yes <br>
+			<input type="radio" name="kids" value="no"> no <br>
+
+		<h4> smoke</h4><br>
+			<input type="radio" name="smoke" value="both"> inside/outside <br>
+			<input type="radio" name="smoke" value="outside"> outside <br>
+			<input type="radio" name="smoke" value="inside"> inside <br>
+			<input type="radio" name="smoke" value="no"> no <br>
+
+	
+		<h4> Pets</h4><br>
+			<input type="radio" name="pets" value="yes"> yes <br>
+			<input type="radio" name="pets" value="no"> no <br>
+
+
+
+	<textarea placeholder="anything else you want your roommate to know?"></textarea>
+
+		<p>google maps will go here</p><br>
+
+		<a href=""><button> message the rentor</button></a>
+
+
+</form>
+<!--END OF DESCRIPTION OF PLACE -->
+
+
+
+	
+<!--OWNER HOME PAGE -->
+	
+	<nav class="ownerhome-nav">
+		<ul>
+			<li>home</li>
+			<li>messages</li>
+			<li>profile</li>
+		</ul>
+	</nav>
+
+<ul>
+	<a><li>description</li></a>
+	<a><li>location</li></a>
+	<a><li>amenities</li></a>
+	<a><li>photos</li></a>
+	<a><li>price</li></a>
+	<a><li>calendar</li></a>
+	<a><li>contract</li></a>
+	<a><li>background check</li></a>
+</ul>
+
+<img src="http://placehold.it/350x150">
+
+<iframe
+  width="600"
+  height="450"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY
+    &q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>
+
+
+
+	<button>Rating</button>
+	<button>Background</button>
+
+
+<!--END HOME PAGE -->
+
+<!--RENTEE HOME PAGE -->
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>Message</li>
+			<li>Profile</li>
+		</ul>
+	</nav>
+
+	<h2>other possiblities</h2>
+	<ul>
+		<li><img src="http://placehold.it/350x150"></li>
+		<li><img src="http://placehold.it/350x150"></li>
+		<li><img src="http://placehold.it/350x150"></li>
+	</ul>
+
+	<h2>Favorites</h2>
+
+	<ul>
+		<li><img src="http://placehold.it/350x150"></li>
+		<li><img src="http://placehold.it/350x150"></li>
+		<li><img src="http://placehold.it/350x150"></li>
+	</ul>
+
+<!--END OF RENTEE HOME PAGE -->
+<!-- user Profile owner Form -->
+<label for="userProfile_Rentee">userProfile_Form</label>
+	<form class="userProfile_Rentee">
+
+	<h3>Gender</h3><br>
+	<input type="checkbox" name="sex" value="male"> Male <br>
+	<input type="checkbox" name="sex" value="female"> Female <br>
+
+	<h3>Sexual orientation</h3><br>
+	<select>
+		<option value="gay">Gay</option>
+		<option value="bi">Bi</option>
+		<option value="straight">Straight</option>
+		<option value="other">Other</option>
+	</select> <br>
+
+	<h3>orientation</h3><br>
+	<input type="checkbox" name="student" value="student"> Student <br>
+	<input type="checkbox" name="professional" value="professional"> Professional <br>
+	<input type="checkbox" name="other" value="other">Other <br> 
+
+	<h3> Age </h3><br>
+		<input type="checkbox" name="18-30" value="male"> 18-30 <br>
+		<input type="checkbox" name="30-40" value="female">31-40<br>
+		<input type="checkbox" name="40-50" value="male"> 41-50 <br>
+		<input type="checkbox" name="50-60" value="female"> 51-60 <br>
+		<input type="checkbox" name="60+" value="female"> 60+ <br>
+
+	<h3> Available Date</h3>
+		<p>calander will go here </p>
+
+	<button>Contract will go here</button><a href="#">edit contract</a><br>
+
+	<h3> Furniture</h3><br>
+	<input type="radio" name="furniture" value="yes"> yes <br>
+	<input type="radio" name="furniture" value="no"> no <br>
+
+
+</form>
+<!-- END user Profile owner Form -->
+
+
+
+<input type="filepicker" data-fp-apikey="A3zP3DqbAQQGc1d7oPU6tz"
+onchange="alert(event.fpfile.url)">
+
+<!--<button onclick="myFunction()">Try it</button>-->
+
+<script src='https://code.jquery.com/jquery-1.11.3.min.js' type='text/javascript'></script>
+<script src='../js/jquery.min.js' type='text/javascript'></script>
+<script src='../js/jquery.ui.widget.js' type='text/javascript'></script>
+<script src='../js/jquery.iframe-transport.js' type='text/javascript'></script>
+<script src='../js/jquery.fileupload.js' type='text/javascript'></script>
+<script src='../js/jquery.cloudinary.js' type='text/javascript'></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
