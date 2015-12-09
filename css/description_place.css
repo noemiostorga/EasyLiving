@@ -1,0 +1,135 @@
+/************************
+DESCRIPTION OF PLACE FORM
+*************************/
+
+/*nav*/
+.place_description{
+	border: 1px solid black;
+	background: red;
+	width: 40%;
+}
+
+
+/************************
+OWNER HOME PAGE
+*************************/
+.owner-home{
+	border: 4px solid black;
+	position: relative;
+	width: 100%;
+
+}
+.ownerhome-nav{
+	width: 100%;
+	background: blue;
+	text-align: center;
+}
+
+/*left*/
+.main-left{
+	float: left;
+	background: yellow;
+	width: 25%;
+}
+
+
+
+/*right*/
+.main-right{
+	float: right;
+	background: purple; 
+	width: 75%;
+}	
+
+.owner-setting{
+	position: relative;
+	background: orange;
+	width: 100%;
+}
+
+
+
+
+
+
+
+.ownerhome-nav ul li{
+	list-style: none;
+	display: inline;
+	padding: 5px;
+	color: white;
+	
+}
+
+/*settings*/
+
+ul.owner-setting{
+	list-style: none;
+	padding: 0px;
+}
+
+.owner-setting ul {
+	padding: 0px;
+}	
+
+.owner-setting{
+	list-style: none;
+	background: orange;
+	width: 100%;
+	font-size: 2em;
+	position: relative;
+	padding: 5px 0px 5px 0px;
+}
+
+.owner-setting a {
+	text-decoration: none;
+
+}
+
+.owner-setting a:hover {
+	font-weight: bold;
+}
+
+/*main-show*/
+.main-show{
+	float: right;
+	width: 75%;
+	background: pink;
+	position: relative;
+}
+
+
+/************************
+RENTEE HOME PAGE
+*************************/
+.Renteehome-page{
+	position: relative;
+	width: 100%;
+	border: 1px solid black;
+}
+
+
+/************************
+USER PROFILE FORM
+*************************/
+.userProfile_Rentee{
+	background: red;
+	width: 40%;
+	border:1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
