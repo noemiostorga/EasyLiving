@@ -18,9 +18,11 @@
   <div id="signUp-container">
     <h1>sign Up!<h1>
     <form id="signup">
-        <p><input id="signup-email" type="text"></p>
-        <p><input id="signup-password" type="password"></p>
-        <p><input id="signup-submit" type="submit"></p>
+        <p><input type="text" id="signup-firstName" placeholder="First Name"></p>
+        <p><input type="text" id="signup-lastName" placeholder="Last Name"></p>
+        <p><input type="text" id="signup-email" placeholder="email"></p>
+        <p><input type="password"id="signup-password" placeholder="password"></p>
+        <p><input type="submit" id="signup-submit" value="Sign Up"></p>
     </form>
 
     <h1>You're ready to use Parse!</h1>
@@ -32,13 +34,18 @@
 $("#signup").submit(function(event){
   event.preventDefault();
 
+  var firstName = $("#signup-firstName").val();
+  var lastName = $("#signup-lastName").val();
   var email = $("#signup-email").val();
   var password = $("#signup-password").val();
-
+  
   var user = new Parse.User();
+  user.set("firstName", firstName);
+  user.set("lastName", lastName);
+  user.set("email", email);//username can be the name and the email I just have to specify the in the value what I want
   user.set("username", email);
   user.set("password", password);
-
+  
   user.signUp(null,{
     success:function(user){
       console.log(user);
