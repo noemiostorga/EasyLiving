@@ -38,11 +38,12 @@ $("#signup").submit(function(event){
   var lastName = $("#signup-lastName").val();
   var email = $("#signup-email").val();
   var password = $("#signup-password").val();
+  var username = $("#signup-username").val();
   
   var user = new Parse.User();
   user.set("firstName", firstName);
   user.set("lastName", lastName);
-  user.set("email", username);//username can be the name and the email I just have to specify the in the value what I want
+  user.set("email", username);
   user.set("username", email);
   user.set("password", password);
   
@@ -51,26 +52,26 @@ $("#signup").submit(function(event){
       console.log(user);
 
     }, error: function (user, error){
-      console.log("signUp error:"+error.message);
+      console.log("signup error:"+error.message);
 
     }
-  });
+  })
 });
 
-    var Test = Parse.Object.extend("Test");//this add a class//
+    // var Test = Parse.Object.extend("Test");//this add a class//
     
-    var newTest = new Test();//new instance//
-    newTest.set("title", "post from web site");
-    newTest.set("content","this is content came from the web");
+    // var newTest = new Test();//new instance//
+    // newTest.set("title", "post from web site");
+    // newTest.set("content","this is content came from the web");
 
-    newTest.save({
-      success: function() {
-      },
-      error: function(error) {
-       console.log("Error:"+error.message)
-      }
-    });
-  </script>
+    // newTest.save({
+    //   success: function() {
+    //   },
+    //   error: function(error) {
+    //    console.log("Error:"+error.message);
+    //   }
+    // });
+</script>
 </body>
 
 </html>
