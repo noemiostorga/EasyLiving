@@ -13,28 +13,9 @@
   
   <div id="main">
 
-<!--login form-->
-
- <div id="login-container">
-    <h1>Log In<h1>
-  <form id="login">
-        <p><input type="text" id="login-email" placeholder="email@2015.com"></p>
-        <p><input type="password"id="login-password" placeholder="password"></p>
-        <p><input type="submit" id="login-submit" value="Log In"></p>
-    </form>
-  </div>
-
 <!--Sign up form -->
 
-  <div id="signup-container">
-    <h1>sign Up!<h1>
-    <form id="signup">
-        <p><input type="text" id="signup-firstName" placeholder="First Name"></p>
-        <p><input type="text" id="signup-lastName" placeholder="Last Name"></p>
-        <p><input type="text" id="signup-email" placeholder="email@"></p>
-        <p><input type="password"id="signup-password" placeholder="password"></p>
-        <p><input type="submit" id="signup-submit" value="Sign Up"></p>
-    </form>
+  
 
     <h1>You're ready to use Parse!</h1>
     
@@ -46,50 +27,8 @@
 
 
 //log in functions//
-$("#login").submit(function(event){
-  event.preventDefault();
-
-  var email = $("#login-email").val();
-  var password = $ ("<div id=""></div>login-password").val();
-
-  Parse.User.logIn(email, password,{
-    success:function(user){
-        console.log("log in success");
-
-      }, error: function (user, error){
-        console.log("login error:"+error.message);
-      }
-    });
-});
-
 
 //sign up functions//
-$("#signup").submit(function(event){
-  event.preventDefault();
-
-  var firstName = $("#signup-firstName").val();
-  var lastName = $("#signup-lastName").val();
-  var email = $("#signup-email").val();
-  var password = $("#signup-password").val();
-  var username = $("#signup-username").val();
-  
-  var user = new Parse.User();
-  user.set("firstName", firstName);
-  user.set("lastName", lastName);
-  user.set("email", username);
-  user.set("username", email);
-  user.set("password", password);
-  
-  user.signUp(null,{
-    success:function(user){
-      console.log(user);
-
-    }, error: function (user, error){
-      console.log("signup error:"+error.message);
-
-    }
-  });
-});
 
 /*
 //test to post in parse//
