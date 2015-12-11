@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
 		initialize: function(){
-			$(document).oAn('cloudinarywidgetsuccess', function(e, data) {
+			$(document).on;('cloudinarywidgetsuccess', function(e, data) {
 		  console.log("Global", e, data); });
 		}
 
