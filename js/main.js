@@ -59,10 +59,10 @@ $(document).ready(function(){
 
 	var image = Backbone.Collection.extend({
 		model: Images,
-		_
+		_cloud_name: easyliving
 
-	})	
-*/ 
+	});	
+
 
 
 
