@@ -1,0 +1,47 @@
+html, body {
+  height: 100%;
+  background-color: yellow;
+}
+
+/* start carrousel*/
+
+#main {
+    width: 1100px;
+    margin: auto;
+    min-height: 100%;
+    margin-bottom: -60px;
+    color:black;
+
+}
+
+#main-photos {
+
+    width: inherit;
+    height:450px;
+    background:white;
+    margin-bottom: -10;
+    clear: both;
+
+}
+
+#main-photos img {
+    width: 1100px;
+    height: 450px;
+}
+
+#hero {
+    height:300px;
+    width:960px;
+}
+#hero div {
+    position:absolute;
+    z-index: 0;
+}
+#hero div.previous {
+    z-index: 1;
+}
+#hero div.current {
+    z-index: 2;
+}
+
+/* start carrousel*/
