@@ -1,6 +1,24 @@
 html, body {
   height: 100%;
-  background-color: yellow;
+  background-color:#99ffdd;
+}
+
+
+.menu{
+    height: 20px;
+
+}
+
+.menu a{
+float:left;
+display: inline-block;
+margin:5px;
+color:#808080;
+
+}
+
+.menu ul{
+list-style:none;
 }
 
 /* start carrousel*/
@@ -45,3 +63,53 @@ html, body {
 }
 
 /* start carrousel*/
+
+/* start of nav-menu */
+#header {
+    margin: 0 auto;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+nav{
+    height: 50px;
+    margin: 0 auto;
+    background-color:#cc99ff;
+    text-align: center;
+    padding: 7px;
+}
+
+nav ul {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top:6px;
+}
+
+#header a:hover{
+    color:black;
+    background-color:#ff66ff;
+}
+
+
+ul {
+    list-style:none;
+    width:1000px;
+    height:40px;
+}
+
+li a{
+    width: 300px;
+    height:40px;
+    float: left;
+    margin-top: 0px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  
+}
+
+ul li a{
+    color:gray;
+}
+
+/* start of nav-menu */
