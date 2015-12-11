@@ -15,8 +15,7 @@ $(document).ready(function(){
 			$(document).on;('cloudinarywidgetsuccess', function(e, data) {
 		  console.log("Global", e, data); });
 		}
-
-});
+	});
 	
 	
 });
@@ -24,7 +23,7 @@ $(document).ready(function(){
 //instagram 
 //fetch set save
 		
-		/*defaults:{
+		defaults:{
 				url: null,
 				path: null,
 				etag: null,
