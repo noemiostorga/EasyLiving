@@ -10,7 +10,7 @@
 <!--DESCRIPTION OF PLACE -->
 <label for="place_description">Description of place</label>
 <div class="place_description">
-
+<i class="fa fa-product-hunt"></i>
 
 		<h3><button>amentities</button></h3><br>
 			<button>kitchen</button>
@@ -174,17 +174,13 @@
 
 <!--<button onclick="myFunction()">Try it</button>-->
 
-<script src='https://code.jquery.com/jquery-1.11.3.min.js' type='text/javascript'></script>
-<script src='../js/jquery.min.js' type='text/javascript'></script>
-<script src='../js/jquery.ui.widget.js' type='text/javascript'></script>
-<script src='../js/jquery.iframe-transport.js' type='text/javascript'></script>
-<script src='../js/jquery.fileupload.js' type='text/javascript'></script>
-<script src='../js/jquery.cloudinary.js' type='text/javascript'></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
 <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
-<script src="../js/main.js"></script>
+<script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
+<script src="js/main.js"></script>
 
-<script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
-   
 <script type="text/javascript">  
   $(document).ready(function(){
 	  $('#upload_widget_opener').cloudinary_upload_widget(
@@ -192,9 +188,19 @@
 	      cropping: 'server', 'folder': 'user_photos' },
 	    function(error, result) { console.log(error, result) });
 
+
+	 $(document).on('cloudinarywidgetsuccess', function(e, data) {
+  console.log("Global", e, data);
 });
 
+
+	});
+
+
 </script>
+
+
+
 
 </body>
 </html>
