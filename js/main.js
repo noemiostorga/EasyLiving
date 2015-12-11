@@ -57,6 +57,12 @@ $(document).ready(function(){
 		cloud_name: "easyliving"
 
 		});
+
+	var image = Backbone.Collection.extend({
+		model: Images,
+		_
+
+	})	
 */ 
 
 
