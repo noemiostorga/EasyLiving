@@ -6,18 +6,80 @@
 </head>
 <body>
 
-<div id="signup-container">
-    <h1>sign Up!<h1>
-    <form id="signup">
-        <p><input type="text" id="signup-firstName" placeholder="First Name"></p>
-        <p><input type="text" id="signup-lastName" placeholder="Last Name"></p>
-        <p><input type="text" id="signup-email" placeholder="email@"></p>
-        <p><input type="password"id="signup-password" placeholder="password"></p>
-        <p><input type="submit" id="signup-submit" value="Sign Up"></p>
+<div class="content"></div>
+    
+<!-- templates -->
+<script type="x-tmpl-mustache" id="signup-template">
+    <div class="signup">
+        <form class="login-form">
+            <h1>Login!<h1>
+            <div class="error" style="display:none"></div>
+            <div><input type="text" id="signup-username" placeholder="email@"></div>
+            <div><input type="password" id="signup-password" placeholder="password"></div>
+            <button>Login</button>
+        </form>
+
+        <form class="signup-form">
+            <h1>Sign Up!<h1>
+            <div class="error" style="display:none"></div>
+            <div><input type="text" id="signup-firstName" placeholder="First Name"></div>
+            <div><input type="text" id="signup-lastName" placeholder="Last Name"></div>
+            <div><input type="text" id="signup-email" placeholder="email@"></div>
+            <div><input type="password" id="signup-password" placeholder="password"></div>
+            <div><input type="password" id="signup-confirm" placeholder="confirm password"></div>
+            <div>Account Type</div>
+            <div>
+                <input type="radio" name="account-type" value="host">Host 
+                <input type="radio" name="account-type" value="renter">Renter
+            </div>
+            <button>Sign Up</button>
+        </form>
+    </div>
+</script>
+<script type="x-tmpl-mustache" id="signup-template">
+    <form class="">
+
+        <h3>Gender</h3><br>
+        <input type="checkbox" name="sex" value="male"> Male <br>
+        <input type="checkbox" name="sex" value="female"> Female <br>
+
+        <h3>Sexual Orientation</h3><br>
+        <select>
+            <option value="gay">Gay</option>
+            <option value="bi">Bi</option>
+            <option value="straight">Straight</option>
+        </select> <br>
+
+        <h3>Ocupation</h3><br>
+            <input type="checkbox" name="student" value="student"> Student <br>
+            <input type="checkbox" name="professional" value="professional"> Professional <br>
+            <input type="checkbox" name="other" value="other">Other <br> 
+
+        <h3> Age </h3><br>
+            <input type="checkbox" name="18-30" value="male"> 18-30 <br>
+            <input type="checkbox" name="30-40" value="female">31-40<br>
+            <input type="checkbox" name="40-50" value="male"> 41-50 <br>
+            <input type="checkbox" name="50-60" value="female"> 51-60 <br>
+            <input type="checkbox" name="60+" value="female"> 60+ <br>
+
+        <h3> Available Date</h3>
+            <p>calander will go here </p>
+
+        <button>See the contract</button><a href="#">Contract</a><br>
     </form>
 
+</script>
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+
 <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
-<script src="js/signup.js"></script>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+
+<script src="js/signup.js"></script>
 </body>
 </html>
