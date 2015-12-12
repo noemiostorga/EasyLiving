@@ -1,6 +1,17 @@
 /************************
 DESCRIPTION OF PLACE FORM
 *************************/
+#map{
+   width: 500px;
+   height: 400px;
+   background: #ccc;
+}
+
+
+
+/************************
+DESCRIPTION OF PLACE FORM
+*************************/
 
 /*nav*/
 .place_description{
