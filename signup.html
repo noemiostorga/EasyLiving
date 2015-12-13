@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>User</title>
 </head>
 <body>
 
@@ -36,37 +36,38 @@
         </form>
     </div>
 </script>
-<script type="x-tmpl-mustache" id="signup-template">
-    <form class="">
+<script type="x-tmpl-mustache" id="userProfile-template">
+    <form class="userprofile-form">
 
         <h3>Gender</h3><br>
-        <input type="checkbox" name="sex" value="male"> Male <br>
-        <input type="checkbox" name="sex" value="female"> Female <br>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
 
         <h3>Sexual Orientation</h3><br>
-        <select>
-            <option value="gay">Gay</option>
-            <option value="bi">Bi</option>
-            <option value="straight">Straight</option>
-        </select> <br>
+        
+        <input type="radio" name="orientation" value="straight"> straight <br>
+         <input type="radio" name="orientation" value="gay"> gay <br>
+          <input type="radio" name="orientation" value="bisexual"> bisexual <br>
+        
 
         <h3>Ocupation</h3><br>
-            <input type="checkbox" name="student" value="student"> Student <br>
-            <input type="checkbox" name="professional" value="professional"> Professional <br>
-            <input type="checkbox" name="other" value="other">Other <br> 
+            <input type="radio" name="occupation" value="student"> Student <br>
+            <input type="radio" name="occupation" value="professional"> Professional <br>
+            <input type="radio" name="occupation" value="other">Other <br> 
 
         <h3> Age </h3><br>
-            <input type="checkbox" name="18-30" value="male"> 18-30 <br>
-            <input type="checkbox" name="30-40" value="female">31-40<br>
-            <input type="checkbox" name="40-50" value="male"> 41-50 <br>
-            <input type="checkbox" name="50-60" value="female"> 51-60 <br>
-            <input type="checkbox" name="60+" value="female"> 60+ <br>
+            <input type="radio" value="18-30" name="agegroup"> 18-30 <br>
+            <input type="radio" value="30-40" name="agegroup">31-40<br>
+            <input type="radio" value="40-50" name="agegroup"> 41-50 <br>
+            <input type="radio" value="50-60" name="agegroup"> 51-60 <br>
+            <input type="radio" value="60+" value="agegroup"> 60+ <br>
 
-        <h3> Available Date</h3>
-            <p>calander will go here </p>
+        <!-- upload user photo option! -->
 
-        <button>See the contract</button><a href="#">Contract</a><br>
+            <button>Continue</button>
+
     </form>
+
 
 </script>
 

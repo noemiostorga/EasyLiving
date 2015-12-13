@@ -91,8 +91,52 @@ var LogInView = Backbone.View.extend({
     }
   });
 
+
+var CreateUserProfileView = Backbone.View.extend({
+  events: {
+      "submit form.userprofile-form": "createUserProfile",
+    },
+
+    el: ".content",
+    
+    initialize: function() {
+      //_.bindAll(this, "logIn", "signUp");
+      _.bindAll(this, "createUserProfile");
+      this.render();
+    },
+    createUserProfile: function(){
+      
+      var gender = $('input[name=gender]:checked').val();
+      var orientation = $('input[name=orientation]:checked').val();
+      var occupation = $('input[name=occupation]:checked').val();
+      var ageGroup = $('input[name=agegroup]:checked').val();
+
+      var UserProfile = Parse.Object.extend("UserProfile");
+      var userProfile = new UserProfile();
+      userProfile.set({
+        gender: gender,
+        orientation: orientation,
+        occupation: occupation,
+        ageGroup: ageGroup
+        
+      }, {
+        error: function(userProfile, error) {
+          // The set failed validation.
+        }
+      });
+    },
+
+    render: function() {
+      var userTemplate = $("#userProfile-template").text();
+      this.$el.html(userTemplate);
+      this.delegateEvents();
+    }
+
+});
+
 if (Parse.User.current()) {
   console.log("Already logged in!");
 } else {
-  new LogInView();
+  //new LogInView();
+  new CreateUserProfileView();
 }
