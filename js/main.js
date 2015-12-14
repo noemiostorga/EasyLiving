@@ -1,4 +1,4 @@
-  console.log('test');
+ /// console.log('test');
 
 $(document).ready(function(){
 
@@ -21,49 +21,4 @@ $(document).ready(function(){
 	
 });
 
-//instagram 
-//fetch set save
-		
-		/*defaults:{
-				url: null,
-				path: null,
-				etag: null,
-				secure_url: null,
-				signature: null,
-				thumbnail: null
-			},
-
-		validate: function(){
-			if(!attrs.url){
-				return "url is required";
-			}
-			if (!attrs.path){
-				return "path is required";
-			}
-			if (!attrs.etag){
-				return "etag is required";
-			}
-			if (!attrs.secure_url){
-				return "secure_url is required";
-			}
-			if (!attrs.signature){
-				return "signature is required";
-			}
-			if (!attrs.thumbnail){
-				return "thumbnail is required";
-			}
-
-		},
-		cloud_name: "easyliving"
-
-		});
-
-	var image = Backbone.Collection.extend({
-		model: Images,
-		_
-
-	})	
-*/ 
-
-
-
+//
