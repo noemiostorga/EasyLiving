@@ -2,44 +2,18 @@ Parse.$ = jQuery;
 Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 
-var LogInView = Backbone.View.extend({
+var SignUpView = Backbone.View.extend({
     events: {
-      "submit form.login-form": "logIn",
       "submit form.signup-form": "signUp"
     },
 
     el: ".content",
     
     initialize: function() {
-      //_.bindAll(this, "logIn", "signUp");
       _.bindAll(this, "signUp");
       this.render();
     },
-    /*
-    logIn: function(e) {
-      var self = this;
-      var username = this.$("#login-username").val();
-      var password = this.$("#login-password").val();
-      
-      Parse.User.logIn(username, password, {
-        success: function(user) {
-          //new ManageTodosView();
-          console.log("success!")
-          self.undelegateEvents();
-          delete self;
-        },
 
-        error: function(user, error) {
-          self.$(".login-form .error").html("Invalid username or password. Please try again.").show();
-          self.$(".login-form button").removeAttr("disabled");
-        }
-      });
-
-      this.$(".login-form button").attr("disabled", "disabled");
-
-      return false;
-    },
-    */
     signUp: function(e) {
       var self = this;
 
@@ -70,7 +44,6 @@ var LogInView = Backbone.View.extend({
         success: function(user) {
           new CreateUserProfileView();
           self.undelegateEvents();
-          delete self;
         },
 
         error: function(user, error) {
@@ -113,16 +86,16 @@ var CreateUserProfileView = Backbone.View.extend({
 
       var UserProfile = Parse.Object.extend("UserProfile");
       var userProfile = new UserProfile();
-      userProfile.set({
+      userProfile.save({
         gender: gender,
         orientation: orientation,
         occupation: occupation,
-        ageGroup: ageGroup
-        
-      }, {
-        error: function(userProfile, error) {
-          // The set failed validation.
-        }
+        ageGroup: ageGroup,
+        user: Parse.User.current()     
+      }).then(function(result) {
+        console.log(result);
+      }, function(error) {
+        console.log("You are horrible")
       });
     },
 
@@ -137,6 +110,6 @@ var CreateUserProfileView = Backbone.View.extend({
 if (Parse.User.current()) {
   console.log("Already logged in!");
 } else {
-  //new LogInView();
-  new CreateUserProfileView();
+  new SignUpView();
+  //new CreateUserProfileView();
 }
