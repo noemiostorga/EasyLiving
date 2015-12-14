@@ -4,7 +4,22 @@ var Location =Backbone.Model.extend({
 		position:
 	},
 	initialize: function(){
-		
+
 	}
 
 })
+
+var Place=Backbone.View.extend({
+	defaults:{
+
+	},
+	initialize: function(){
+		success: function(){
+
+		}
+	},
+	render: function(){
+		
+	}
+
+});
