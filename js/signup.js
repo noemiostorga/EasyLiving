@@ -108,7 +108,7 @@ var CreateUserProfileView = Backbone.View.extend({
         window.location = "host.homePage.html"; 
       }, function(error) {
         // on failure, you should do something? Maybe? Dunno.
-        console.log("You are horrible")
+        console.log("check your infomation")
       });
     },
 
