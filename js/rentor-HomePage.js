@@ -35,25 +35,26 @@ var Renter = Backbone.Router.extend({
 		Backbone.history.start({pushState: true});
 	},
 		routes: {
-			"" : "renter_view"
+			"messages/": "message",
+			"profile": "profile",
+			" " : "index"
+
 		}
-
-	help: function(){
-		console.log("Hfe");
-
-	},
-	search: function(){
-		console.log("searching");
-	},
-
 });
 
 
 
 
 var router = new Router();
-	router.on('')
 
+	router.on('route: profile', function(objectId){
+		var profile: new({objectId: objectId});
+		profile.fetch({
+			success: fucntion(resp){
+
+			}
+		})
+	});
 
 
 /*var SignupRentee= Backbone.Model.extend({
