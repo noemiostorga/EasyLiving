@@ -8,7 +8,7 @@ var Router = Backbone.Router.extend({
 	routes: {
 		"signup/": "",
 		"": "",
-		"":""
+		"":"index"
 	},
 	index: function(){
 

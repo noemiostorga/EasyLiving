@@ -16,7 +16,7 @@
 		picture_url = data[0].url
 		console.log(picture_url);
 		
-	});
+
 
 
 	var Image = Backbone.Model.extend({
@@ -25,8 +25,8 @@
 		
 
 		},defaults: {
-			picture_url: data[0].url,
-			url: null
+			url: picture_url,
+			
 		},
 		_parse_class_name: "RoomImages"
 	});
@@ -34,7 +34,7 @@
 	var ImageCollection= Backbone.Collection.extend({
 			model: Image,
 			_parse_class_name: "RoomImages",
-			picture_url : data[0].url
+			url : picture_url
 	});
 
 
@@ -44,7 +44,7 @@
 	var image = new Image();
 
 			image.set({
-				picture_url: data[0].url
+				url: picture_url,
 			})
 			image.save(null, {
 				success: function(resp){
@@ -55,7 +55,7 @@
 
 
 
-
+	});
 
 
 
