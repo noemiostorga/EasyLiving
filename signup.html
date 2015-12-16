@@ -12,7 +12,7 @@
 <script type="x-tmpl-mustache" id="signup-template">
     <div class="signup">
         <form class="signup-form">
-            <h1>Sign Up!<h1>
+            <h1>Sign Up!</h1>
             <div class="error" style="display:none"></div>
             <div><input type="text" id="signup-firstName" placeholder="First Name"></div>
             <div><input type="text" id="signup-lastName" placeholder="Last Name"></div>
@@ -24,7 +24,9 @@
                 <input type="radio" name="account-type" value="host">Host 
                 <input type="radio" name="account-type" value="renter">Renter
             </div>
-            <button>Sign Up</button>
+            <div id="inputBtn">
+            <button>signup</button>
+            </div> 
         </form>
     </div>
 </script>
@@ -35,32 +37,29 @@
     <form class="userprofile-form">
 
         <h3>Gender</h3><br>
-        <input type="radio" name="gender" value="male"> Male <br>
-        <input type="radio" name="gender" value="female"> Female <br>
+        {{#gender}}
+        <input type="radio" name="gender" value="{{.}}"> {{.}} <br>
+        {{/gender}}
 
         <h3>Sexual Orientation</h3><br>
-        
-        <input type="radio" name="orientation" value="straight"> straight <br>
-         <input type="radio" name="orientation" value="gay"> gay <br>
-          <input type="radio" name="orientation" value="bisexual"> bisexual <br>
-        
+        {{#orientation}}
+        <input type="radio" name="orientation" value="{{.}}"> {{.}} <br>
+        {{/orientation}}
 
-        <h3>Ocupation</h3><br>
-            <input type="radio" name="occupation" value="student"> Student <br>
-            <input type="radio" name="occupation" value="professional"> Professional <br>
-            <input type="radio" name="occupation" value="other">Other <br> 
+        <h3>Occupation</h3><br>
+        {{#occupation}}
+            <input type="radio" name="occupation" value="{{.}}"> {{.}} <br>
+        {{/occupation}}
 
         <h3> Age </h3><br>
-            <input type="radio" value="18-30" name="agegroup"> 18-30 <br>
-            <input type="radio" value="30-40" name="agegroup">31-40<br>
-            <input type="radio" value="40-50" name="agegroup"> 41-50 <br>
-            <input type="radio" value="50-60" name="agegroup"> 51-60 <br>
-            <input type="radio" value="60+" value="agegroup"> 60+ <br>
+        {{#ageGroup}}
+            <input type="radio" name="agegroup" value="{{.}}"> {{.}} <br>
+        {{/ageGroup}}
 
         <!-- upload user photo option! -->
-
-            <button>Continue</button>
-
+        <div id="inputBtn">
+        <button>Continue</button>
+        </div>  
     </form>
 
 
