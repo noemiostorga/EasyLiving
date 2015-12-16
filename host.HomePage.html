@@ -6,10 +6,11 @@
 </head>
 <body>
    <div class="owner-home">
-
+   <!--
     <nav class="ownerhome-nav">
         <ul>
-            <li>home</li>
+            <li><a href=
+            home</li>
             <li>messages</li>
             <li>profile</li>
             <li><a href="/add">Add</a></li>
@@ -29,10 +30,11 @@
             <a href="#"><li>Background Check</li></a>
         </ul>
     </div>  
-
+    -->
     
     <div class="content"></div>
     
+    <!--
     <div class="main-right">
         <p> google will be here</p>
         <img class="placeit" src="http://placehold.it/350x150" />
@@ -41,7 +43,7 @@
         <button>Rating</button>
         <button>Background</button>
     </div>
-
+    -->
     <script type="x-tmpl-mustache" id="app-template">
         <div class="app-template">
             <form class="app-form">
@@ -56,72 +58,33 @@
 <script type="x-tmpl-mustache" id="create-listing-template">
     
     <form class="create-listing-form">
-                <h1>Host Dashboard</h1>
+        <div class="error" style="display:none"></div>
+        <h1>Host Dashboard</h1>
 
-        <h3><button>amentities</button></h3><br>
-            <button>kitchen</button>
-            <button>tv</button>
-            <button>gym</button>
-            <button>internet</button>
-            <button>washer/dryer</button>
-            <button>pool</button> <br>
-
-        <h3>Price</h3><br>
-            <p> range bar will go here</p>
-            <br>
-        
-        <h3>Upload pics</h3>
-        <button>upload pics</button>
-        <h3> Description</h3>
-        <textarea placeholder="tell us about your space"></textarea>
-        
-        <h3>Room Description</h3>
-
-            <h4>Room size</h4><br>
-                {{#squareFoot}}
-                <input type="radio" name="squareFoot"value= "{{.}}">{{.}} <br>
-                {{/squareFoot}}
-                
-            <h4> Bathroom</h4><br>
-            {{#bathroom}}
-                <input type="radio" name="bathroom" 
-                 value= "{{.}}">{{.}} <br>
-            {{/bathroom}}
-
-            <h4> Smooke</h4>
-            {{#smoke}}
-                <input type="radio" name="smoke" 
-                value= "{{.}}">{{.}} <br>
-            {{/smoke}}
-
-            <h3> Furniture</h3><br>
-             {{#furniture}}
-                <input type="radio" name="furniture"
-                value= "{{.}}">{{.}} <br>
-             {{#furniture}} 
-        
-            <h4>Kids</h4><br>
-             {{#kids}}
-                <input type="radio" name="kids" value= "{{.}}">{{.}} <br>
-            {{/kids}}
-
-            <h4> Pets</h4><br>
-            {{#kids}}
-                <input type="radio" name="pets" value="{{.}}">{{.}} <br>
-            {{/kids}}
-
-        <div id="inputBtn">
-        <button>Create Listing</button>
+        {{#fields}}
+        <div>
+            <input type="{{type}}" name="{{name}}" placeholder="{{description}}">
+        </div>
+        {{/fields}}
+        <div>
+            <textarea name="description" placeholder="Tell us more about your space..."></textarea>
+        </div>
+        <div>
+            <span>Amenities</span>
+            {{#amenities}}
+                <div><input type="checkbox" name="{{value}}" value="{{value}}"> {{description}} </div>
+            {{/amenities}}
+        </div>
+        <div>
+            <span>Restrictions</span>
+            {{#restrictions}}
+                <div><input type="checkbox" name="{{value}}" value="{{value}}"> {{description}} </div>
+            {{/restrictions}}
+        </div>
+        <div>
+            <button>Create Listing</button>
         </div>  
     </form>
-
-
-        <textarea placeholder="anything else you want your roommate to know?"></textarea>
-
-            <p>google maps will go here</p><br>
-
-            <a href=""><button> message the rentor</button></a
-    
 </script>
     
 
