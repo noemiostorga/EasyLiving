@@ -1,101 +1,41 @@
 html, body {
   height: 100%;
-  background-color:#99ffdd;
-}
-
-
-.menu{
-    height: 20px;
-
-}
-
-.menu a{
-float:left;
-display: inline-block;
-margin:5px;
-color:#808080;
-
+  background-color:#B1B1B1;
 }
 
 .menu ul{
 list-style:none;
-display
 }
 
-/* start carrousel*/
-
-#main {
-    width: 1100px;
-    margin: auto;
-    min-height: 100%;
-    margin-bottom: -60px;
-    color:black;
-
-}
-
-#main-photos {
-
-    width: inherit;
+/*. background image{
+    background: url("images/o-COLLEGE-ROOMMATES-facebook.jpg")  no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color:#FFF;
+    width:inherit;
     height:450px;
-    background:white;
-    margin-bottom: -10;
-    clear: both;
-
-}
-
-#main-photos img {
-    width: 1100px;
-    height: 450px;
-}
-
-#hero {
-    height:300px;
-    width:960px;
-}
-#hero div {
-    position:absolute;
-    z-index: 0;
-}
-#hero div.previous {
-    z-index: 1;
-}
-#hero div.current {
-    z-index: 2;
-}
-
-/* start carrousel*/
-
-/* start of nav-menu */
-#header {
-    margin: 0 auto;
+    margin: auto;
+    padding-top: 60px;
     font-size: 30px;
-    padding-bottom: 40px;
-}
+}*/
 
 nav{
     height: 50px;
     margin: 0 auto;
-    background-color:#cc99ff;
+    background-color:#7980AF;
     text-align: center;
     padding: 7px;
 }
 
 nav ul {
-    width: 1000px;
     margin: 0 auto;
     padding-top:6px;
 }
 
-#header a:hover{
-    color:black;
-    background-color:#ff66ff;
-}
-
-
-ul {
-    list-style:none;
-    width:1000px;
-    height:40px;
+nav a:hover{
+    color:white;
+    background-color:#AAABB1;
 }
 
 li a{
@@ -110,27 +50,24 @@ li a{
 }
 
 ul li a{
-    color:gray;
+    color:black;
 }
 
-/* start of nav-menu */
 /*--logos--*/
 #options{
-    background-color:white;
-    height:300px;
-
+    height:10px;
     
 }
 
 #options i{
     width:100px;
-    font-size: 7em;
+    font-size: 3em;
     color:black;
     
 }
 
 #photos{
-    background-color:#66ccff;
+    background-color:#C5C5AD;
 }
 
 #footer{
@@ -151,7 +88,6 @@ ul li a{
 }
 #footer a{
     margin: 10px;
-}
 
 
 

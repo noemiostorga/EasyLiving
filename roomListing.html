@@ -6,6 +6,8 @@
 </head>
 <body>
 
+<div class="content"></div>
+
 <script type="x-tmpl-mustache" id="create-listing-template">
     
     <form class="create-listing-form">
@@ -26,6 +28,12 @@
         <h3>Upload pics</h3>
         <button>upload pics</button>
         <h3> Description</h3>
+//<script type = "x-tmpl-mustache" id="DescriptionTemplate">  
+        <img src="{{url}}"></img>
+            <p><div class="photo-description">{{description}}</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt mollitia ut laudantium amet similique dicta, ullam at laborum, deleniti, nobis necessitatibus blanditiis magnam. Tenetur officiis quam, consectetur quo, labore molestiae.</div></p>//
+
+
         <textarea placeholder="tell us about your space"></textarea>
         
         <h3>Room Description</h3>
@@ -87,7 +95,7 @@
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
-    <script src="js/hostHomePage.js"></script>
+    <script src="js/roomListing.js"></script>
 </body>
 </html>
 
