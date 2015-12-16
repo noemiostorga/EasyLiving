@@ -25,7 +25,7 @@ var LogInView = Backbone.View.extend({
 
       error: function(user, error) {
         self.$(".login-form .error").html("Invalid username or password. Please try again.").show();
-        self.$(".login-form button").removeAttr("disabled");
+        self.$(".login-form button").removeAttr("disabfled");
       }
     });
 
