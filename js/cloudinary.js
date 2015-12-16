@@ -34,8 +34,7 @@
 	var ImageCollection= Backbone.Collection.extend({
 			model: Image,
 			_parse_class_name: "RoomImages",
-			picture_url : data[0].url
-	});
+			picture_url : data[0].url,
 
 
 
