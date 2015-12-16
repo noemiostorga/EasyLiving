@@ -6,7 +6,7 @@ var Router = Backbone.Router.extend({
 		Backbone.history.start({pushState: true});
 	},
 	routes: {
-		"": "",
+		"signup/": "",
 		"": "",
 		"":""
 	},
