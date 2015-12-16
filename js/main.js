@@ -1,5 +1,5 @@
-var myModule = require('./myModule');
+//var myModule = require('./myModule');
 
-myModule.sayHello();
+//myModule.sayHello();
 
 
