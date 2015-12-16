@@ -25,7 +25,7 @@
 		
 
 		},defaults: {
-			image_url: null,
+			picture_url: data[0].url,
 			url: null
 		},
 		_parse_class_name: "RoomImages"
@@ -34,7 +34,7 @@
 	var ImageCollection= Backbone.Collection.extend({
 			model: Image,
 			_parse_class_name: "RoomImages",
-			url: "https://www.parse.com/apps/easyliving/collections#class/RoomImages"
+			picture_url : data[0].url
 	});
 
 
@@ -44,7 +44,7 @@
 	var image = new Image();
 
 			image.set({
-				url: 'https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg'
+				picture_url: data[0].url
 			})
 			image.save(null, {
 				success: function(resp){
