@@ -1,4 +1,4 @@
-module.exports={
+
 
 var Rooms = Backbone.Model.extend({
 	initialize: function(){
@@ -70,4 +70,3 @@ var renter_view = new Renter({el: $("#view_container")});
 
 
 
-}
