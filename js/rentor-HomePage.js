@@ -1,4 +1,37 @@
-module.exports={
+Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
+
+
+var RenterView = Backbone.View.extend({
+
+	events: {
+		"submit form.userprofile-form": "createRenterView",
+	},
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*module.exports={
 
 var Rooms = Backbone.Model.extend({
 	initialize: function(){
@@ -66,8 +99,8 @@ var router = new Router();
 })
 
 */
-var renter_view = new Renter({el: $("#view_container")});
+/*var renter_view = new Renter({el: $("#view_container")});
 
 
 
-}
+}*/
