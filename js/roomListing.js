@@ -39,7 +39,7 @@ var CreteListingView = Backbone.View.extend({
       }).then(function(result) {
 
         // on success, move to the next page (dashboard)
-        window.location = "host.homePage.html"; 
+        window.location = "host.html"; 
       }, function(error) {
         // on failure, you should do something? Maybe? Dunno.
         console.log("check your infomation")
@@ -116,7 +116,7 @@ var CreteListingView = Backbone.View.extend({
       }).then(function(result) {
 
         // on success, move to the next page (dashboard)
-        window.location = "host.homePage.html"; 
+        window.location = "host.html"; 
       }, function(error) {
         // on failure, you should do something? Maybe? Dunno.
         console.log("check your infomation")
@@ -193,7 +193,7 @@ var CreteListingView = Backbone.View.extend({
       }).then(function(result) {
 
         // on success, move to the next page (dashboard)
-        window.location = "host.homePage.html"; 
+        window.location = "host.html"; 
       }, function(error) {
         // on failure, you should do something? Maybe? Dunno.
         console.log("check your infomation")
