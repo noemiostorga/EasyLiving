@@ -27,7 +27,7 @@ ImageCollection.fetch({
 });
 
 
-/////////////////////
+////////////////////////
 
 var Renter = Backbone.Router.extend({
 	initialize: function(){
