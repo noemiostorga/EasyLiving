@@ -154,12 +154,16 @@
         query.equalTo("user", user);
         query.first({
           success: function(object) {
+              // Use object with mustache to populate the #host-view-template with the 
+              // room data
               if (object){
                 var template = $("#host-view-template").text();
+                html = Mustache.render(template, {room: object});
               } else {
                 var template = $("#host-view-template-no-listing").text();
+                htnl = template;
               }
-              self.$el.html(template);
+              self.$el.html(html);
           },
           error: function() {
             console.log("Error querying Room object for user");
