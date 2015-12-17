@@ -6,7 +6,11 @@ var RenterView = Backbone.View.extend({
 	events: {
 		"submit form.userprofile-form": "createRenterView",
 	},
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> routing
 
 
 });
