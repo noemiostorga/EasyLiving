@@ -1,6 +1,39 @@
+Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 
-/*var Room = Backbone.Model.extend({
+var RenterView = Backbone.View.extend({
+
+	events: {
+		"submit form.userprofile-form": "createRenterView",
+	},
+	
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*module.exports={
+
+var Rooms = Backbone.Model.extend({
 	initialize: function(){
 
 	}, defualts: {
@@ -10,7 +43,7 @@
 
 })
 
-var Rooms = Backbone.Collection.extend({
+var Room = Backbone.Collection.extend({
 	model: Rooms,
 	_parse_class_name: "Room"
 });
@@ -27,7 +60,7 @@ ImageCollection.fetch({
 });
 
 
-/////////////////////
+////////////////////////
 
 var Renter = Backbone.Router.extend({
 	initialize: function(){
@@ -48,17 +81,16 @@ var Renter = Backbone.Router.extend({
 var router = new Router();
 
 	router.on('route: profile', function(objectId){
-		/*var profile: new profile ({objectId: objectId});*/
-/*		profile.fetch({
-			success: function(resp){
+		var profile: new({objectId: objectId});
+		profile.fetch({
+			success: fucntion(resp){
 
 			}
 		})
 	});
 
 
-
-var SignupRentee= Backbone.Model.extend({
+/*var SignupRentee= Backbone.Model.extend({
 	document.getElementById("Signup-firstname").val();
 	document.getElementById("signup-lastname".val();
 	document.getElementById("signup-email").val();
@@ -66,7 +98,9 @@ var SignupRentee= Backbone.Model.extend({
 	document.getElementById("signup-confirm").val();	
 })
 
-var renter_view = new Renter({el: $("#view_container")});
-
 */
+/*var renter_view = new Renter({el: $("#view_container")});
 
+
+
+}*/
