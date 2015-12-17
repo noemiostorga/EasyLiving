@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> photosHost
 
 
 /*var Room = Backbone.Model.extend({
@@ -70,3 +74,7 @@ var renter_view = new Renter({el: $("#view_container")});
 
 */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> photosHost
