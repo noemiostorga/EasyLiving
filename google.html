@@ -9,8 +9,27 @@
 	
 <div id="map"></div>
 
+<p>hel</p>
 
-    <script>
+<script type="text/javascript">
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: {lat: 36.114647, lng: -115.172813}
+  });
+
+  // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+  map.data.loadGeoJson('');
+}
+</script>
+
+
+
+
+
+
+<!--    <script>
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 36.114647, lng: -115.172813},
@@ -48,21 +67,11 @@ function initMap() {
          async defer></script>
   </body>
 </html>
-  <!--  <script>
-
-        var map;
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat:  36.114647, lng: -115.172813},
-            zoom: 8
-          });
-        }
-
-    </script>-->
+ -->
 
 
 
-<!--
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
@@ -71,7 +80,7 @@ function initMap() {
 	        async defer></script>
 	<script src="js/google.js"></script>
 
-	-->
+	
 
 </body>
 </html>

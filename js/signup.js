@@ -140,6 +140,8 @@ if (!Parse.User.current()) {
   //new CreateUserProfileView();
 }
 
+
+
 /*$('#inputBtn').on ('click',function() {
      var userProfile = new CreateUserProfileView();
     CreateUserProfileView.set ({

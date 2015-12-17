@@ -1,6 +1,6 @@
 
 
-var Rooms = Backbone.Model.extend({
+/*var Room = Backbone.Model.extend({
 	initialize: function(){
 
 	}, defualts: {
@@ -10,7 +10,7 @@ var Rooms = Backbone.Model.extend({
 
 })
 
-var Room = Backbone.Collection.extend({
+var Rooms = Backbone.Collection.extend({
 	model: Rooms,
 	_parse_class_name: "Room"
 });
@@ -48,16 +48,17 @@ var Renter = Backbone.Router.extend({
 var router = new Router();
 
 	router.on('route: profile', function(objectId){
-		var profile: new({objectId: objectId});
-		profile.fetch({
-			success: fucntion(resp){
+		/*var profile: new profile ({objectId: objectId});*/
+/*		profile.fetch({
+			success: function(resp){
 
 			}
 		})
 	});
 
 
-/*var SignupRentee= Backbone.Model.extend({
+
+var SignupRentee= Backbone.Model.extend({
 	document.getElementById("Signup-firstname").val();
 	document.getElementById("signup-lastname".val();
 	document.getElementById("signup-email").val();
@@ -65,8 +66,7 @@ var router = new Router();
 	document.getElementById("signup-confirm").val();	
 })
 
-*/
 var renter_view = new Renter({el: $("#view_container")});
 
-
+*/
 

@@ -1,12 +1,14 @@
-
-
+var map;
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 36.114647, lng: -115.172813},
-    zoom: 8
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: {lat: -28, lng: 137}
   });
 
-  var drawingManager = new google.maps.drawing.DrawingManager({
+  // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+  map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json');
+}
+ /* var drawingManager = new google.maps.drawing.DrawingManager({
     drawingMode: google.maps.drawing.OverlayType.MARKER,
     drawingControl: true,
     drawingControlOptions: {
