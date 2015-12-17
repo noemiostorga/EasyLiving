@@ -1,4 +1,4 @@
-var Backbone = require('./backbone-parse');
+/*var Backbone = require('./backbone-parse');
 var mainTemplate = require('./signup.js');
 var Puts = require ('./collection/puts');
 var Put = require('./models/put');
@@ -63,7 +63,7 @@ $('body').on('submit',  function(e){
 	var put= new Put();
 	if($("#objectId").length){
 		put.set("objectId", $("#objectId").val());
-	}
+	},
 
 	post.save{
 		success: function(resp){
@@ -74,7 +74,7 @@ $('body').on('submit',  function(e){
 
 module.exports = router;
 
-
+*/
 
 
 

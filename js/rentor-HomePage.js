@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> photosHost
->>>>>>> 4315855bc130a3f37fba1e2e66aa7211e3a77ea3
+//Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
+
+
 
 
 var RenterView = Backbone.View.extend({
@@ -13,11 +9,64 @@ var RenterView = Backbone.View.extend({
 	events: {
 		"submit form.userprofile-form": "createRenterView",
 	},
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> routing
+	el:".content",
+
+	initialize: function(){
+		_.bindAll(this, "createRenterView");
+		this.render();
+	},
+	createRenterView: function(){
+
+
+		//use mustache here
+
+
+
+		
+
+		/*var RoomImages = Parse.Object.extend("RoomImages");
+		var roomImages = new RoomImages();
+
+		roomImages.set("url",  "http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg");
+		roomImages.save(null, {
+			success: function(roomImages){
+				alert("done");
+			},
+			error: function(roomImages, error){
+				alert("image not found");
+				error.message("fail");
+			}
+		});
+
+		var RenterProfile = Parse.Object.extend("RenterProfile");
+		var renterProfile = new RenterProfile();
+
+		renterProfile.save({
+			//save whatever likes the renter likes
+
+		}).then(function(result){
+
+			new AppView();
+
+		});*/
+		
+	},
+
+	render: function(data){
+
+			/*var data = {
+				console.log("this work");
+			}*/
+
+	var RenterTemplate = $("#renter-homepageTemp").text();
+	var TempHTMLRenter = Mustache.render(RenterTemplate, data);	
+	this.$el.html(TempHTMLRenter);
+	this.delegateEvents();
+	
+	}
+
+	
 
 
 });
@@ -114,11 +163,6 @@ var router = new Router();
 
 
 
-<<<<<<< HEAD
-}*/
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> photosHost
->>>>>>> 4315855bc130a3f37fba1e2e66aa7211e3a77ea3
+}*/
+
