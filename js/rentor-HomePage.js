@@ -23,7 +23,27 @@ var RenterView = Backbone.View.extend({
 		var UserProfile = Parse.Object.extend("UserProfile");
 		var userProfile = new UserProfile();
 
-		var Renter = Parse.Object.extend("user")
+		var Renter = Parse.Object.extend("user",{
+			hasGender: function(){
+				return this.get("ageGroup") /* > 18-30? make age groups like this*/ ;
+			},
+			initialize: function(attrs, options){
+				console.log("hey");
+			}
+		},
+
+		Parse.Object.registerSubclass()
+});
+
+		class RenterView extends Parse.Object{
+			constructor(){
+
+				console.log("user");
+
+			}
+			
+		}
+
 
 
 		/*userProfile.set("url",  "http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg");
