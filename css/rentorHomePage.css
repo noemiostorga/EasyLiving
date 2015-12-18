@@ -1,0 +1,44 @@
+.renterhome-nav{
+	width: 80%;
+	text-align: center;
+	margin: 0px auto;
+	color: black;
+
+}
+
+.renterhome-nav ul li{
+	list-style: none;
+	display: inline;
+	padding-left: 20px;
+	font-size: 1.5em;
+}
+
+.renterhome-nav li a{
+	text-decoration: none;
+}
+
+
+
+
+.other li {
+	list-style: none;
+	display: inline;
+	padding-left: 10px;
+}
+
+.other li img {
+	height: 200px;
+	width: 250px;
+	display: inline-block;
+	position: relative;
+}
+
+.other img:after {
+	content: " ";
+	background: red;
+	position: absolute;
+	height: 20px;
+	width: 10px;
+
+}
+

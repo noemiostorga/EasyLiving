@@ -17,15 +17,11 @@ var RenterView = Backbone.View.extend({
 		this.render();
 	},
 	createRenterView: function(){
-
+		/*$("#createRenterView")
 
 		//use mustache here
 
-
-
-		
-
-		/*var RoomImages = Parse.Object.extend("RoomImages");
+		var RoomImages = Parse.Object.extend("RoomImages");
 		var roomImages = new RoomImages();
 
 		roomImages.set("url",  "http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg");
@@ -35,7 +31,7 @@ var RenterView = Backbone.View.extend({
 			},
 			error: function(roomImages, error){
 				alert("image not found");
-				error.message("fail");
+				error.message
 			}
 		});
 
@@ -49,24 +45,23 @@ var RenterView = Backbone.View.extend({
 
 			new AppView();
 
-		});*/
-		
+		});
+		*/
 	},
 
 	render: function(data){
 
-			/*var data = {
+			var Renterdata = {
 				console.log("this work");
-			}*/
+			},
+	}
 
-	var RenterTemplate = $("#renter-homepageTemp").text();
-	var TempHTMLRenter = Mustache.render(RenterTemplate, data);	
+	/*var RenterTemplate = $("#renter-homepageTemp").text();
+	var TempHTMLRenter = Mustache.render(RenterTemplate, Renterdata);	
 	this.$el.html(TempHTMLRenter);
 	this.delegateEvents();
 	
-	}
-
-	
+	},*/
 
 
 });
