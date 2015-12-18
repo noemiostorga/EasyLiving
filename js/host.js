@@ -100,6 +100,11 @@
               value: "privateBathroom"},
             { description: "Furnished",
               value: "furnished"},
+            { description: "Pool",
+              value: "pool"},
+            { description: "Washer & Dryier",
+              value: "Washer & Dryier"},
+
           ],
           restrictions: [
             { description: "No smoking",
@@ -161,11 +166,13 @@
                 html = Mustache.render(template, {room: object});
               } else {
                 var template = $("#host-view-template-no-listing").text();
-                htnl = template;
+                html = template;
               }
-              self.$el.html(html);
+              self.$el.html(template);
+              self.delegateEvents();
           },
-          error: function() {
+
+         error: function() {
             console.log("Error querying Room object for user");
             console.log(error);
           }

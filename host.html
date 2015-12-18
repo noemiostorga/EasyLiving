@@ -5,51 +5,19 @@
     <title>Host home page</title>
     <link link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/roomListing.css">
 </head>
 <body>
    <div class="owner-home">
-   <!--
+        <div id="navBar">
+            <h3 id="title">Easy Living </h3>
+        </div> 
+    </div>
 
-    <nav class="ownerhome-nav">
-        <ul>
-            <li><a href=
-            home</li>
-            <li>messages</li>
-            <li>profile</li>
-            <li><a href="/add">Add</a></li>
-            <li><a href="/edit">Edit</a></li>   
-        </ul>
-    </nav>
-
-
-    <div class="main-left">
-        <ul class="host-setting">
-            <a href="#"><li> room description</li></a>
-            <a href="#"><li>amenities</li></a>
-            <a href="#"><li>Upload photos</li></a>
-            <a href="#"><li>price</li></a>
-            <a href="#"><li>Move in Date</li></a>
-            <a href="#"><li>Sign Contract</li></a>
-            <a href="#"><li>Background Check</li></a>
-        </ul>
-    </div>  
-    
-    -->
     <div id="mainapp">
         <div class="content"></div>
     </div>
     
-    <!--
-    <div class="main-right">
-        <p> google will be here</p>
-        <img class="placeit" src="http://placehold.it/350x150" />
 
-
-        <button>Rating</button>
-        <button>Background</button>
-    </div>
-    -->
     <script type="x-tmpl-mustache" id="host-view-template-no-listing">
         <div class="host-template">
             <form class="host-form">
@@ -172,34 +140,61 @@
                 
             <div class="main-left">
                 <h2> Host Settings </h2>
-                    <ul class="Host-settings">
-                        <a href="#"><li>Room description</li></a>
-                        <li><h3>Amenities</h3></li><br>
-                        <h3> Available move in Date</h3>
-                        <a class="calendar" href="#"><i class="fa fa-building"></i>Calendar</a>
-                        <div class ="Price">
-                        <h3>Price</h3>
-                        <img class="placeit" src="http://placehold.it/100x30" />
-                        </div>
+
+            {{#title}}
+            <h3 class ="title">{{title}}</h3>
+        
+            {{/title}}
+
+            <div>
+                <h3>Room Description</h3>
+                {{#description}}
+                    <div><textarea name="description" placeholder="Tell us more about your space..."></textarea> </div>
+                {{/description}}
+            </div>
+            <div>
+                <h3>Amenities</h3>
+                {{#amenities}}
+                    <input type="text" name="amenities" value="{{}}"> {{.}} </div>
+                {{/amenities}}
+            </div>
+            <div>
+                <h3> Move in Date</h3>
+                 <a class="calendar" href="#"><i class="fa fa-building"></i>Calendar</a>
+
+            <div>
+                <h3>Price</h3>
+                {{#price}}
+                   <input type="number" name="price" value="{{price}}"> {{.}} </div>
+                {{/price}}
+            </div>
+                <img class="placeit" src="http://placehold.it/100x30" />
+            </div>
         <!--create bar -->
-                
-                        <h3>Review the contract</h3>
-                        <a href="#"><li>Contract</li></a>
-                        <!--add hellosign with contract -->
-                        <a href="#"><li>Background check</li></a>
-                        <!--Provide links where they can do this-->
-                    </ul>
+            <div>
+                <h3>Review the contract</h3>
+                    <a href="#">Contract></a>
+                     <!--add hellosign with contract -->
+
+            <div>
+                <a href="#"><Background check></a>
+                <!--Provide links where they can do this-->
+                    
             </div>  
+
+            <div>
+                <h3>Zip Code</h3>
+                {{#zipCode}}
+                    <div><input type="checkbox" name="{{value}}" value="{{value}}"> {{description}} </div>
+                {{/zipCode}}
+            </div>
 
             <div class="map">
                 <h3> Google map</h3>
                 <img class="placeit" src="http://placehold.it/350x150" />
             </div>
 
-            <div class="upload-photos">
                 <h3>Photos</h3>
-                <a href="#"><li>Add Room Photos</li></a>
-            </div>
 
             <div id="photos">
                 <a href="#" id="upload_widget_opener">Upload multiple images</a>
@@ -211,6 +206,7 @@
                 <img src="http://placehold.it/350x250">
                 <img src="http://placehold.it/350x250">
             </div>
+
 
             <div>
                <h3>Ratings</h3>
@@ -234,6 +230,10 @@
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+
+    <script src="js/cloudinary.js"></script>
+
     <script src="js/host.js"></script>
+        
 </body>
 </html>
