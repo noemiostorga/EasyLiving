@@ -47,7 +47,7 @@ var RenterView = Backbone.View.extend({
 			new AppView();
 
 		});
-		*/
+		
 	},
 
 	render: function(data){
@@ -62,7 +62,7 @@ var RenterView = Backbone.View.extend({
 	this.$el.html(TempHTMLRenter);
 	this.delegateEvents();
 	
-	},*/
+	},
 
 
 });/*
@@ -151,15 +151,8 @@ var router = new Router();
 	document.getElementById("signup-passsword").val();
 	document.getElementById("signup-confirm").val();	
 })
-
+var renter_view = new Renter({el: $("#view_container")});
 */
-/*var renter_view = new Renter({el: $("#view_container")});
 
 
 
-
-<<<<<<< HEAD
-}*/
-
-=======
->>>>>>> cleaning
