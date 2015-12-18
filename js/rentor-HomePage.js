@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 
-//Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
-=======
->>>>>>> cleaning
+
+Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 
 
@@ -20,15 +18,16 @@ var RenterView = Backbone.View.extend({
 		this.render();
 	},
 	createRenterView: function(){
-		/*$("#createRenterView")
-
 		//use mustache here
 
-		var RoomImages = Parse.Object.extend("RoomImages");
-		var roomImages = new RoomImages();
+		var UserProfile = Parse.Object.extend("UserProfile");
+		var userProfile = new UserProfile();
 
-		roomImages.set("url",  "http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg");
-		roomImages.save(null, {
+		var Renter = Parse.Object.extend("user")
+
+
+		/*userProfile.set("url",  "http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg");
+		userProfile.save(null, {
 			success: function(roomImages){
 				alert("done");
 			},
@@ -48,8 +47,8 @@ var RenterView = Backbone.View.extend({
 
 			new AppView();
 
-		});
-		*/
+		});*/
+	
 	},
 
 	render: function(data){
@@ -64,29 +63,10 @@ var RenterView = Backbone.View.extend({
 	this.$el.html(TempHTMLRenter);
 	this.delegateEvents();
 	
-	},*/
+	},
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*module.exports={
@@ -165,5 +145,3 @@ var router = new Router();
 <<<<<<< HEAD
 }*/
 
-=======
->>>>>>> cleaning
