@@ -16,7 +16,6 @@
     <div id="mainapp">
         <div class="content"></div>
     </div>
-    
 
     <script type="x-tmpl-mustache" id="host-view-template-no-listing">
         <div class="host-template">
@@ -140,53 +139,49 @@
                 
             <div class="main-left">
                 <h2> Host Settings </h2>
+                <h3 class ="title">Listing Title</h3>
+                <div><input type="text" value="{{room.title}}"></div>
+                <div>
+                    <h3>Room Description</h3>
+                    <div>
+                        <textarea name="description" placeholder="Tell us more about your space...">{{room.description}}</textarea>
+                    </div>
+                </div>
+                <div>
+                    <span>Amenities</span>
+                    {{#amenities}}
+                        <div><input type="checkbox" name="{{value}}" value="{{value}}" {{#value}}checked{{/value}}> {{description}} </div>
+                    {{/amenities}}
+                </div>
+                <div>
+                    <span>Restrictions</span>
+                    {{#restrictions}}
+                        <div>
+                            <input type="checkbox" name="{{value}}" value="{{value}}"{{#value}}checked{{/value}}>
+                            {{description}}
+                        </div>
+                    {{/restrictions}}
+                </div>
+                <div>
+                    <h3> Move in Date</h3>
+                     <a class="calendar" href="#"><i class="fa fa-building"></i>Calendar</a>
 
-            {{#title}}
-            <h3 class ="title">{{title}}</h3>
-        
-            {{/title}}
-
-            <div>
-                <h3>Room Description</h3>
-                {{#description}}
-                    <div><textarea name="description" placeholder="Tell us more about your space..."></textarea> </div>
-                {{/description}}
-            </div>
-            <div>
-                <h3>Amenities</h3>
-                {{#amenities}}
-                    <input type="text" name="amenities" value="{{}}"> {{.}} </div>
-                {{/amenities}}
-            </div>
-            <div>
-                <h3> Move in Date</h3>
-                 <a class="calendar" href="#"><i class="fa fa-building"></i>Calendar</a>
-
-            <div>
-                <h3>Price</h3>
-                {{#price}}
-                   <input type="number" name="price" value="{{price}}"> {{.}} </div>
-                {{/price}}
-            </div>
-                <img class="placeit" src="http://placehold.it/100x30" />
+                </div>
+                <div>
+                    <h3>Price</h3>
+                    <input type="number" name="price" value="{{room.price}}"> </div>
+                </div>
+               <div>
+                    <h3>Sqft</h3>
+                    <input type="number" name="sqft" value="{{room.sqft}}"> </div>
+                </div>
             </div>
         <!--create bar -->
             <div>
-                <h3>Review the contract</h3>
-                    <a href="#">Contract></a>
-                     <!--add hellosign with contract -->
-
-            <div>
-                <a href="#"><Background check></a>
-                <!--Provide links where they can do this-->
-                    
-            </div>  
-
-            <div>
                 <h3>Zip Code</h3>
-                {{#zipCode}}
-                    <div><input type="checkbox" name="{{value}}" value="{{value}}"> {{description}} </div>
-                {{/zipCode}}
+                <div>
+                    <input type="text" name="zipcode" value="{{room.zipCode}}">
+                </div>
             </div>
 
             <div class="map">
@@ -198,7 +193,15 @@
 
             <div id="photos">
                 <a href="#" id="upload_widget_opener">Upload multiple images</a>
-            </div><br>
+            </div>
+            <div>
+                <h3>Review the contract</h3>
+                <a href="#">Contract</a>
+                <!--add hellosign with contract -->
+            <div>
+                <a href="#"><Background check></a>
+                <!--Provide links where they can do this-->
+            </div> 
 
             <div class="photos-container">
                 <img src="http://placehold.it/350x250">
@@ -231,7 +234,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 
-    <script src="js/cloudinary.js"></script>
+    <!--<script src="js/cloudinary.js"></script>-->
 
     <script src="js/host.js"></script>
         
