@@ -1,67 +1,6 @@
-html, body {
-  height: 100%;
-  background-color:#d7e0c1;
-}
-
-h1{
-    color: white;
-}
-
-h4{
-    display: inline;
-}
-
-
-.menu{
-    position: relative;
-    width: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.menu ul{
-list-style:none;
-
-}
-
-.loginBtn{
-    float: right;
-    position: relative;
-    right: 10px;
-    bottom: 50px;
-    background: grey;
-    border: none;
-    font-size: 1em;
-    color: white;
-}
-
-
-.loginBtn a{
-    float: right;
-    position: relative;
-    background: grey;
-    border: none;
-    font-size: 1em;
-    color: white;
-}
-
-
-
-.loginBtn a:hover{
- 
-    color: white;
-}
-
-
-
-
-.loginLink{
-    text-decoration: none;  
-  
-}
 
 #background {
-    background: url("../images/o-COLLEGE-ROOMMATES-facebook.jpg") no-repeat;
+    background: url("http://33.media.tumblr.com/f69a7a82b44a27fd761f8cccbda7c7f7/tumblr_nm98pkI6Rj1uo7ripo1_r15_500.gif") no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
@@ -75,47 +14,109 @@ list-style:none;
     border-bottom: 20px solid black;
 }
 
+
+.es{
+    padding: 20px;
+    background: #006BE1;
+    color: white;
+    width: 7%;
+    margin: 0px auto;
+    border-radius: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+h1{
+ 
+    color: white;
+}
+
+h4{
+    display: inline;
+}
+
+
 .signUp{
     margin: auto;
     position: relative;
-    top:180px;
+    top:15px;
     background: transparent;
-    border: 1px solid grey;
+    border: 1px solid #006BE1;
+    display: inline-block;
+    transition: background 1s ease;
 
 }
-
-.signUp:hover {
-    background: grey;
-
-}
-
-
-
 
 .signUp a{
     text-decoration: none;
     color: white;
 }
 
+.signUp:hover {
+    background: #006BE1;
 
-
-nav{
-    height: 50px;
-    margin: 0 auto;
-    background-color:#7980AF;
-    text-align: center;
-    padding: 7px;
 }
 
-nav ul {
-    margin: 0 auto;
-    padding-top:6px;
+
+.loginBtn{
+     margin: auto;
+    position: relative;
+    top:15px;
+    background: transparent;
+    border: 1px solid #006BE1;
+    display: inline-block;
+    transition: background 1s ease;
 }
 
-nav a:hover{
-    color:white;
-    background-color:#AAABB1;
+.loginBtn a{
+   text-decoration: none;
+    color: white;
 }
+
+.loginBtn :hover{
+ background: #006BE1;
+}
+
+
+
+
+
+
+
+
+
+
+.loginLink{
+    text-decoration: none;  
+  
+}
+
+/******************/
+.navBar p{
+    color: red;
+    position: relative;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.menu ul{
+list-style:none;
+
+}
+
+
+
+
+
+
+
+
 
 li a{
     width: 300px;
@@ -131,6 +132,8 @@ li a{
 ul li a{
     color:black;
 }
+
+
 
 /*--logos--*/
 #options{

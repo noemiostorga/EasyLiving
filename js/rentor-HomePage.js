@@ -1,6 +1,6 @@
 
 
-Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
+//Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 
 
@@ -30,21 +30,13 @@ var RenterView = Backbone.View.extend({
 			initialize: function(attrs, options){
 				console.log("hey");
 			}
-		},
+		
 
-		Parse.Object.registerSubclass()
+		/*Parse.Object.registerSubclass();*/
+		});
+	}
+
 });
-
-		class RenterView extends Parse.Object{
-			constructor(){
-
-				console.log("user");
-
-			}
-			
-		}
-
-
 
 		/*userProfile.set("url",  "http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg");
 		userProfile.save(null, {
@@ -67,7 +59,7 @@ var RenterView = Backbone.View.extend({
 
 			new AppView();
 
-		});*/
+		});
 	
 	},
 
@@ -76,7 +68,7 @@ var RenterView = Backbone.View.extend({
 			var Renterdata = {
 				console.log("this work");
 			},
-	}
+	}*/
 
 	/*var RenterTemplate = $("#renter-homepageTemp").text();
 	var TempHTMLRenter = Mustache.render(RenterTemplate, Renterdata);	
