@@ -1,5 +1,4 @@
 
-
 //Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 
@@ -21,6 +20,18 @@ var RenterView = Backbone.View.extend({
 		//use mustache here
 
 		var UserProfile = Parse.Object.extend("UserProfile");
+		var query = new Parse.Object.extend("UserProfile");
+		query.equalTo("renter", "noemi");
+		query.find({
+			success: function(results){
+				alert("Successfully retrieved" + results.length + " rooms.");
+
+				for(var i=0; i < results.length; i++){
+					alert("hey" + objectId);
+				}
+			}
+			query.containedIn("UserProfile",["Monica", "Noemi"])
+		});
 		var userProfile = new UserProfile();
 
 		var Renter = Parse.Object.extend("user",{
@@ -34,7 +45,37 @@ var RenterView = Backbone.View.extend({
 
 		/*Parse.Object.registerSubclass();*/
 		});
+		var UserProfile = Parse.Object.extend("users");
+		var userProfile = new UserProfile();
+
+		userProfile.set("score, 1337");
+		userProfile.set("player", "1887");
+		userProfile.set("cheatmode", false);
+
+		userProfile.save(null, {
+			success: function()
+				alert("hey");
+		});
+
+			error: function(){
+				alert("hey");
+			}
+		alert('')
+	},
+	render: function(data){
+
+			var Renterdata = {
+				console.log("this work");
+			},
 	}
+
+	var RenterTemplate = $("#renter-homepageTemp").text();
+	var TempHTMLRenter = Mustache.render(RenterTemplate, Renterdata);	
+	this.$el.html(TempHTMLRenter);
+	this.delegateEvents();
+	
+	},
+
 
 });
 
@@ -63,97 +104,9 @@ var RenterView = Backbone.View.extend({
 	
 	},
 
-	render: function(data){
-
-			var Renterdata = {
-				console.log("this work");
-			},
-	}*/
-
-	/*var RenterTemplate = $("#renter-homepageTemp").text();
-	var TempHTMLRenter = Mustache.render(RenterTemplate, Renterdata);	
-	this.$el.html(TempHTMLRenter);
-	this.delegateEvents();
 	
-	},
 
 
 });
 
-
-/*module.exports={
-
-var Rooms = Backbone.Model.extend({
-	initialize: function(){
-
-	}, defualts: {
-		image_url: null
-	},
-		_parse_class_name: "Room"
-
-})
-
-var Room = Backbone.Collection.extend({
-	model: Rooms,
-	_parse_class_name: "Room"
-});
-
-var ImageCollection = new Room();
-
-ImageCollection.fetch({
-	success: function(resp){
-
-	},
-	error: function(err){
-		console.log(err);
-	}
-});
-
-
-////////////////////////
-
-var Renter = Backbone.Router.extend({
-	initialize: function(){
-
-		Backbone.history.start({pushState: true});
-	},
-		routes: {
-			"messages/": "message",
-			"profile": "profile",
-			" " : "index"
-
-		}
-});
-
-
-
-
-var router = new Router();
-
-	router.on('route: profile', function(objectId){
-		var profile: new({objectId: objectId});
-		profile.fetch({
-			success: fucntion(resp){
-
-			}
-		})
-	});
-
-
-/*var SignupRentee= Backbone.Model.extend({
-	document.getElementById("Signup-firstname").val();
-	document.getElementById("signup-lastname".val();
-	document.getElementById("signup-email").val();
-	document.getElementById("signup-passsword").val();
-	document.getElementById("signup-confirm").val();	
-})
-
-*/
-/*var renter_view = new Renter({el: $("#view_container")});
-
-
-
-
-<<<<<<< HEAD
-}*/
 

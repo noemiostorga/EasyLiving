@@ -3,23 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-<link href="./css/detailRoom.css" />
+
+<link rel="stylesheet" href="./css/google.css" />
+<link rel="stylesheet" href="./css/detailRoom.css" />
+
 </head>
 
 <body>
 	
-	<div class="DetailImg">
-		<img src="http://www.stanleyhotel.com/uploads/content-photos/lodge-room.jpg"/>
+<nav>
+	<ul class="detNav">
+		<li><a href="mainPage.html">Home</a></li>
+		<li><a href="message.html">Message</a></li>
+	</ul>
+</nav>
 
+
+
+	<div>
+		<img class="detail" src="http://www.stanleyhotel.com/uploads/content-photos/lodge-room.jpg"/>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, totam soluta corporis doloremque, vel incidunt porro est saepe necessitatibus sequi minus earum. Perferendis ullam eius laudantium, rerum sequi maxime. Nulla.</p>
 	</div>	
 
+    
+ <div id="map" class="detailMap"></div>
 
 
-	<p>add google here</p>
+	    <script type="text/javascript">
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {lat: 36.114647, lng: -115.172813}
+              });
 
-	<p>price</p>
-	<p>rating</p>
+              // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+              map.data.loadGeoJson('');
+            }
+        </script>
+
+
+	<p>Price: $400</p>
 	<p>contract for rentor<p>
 	<p>calendar</p>
 	<p>message disquis</p>
@@ -31,6 +55,8 @@
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA41EQGAJiPwKuOJKxSCNC_x1P3vMGubuk&callback=initMap"async defer></script>
+	<script src="js/google.js"></script>  
 	<script src="js/rentor-HomePage.js"></script>
 	<script src="js/mainPage.js"></script>  
 </body>

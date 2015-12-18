@@ -6,6 +6,7 @@
     <link link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/google.css">
     <link rel="stylesheet" href="css/mainPage.css">
     
 </head>
@@ -14,6 +15,7 @@
         
         <div id="background"> 
             <div class="mainPage-con">
+
                 <p class="es">ES</p>
                 <h1> Easy Living</h1>
                     <button class="signUp">
@@ -25,25 +27,46 @@
             </div>
         </div>
 
-    
 
+    
+ <div id="map"></div>
 
         <div id="photos">
-            <img src="http://www.stanleyhotel.com/uploads/content-photos/lodge-room.jpg">
-            <img src="http://www.hotelambrose.ca/files/rooms_bg.jpg">
+            <a href="detailRoom.html"><img src="http://www.stanleyhotel.com/uploads/content-photos/lodge-room.jpg"></a>
+            <a href=""<img src="http://www.hotelambrose.ca/files/rooms_bg.jpg"></a>
             <img src="http://img.lasvegasdirect.com/silverton-hotel-casino-las-vegas-resort-room-01.jpg">
             <img src="http://www.sporeweb.com/wp-content/uploads/2015/09/beautiful-rooms-awesome-with-image-of-beautiful-rooms-creative-fresh-on-gallery.jpg">
             <img src="http://www.iseecubed.com/wp-content/uploads/creative-sharp-minimalist-bedroom.jpg">
             <img src="http://disow.com/wp-content/uploads/2015/09/Contemporary-Bed-Room-Decoration-Along-With-Black-Stripe-Wood-Headboard-Together-Rectangle-Lamp-And-Brown-White-Pillows-And-Striped-Bed-Sheet-On-Black-Bed.jpg">
         </div>
 
+
+      
+       
+
+    </div> <!-- end of main-->
+
+
+
+
+        <script type="text/javascript">
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {lat: 36.114647, lng: -115.172813}
+              });
+
+              // NOTE: This uses cross-domain XHR, and may not work on older browsers.
+              map.data.loadGeoJson('');
+            }
+        </script>
+
+
         <div id="get in touch">
             <h2>GET IN TOUCH<h2>
             <p><loren></loren></p>
         </div>
-
-
-    </div> <!-- end of main-->
 
 
 <div id="footer">
@@ -58,6 +81,9 @@
         
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/rentor-HomePage.js"></script>
-<script src="js/mainPage.js"></script>  
+<script src="js/google.js"></script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUXLL_zf9IlCI6GRYbThgKJCe_6Xq9qL8&callback=initMap"
+            async defer></script>
+<!--<script src="js/mainPage.js"></script>  -->
 </body>
 </html>
