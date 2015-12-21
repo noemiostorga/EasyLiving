@@ -12,12 +12,18 @@
     <div id="main">
         
         <div id="background"> 
-          <button class="loginBtn"><a class="loginLink"href="host.html">Log in </a></button>
-        <h1> Easy Living</h1>
-          <button class="signUp"><a href="host.html">Sign Up</a></button>
+
+          <button class="loginBtn">
+             <a class="loginLink"href="login.html">Log in </a>
+          </button>
+
+             <h1> Easy Living</h1>
+                  <button class="signUp">
+                    <a href="signup.html">Sign Up</a>
+                  </button>
         </div>
 
-        </div> 
+    </div> 
 
 
         <div id="photos">
@@ -36,6 +42,18 @@
 
 
     </div> <!-- end of main-->
+
+<script type="text/javascript">
+    var map;
+    function initMap(){
+        map = new google.maps.Map(document.getElementById('map'),{
+            zoom: 11, 
+            center: {lat: 36.114647, lng: -115.172813}
+        });
+        map.data.loadGeoJson('');
+    }
+</script>
+
 
 
 <div id="footer">

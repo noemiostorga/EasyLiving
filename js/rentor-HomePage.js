@@ -1,6 +1,6 @@
 
 
-//Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
+Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclrySOuLi6iAR4LCyrKE3y130Xg");
 
 
 
@@ -48,7 +48,7 @@ var RenterView = Backbone.View.extend({
 			new AppView();
 
 		});
-		*/
+		
 	},
 
 	render: function(data){
@@ -62,12 +62,10 @@ var RenterView = Backbone.View.extend({
 	this.$el.html(TempHTMLRenter);
 	this.delegateEvents();
 	
-	},*/
+	},
 
 
-});
-
-
+});/*
 
 
 
@@ -153,14 +151,9 @@ var router = new Router();
 	document.getElementById("signup-passsword").val();
 	document.getElementById("signup-confirm").val();	
 })
-
+var renter_view = new Renter({el: $("#view_container")});
 */
-/*var renter_view = new Renter({el: $("#view_container")});
 
 
 
-
-
-}*/
-
-
+}
