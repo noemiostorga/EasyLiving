@@ -1,13 +1,47 @@
+body{
+	background: grey;
+}
+
+
+
+
 
 .hostContainer{
 	background: purple;
-	width: 60%;
+	width: 80%;
+	height: 500px;
 	margin:0px auto;
 	padding: 1%;
 	position: relative;
 	top: 60px;
 	box-shadow: 10px 10px 10px 10px grey;
 }
+/*********************
+LOGIN FORM
+*********************/
+
+.login-form{
+	margin: 0px auto;
+	color: white;
+	background: orange;
+	min-height: 200px;
+	position: relative;
+	padding: 5%;
+
+}
+
+#login-username {
+	height: 40px;
+	margin: 10px auto;
+	border: none;
+}
+
+#login-password{
+	height: 40px;
+	border: none;
+	background: rgba(255,255,255,.6);
+}
+
 
 
 .owner-home{
@@ -40,16 +74,7 @@
 
 }
 
-.login-form{
-	margin: 0px auto;
-	color: white;
-	background: orange;
-	width: 200px;
-	height: 150px;
-	position: relative;
-	padding: 20px;
 
-}
 
 .login-form div input{
 	height: 100%;
@@ -66,7 +91,15 @@
 }
 
 
+/***********************
+SIGN UP FORM
+*******************************/
 
+.signup{
+	background: red;
+	width: 300px;
+	padding: 1%;
+}
 
 
 
