@@ -110,7 +110,9 @@ var CreateUserProfileView = Backbone.View.extend({
         // on failure, you should do something? Maybe? Dunno.
         console.log("check your infomation")
       });
-    },
+
+      return false;
+    }, 
 
     // This renders the view
     render: function() {

@@ -31,13 +31,19 @@
       var price = parseInt($('input[name=price]').val());
       var sqft = $('input[name=sqft]').val();
       var description = $('textarea[name=description]').val();
+
+      // amenities
+      var washerDryer = $('input[name=washerDryer]').is(':checked');
+      var pool = $('input[name=pool]').is(':checked');
       var privateBathroom = $('input[name=privateBathroom]').is(':checked');
       var furnished = $('input[name=furnished]').is(':checked');
+      
+      // restrictions
       var noSmoking = $('input[name=noSmoking]').is(':checked');
       var noKids = $('input[name=noKids]').is(':checked');
       var noPets = $('input[name=noPets]').is(':checked');
 
-        // Instantiate the object we're going to create in Parse
+      // Instantiate the object we're going to create in Parse
       var Room = Parse.Object.extend("Room");
       var room = new Room();
 
@@ -52,6 +58,8 @@
           sqft: sqft,
           description: description,
           privateBathroom: privateBathroom,
+          pool: pool,
+          washerDryer: washerDryer,
           furnished: furnished,
           noSmoking: noSmoking,
           noKids: noKids,
@@ -66,6 +74,8 @@
         });
 
         this.$(".create-listing-form button").attr("disabled", "disabled");
+
+        return false;
       },
 
       // This renders the view
@@ -101,8 +111,8 @@
               value: "furnished"},
             { description: "Pool",
               value: "pool"},
-            { description: "Washer & Dryier",
-              value: "Washer & Dryier"},
+            { description: "Washer & Dryer",
+              value: "washerDryer"},
 
           ],
           restrictions: [
@@ -169,11 +179,11 @@
                 { description: "Private Bathroom",
                   value: room.get("privateBathroom")},
                 { description: "Furnished",
-                  value: room.get("furnished")}
-                /*{ description: "Pool",
+                  value: room.get("furnished")},
+                { description: "Pool",
                   value: room.get("pool")},
-                { description: "Washer & Dryier",
-                  value: "Washer & Dryier"},*/
+                { description: "Washer & Dryer",
+                  value: room.get("washerDryer")}
 
               ];
               var restrictions = [
@@ -427,6 +437,6 @@
 
   });
 
- new AppView() 
+ new AppView();
 
 })();
