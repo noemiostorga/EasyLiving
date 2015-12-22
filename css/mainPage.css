@@ -1,9 +1,11 @@
-
-
-
-
+body{
+    margin: 0px auto;
+}
+/*****************
+Main header
+***************/
 #background {
-    background: url("https://markp427.files.wordpress.com/2012/01/p1000106.jpg") no-repeat;
+    background: rgba(213,213,213,1);
     background-size: 100%;
     background-attachment: fixed;
     text-align: center;
@@ -19,16 +21,61 @@
 
 
 h1{
-    color: white;
+    color: rgb(52, 67, 67);
     position: relative;
-    top: 50px;
+    margin: 80px auto;
+    width: 80%;
 }
 
-h4{
-    display: inline;
+
+.signUp{
+    color:rgb(52, 67, 67);
+    float: right;
+    position: relative;
+    bottom: 45px;
+    right: 15px;
+    background: transparent;
+    border:1px solid  rgba(62,133,209,.6);
+    transition: background 1s ease;
 }
 
-.menu{
+.signUp:hover{
+    background: #1589FF;
+}
+
+.signUp a{
+    color: rgb(52, 67, 67);
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.signUp a:hover{
+    color: white;
+}
+
+.loginBtn{
+    border: 1px solid  rgba(62,133,209,.6);
+    background: transparent;
+    transition:background 1s ease;
+}
+
+.loginBtn:hover{
+    background: rgba(62,133,209,1);
+}
+
+
+.loginBtn a {
+    text-decoration: none;
+    color: rgb(52, 67, 67);
+    transition:color 1s ease;
+}
+
+.loginBtn a:hover {
+    color: white;
+}
+
+
+/*.menu{
     position: relative;
     width: 100%;
     padding-top: 2em;
@@ -137,7 +184,7 @@ ul li a{
     color:black;
 }
 
-/*--logos--*/
+/*--logos--
 #options{
     height:10px;
     
@@ -196,7 +243,7 @@ ul li a{
 
 
 
-
+*/
 
 
 
