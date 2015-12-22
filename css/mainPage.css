@@ -16,7 +16,7 @@ Main header
     padding-top: 60px;
     font-size: 30px;
     position: relative;
-    border-bottom: 20px solid black;
+    border-bottom: 20px solid rgb(156,193,194);
 }
 
 
@@ -47,6 +47,7 @@ h1{
     color: rgb(52, 67, 67);
     text-decoration: none;
     font-size: .8em;
+    transition:color 1s ease;
 }
 
 .signUp a:hover{
@@ -75,114 +76,31 @@ h1{
 }
 
 
-/*.menu{
-    position: relative;
+/******************
+GALLERY
+*******************/
+#gallery{
     width: 100%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    margin: 0px auto;
 }
 
-.menu ul{
-list-style:none;
-
+ul.photos{
+    padding: 0px;
+    margin: 50px auto;
+    width: 90%;
 }
 
-.loginBtn{
-    float: right;
-    position: relative;
-    right: 10px;
-    bottom: 50px;
-    background: grey;
-    border: none;
-    font-size: 1em;
-    color: white;
+.photos li{
+    list-style: none;
+    display: inline;
 }
 
-
-.loginBtn a{
-    float: right;
-    position: relative;
-    background: grey;
-    border: none;
-    font-size: 1em;
-    color: white;
-}
-
-
-
-.loginBtn a:hover{
-    color: white;
-}
-
-
-
-
-.loginLink{
-    text-decoration: none;  
-  
-}
-
-
-
-.signUp{
-    margin: auto;
-    position: relative;
-    top:70px;
-    background: transparent;
-    border: 1px solid #006be1;
-    display: inline-block;
-    transition: background 1s ease;
-}
-
-
-
-.signUp:hover {
-    background: #006be1;
-
-}
-
-
-
-
-.signUp a{
-    text-decoration: none;
-    color: white;
-}
-
-
-
-nav{
-    height: 50px;
-    margin: 0 auto;
-    background-color:#7980AF;
-    text-align: center;
-    padding: 7px;
-}
-
-nav ul {
-    margin: 0 auto;
-    padding-top:6px;
-}
-
-nav a:hover{
-    color:white;
-    background-color:#AAABB1;
-}
-
-li a{
+.photos li img{
+    height: 200px;
     width: 300px;
-    height:40px;
-    float: left;
-    margin-top: 0px;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-  
 }
 
-ul li a{
-    color:black;
-}
+
 
 /*--logos--
 #options{
