@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
+     <link rel="stylesheet" href="./css/host.css">
+     <link href='https://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -11,10 +14,19 @@
     <script type="x-tmpl-mustache" id="login-template">
         <div class="login">
             <form class="login-form">
-                <h1>Login In!</h1>
                 <div class="error" style="display:none"></div>
-                <div><input type="text" id="login-username" placeholder="email@"></div>
-                <div><input type="password" id="login-password" placeholder="password"></div>
+
+                <div class="input">
+                    <div class="user-input"><span class="font fa fa-user"></span>
+
+                    <div><input type="text" id="login-username" placeholder="Username@">
+                    </div>
+                     </div>
+                    <span class=" lock fa fa-lock"></span>
+                    <div><input type="password" id="login-password" placeholder="Password"
+                    </div>
+                </div>
+
                 <button>Login</button>
             </form>
         </div>
