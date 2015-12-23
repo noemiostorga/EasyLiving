@@ -2,8 +2,13 @@ body{
 	background: grey;
 }
 
-
-
+/*h1:before{
+	content: ">";
+	background: red;
+	height: 300px;
+	width: 400px;
+	padding: 40px;
+}*/
 
 
 .hostContainer{
@@ -29,6 +34,7 @@ LOGIN FORM
 	padding: 5%;
 
 }
+
 
 #login-username {
 	height: 40px;
