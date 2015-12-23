@@ -2,13 +2,7 @@ body{
 	background: grey;
 }
 
-/*h1:before{
-	content: ">";
-	background: red;
-	height: 300px;
-	width: 400px;
-	padding: 40px;
-}*/
+
 
 
 .hostContainer{
@@ -84,6 +78,7 @@ LOGIN FORM
 
 .login-form div input{
 	height: 100%;
+	
 }
 
 #login-user{
