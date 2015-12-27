@@ -5,20 +5,15 @@
     <title>Host home page</title>
     <link link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/host.css">
 </head>
 <body>
-
-    <div class="hostContainer">
-        <div class="owner-home">
-            <div id="navBar">
-                <h3 id="title">Easy Living </h3>
-            </div> 
-        </div>
-
-        <div id="mainapp">
-            <div class="content"></div>
-        </div>
+    <div id="navBar">
+        <h3 id="title">Easy Living </h3>
+    </div> 
+    <div id="mainapp">
+        <div class="content"></div>
     </div>
 
     <script type="x-tmpl-mustache" id="host-view-template-no-listing">
@@ -27,24 +22,11 @@
                 <h1>Host Dashboard</h1>
                 <div class="error" style="display:none"></div>
                 
-                <button>Create Listing</button>
+                <button class="create-listing-btn">Create Listing</button>
             </form>
         </div>
     </script>
 
-<!--    
-    <script type="x-tmpl-mustache" id="login-template">
-        <div class="login">
-            <form class="login-form">
-                <h1>Login In!</h1>
-                <div class="error" style="display:none"></div>
-                <div><input type="text" id="login-username" placeholder="email@"></div>
-                <div><input type="password" id="login-password" placeholder="password"></div>
-                <div><button class="logBtn">Login</button> or <a href="#signup" class="signup">Sign up!</a></div>
-            </form>
-        </div>
-    </script>
--->
 
     <script type="x-tmpl-mustache" id="signup-template">
         <div class="signup">

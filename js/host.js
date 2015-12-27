@@ -129,7 +129,6 @@
 
         }
 
-
         var listingTemplate = $("#create-listing-template").text();
         var templateHtml = Mustache.render(listingTemplate, data);
         this.$el.html(templateHtml);
@@ -158,6 +157,7 @@
       },
 
       render: function() {
+
         var self = this;
 
         var user = Parse.User.current();
@@ -227,7 +227,7 @@
           }
         })
 
-        this.delegateEvents();
+        $('body').addClass('show-bg-image');
         return false;
       }
   });
