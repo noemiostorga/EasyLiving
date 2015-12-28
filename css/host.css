@@ -1,7 +1,9 @@
 body {
-    background: grey;
-}
-
+    background-image: url("../images/002-wall-pattern-background-texture.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    
 /************************
 LOGIN FORM
 ***************************/
@@ -26,14 +28,14 @@ LOGIN FORM
     width:600px;
     height: 300px;
     text-align: center;
-    border-top: 4px solid #464444;
-    border-right:2px solid #252424;
-    border-left:2px solid #252424;
-    border-bottom: 4px solid #464444;
-    border-top-right-radius:7px;
-    border-top-left-radius:7px;
-    border-bottom-right-radius:7px;
-    border-bottom-left-radius:7px;
+    border-top: 6px solid #464444;
+    border-right:3px solid #464444;
+    border-left:3px solid #464444;
+    border-bottom: 3px solid #464444;
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
     margin:0 auto;
 }
 
@@ -98,7 +100,7 @@ LOGIN FORM
     border: none;
     background:rgb(62,133,209);
     color: black;
-    width: 360px;
+    width: 365px;
     margin-right: 50px;
     margin-top: 10px;
     font-family: 'Nova Round', cursive;
@@ -177,17 +179,18 @@ LISTING TEMPLATE
 ****************************/
 
 .form-title {
-    color:#C0C0C0;
-    font-size: 25px;
+    color:rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
     border-bottom: 2px solid;
     text-align: center;
+    height: 65px;
+    padding-top: 40px;
 }
 
 .create-listing-form{
     width: 37.5%;
     background-color: #353434;
-    height: 800px;
+    height: 900px;
     padding-top: 40px;
     margin:0 auto;
 }
@@ -195,36 +198,62 @@ LISTING TEMPLATE
     width: 300px;
     height: 35px;
     font-size: 15px;
-    border-top-color: black;
+    border-top: 4px solid #252424;
+    border-bottom: 2px solid #252424;
+    border-left: 2px solid #252424;
+    border-right: 2px solid #252424;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
     margin-bottom: 10px;
+    background-color:rgba(121, 119, 119, 0.89);
 
 }
 .create-listing-form textarea{
     width: 300px;
     height: 90px;
     font-size: 15px;
+    background-color:rgba(121, 119, 119, 0.89);
+    border-top: 4px solid #252424;
+    border-bottom: 2px solid #252424;
+    border-left: 2px solid #252424;
+    border-right: 2px solid #252424;
+
 
 }
 
 span{
-    font-size:30px;
+    font-size:35px;
 
 }
 
 .listing-btn{
-    height: 20px;
-    font-size:15px;
+    font-size:18px;
+    margin: auto;
+    display: block;
+    height: 50px;
+    border-top: 4px solid #252424;
+    border-bottom: 2px solid #252424;
+    border-left: 2px solid #252424;
+    border-right: 2px solid #252424;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: black;
+    background-color: rgb(62,133,209);
+    width: 200px;
+    margin-top: 30px;
+
 }
+
 
 .info{
     margin: 0 auto;
     font-size: 20px;
     margin-bottom: 20px;
-    color:#C0C0C0;
+    color:rgba(255, 255, 255, 0.8);
 }
 
 .create-listing-content {
@@ -233,7 +262,7 @@ span{
     background-color: #353434;
     font-size: 20px;
     margin-bottom: 20px;
-    color:#C0C0C0;
+    color:white;
 }
 
 .create-listing-form label {
@@ -249,5 +278,10 @@ span{
     vertical-align: bottom;
     position: relative;
     top: -1px;
+}
+.create-listing-form input::-webkit-input-placeholder { 
+    padding-left: 30px;
+    color:white;
+
 }
 
