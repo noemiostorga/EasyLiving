@@ -74,7 +74,7 @@
         });
 
         this.$(".create-listing-form button").attr("disabled", "disabled");
-        
+
         return false;
       },
 
@@ -130,7 +130,6 @@
         }
 
         $('body').removeClass('show-bg-image');
-        //$(this.el).addClass('create-listing-content');
         var listingTemplate = $("#create-listing-template").text();
         var templateHtml = Mustache.render(listingTemplate, data);
         this.$el.html(templateHtml);

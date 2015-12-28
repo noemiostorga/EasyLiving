@@ -111,7 +111,7 @@ END LOGIN FORM
 ***************************/
 
 /**********************
-HOST DASHBOARD
+HOST DASBOARD
 **********************/
 .show-bg-image{
     
@@ -122,19 +122,15 @@ HOST DASHBOARD
 
 #mainapp{
     
+    width: 60%;
     margin:0px auto;
     padding: 1%;
     position: relative;
+    top: 170px;
     font-family: 'Nova Round', cursive;
     font-size: 10px;
+    text-align: center;
     
-    
-}
-
-.host-content {
-    margin-top: 176px;
-    width: 60%;
-    margin: 180px auto;
 }
 
 .host-form h1 {
@@ -153,8 +149,7 @@ h3{
 
 .create-listing-btn{
     height: 50px;
-    width: 250px;
-    display: block;
+    width: px;
     border: none;
     background:rgb(62,133,209);
     color: black;
@@ -168,7 +163,7 @@ h3{
 }
 
 /***************************
-END HOST DASHBOARD
+END HOST DASBOARD
 ****************************/
 
 
@@ -176,78 +171,24 @@ END HOST DASHBOARD
 LISTING TEMPLATE
 ****************************/
 
-.form-title {
+.create-listing-form h1{
     color:#C0C0C0;
-    font-size: 25px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid;
-    text-align: center;
+    font-size: 30px;
 }
 
 .create-listing-form{
-    width: 37.5%;
+    width: 100%;
     background-color: #353434;
-    height: 800px;
-    padding-top: 40px;
-    margin:0 auto;
+    height: 700px;
+    padding-top: 84px;
 }
-.fields {
+.create-listing-form input {
     width: 300px;
     height: 35px;
-    font-size: 15px;
-    border-top-color: black;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    margin-bottom: 10px;
+    font-size: 20px;
 
 }
 .create-listing-form textarea{
     width: 300px;
-    height: 90px;
-    font-size: 15px;
-
+    height: 80px;
 }
-
-span{
-    font-size:30px;
-
-}
-
-.listing-btn{
-    height: 20px;
-    font-size:15px;
-}
-
-.info{
-    margin: 0 auto;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color:#C0C0C0;
-}
-
-.create-listing-content {
-    width: 60%;
-    margin: 0 auto;
-    background-color: #353434;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color:#C0C0C0;
-}
-
-.create-listing-form label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
-.create-listing-form input[type=checkbox] {
-    width: 13px;
-    height: 13px;
-    padding: 0;
-    margin:0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-}
-
