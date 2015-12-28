@@ -1,5 +1,48 @@
+
+.signup{
+	min-height: 300px;
+	width: 80%;
+	margin: 50px auto;
+	background: rgb(24,24,24);
+	border-top:10px solid rgb(54,52,52);
+	border-bottom:10px solid rgb(54,52,52);
+	border-radius: 10px; 
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+
+}
 .signup-form{
     width: 80%;
-    margin: 0px auto;
-    color: red;
+	margin: 50px auto;
+    color: rgb(153,153,153);
+    text-align: center;
 }
+
+
+
+.userType{
+	width: 30%;
+	margin-top: 10px;
+	padding-left: 10px;
+	border-radius: 2px;
+	border: none;
+	height: 20px;
+	font-size: 1.1em;
+}
+
+.accountType{
+	font-size: 2em;
+}
+
+input[type=radio]{
+	display:none;
+}
+
+
+.accountBtn + label:before{
+
+    width: 1.5em;
+    height: 1.5em;
+
+}
+

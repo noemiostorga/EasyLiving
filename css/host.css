@@ -16,122 +16,106 @@ body{
 LOGIN FORM
 ***************************/
 .error{
-	font-family: 'Nova Round', cursive;
-	font-size: 20px;
-	height: 50px;
-    width: 300px;
+   font-family: 'Nova Round', cursive;
+   font-size: 20px;
+   height: 50px;
+   width: 300px;
 }
 
-
-
-#login-username {
-	height: 40px;
-	margin: 10px auto;
-	border: none;
-    margin: 0px auto;
-    color:#9C9898;
-    background:#353434;
-    min-height: 500px;
-    position: relative;
-    padding: 5%;
-
+.login{
+   margin: 0px auto;
+   color:#9C9898 ;
+   background:#353434 ;
+   min-height: 500px;
+   position: relative;
+   padding: 5%;
 }
 
 .login-form{
-	background-color:#252424;
-	width:600px;
-	height: 300px;
-	text-align: center;
-	border-top: 8px solid #464444;
-	border-right:2px solid #252424;
-	border-left:2px solid #252424;
-	border-bottom: 4px solid #464444;
-	border-top-right-radius:7px;
-	border-top-left-radius:7px;
-	border-bottom-right-radius:7px;
-	border-bottom-left-radius:7px;
-	margin:0 auto;
+   background-color:#252424 ;
+   width:600px;
+   height: 300px;
+   text-align: center;
+   border-top: 8px solid #464444 ;
+   border-right:2px solid #252424 ;
+   border-left:2px solid #252424 ;
+   border-bottom: 4px solid #464444 ;
+   border-top-right-radius:7px;
+   border-top-left-radius:7px;
+   border-bottom-right-radius:7px;
+   border-bottom-left-radius:7px;
+   margin:0 auto;
 }
 
 .input{
-	margin-top:-50px;
+   margin-top:-50px;
 }
 
 #login-username {
-    height: 50px;
-    width: 300px;
-    margin: 7px auto;
-    border: none;
-    background-color: #3E3B3B;   
-	font-family: 'Nova Round', cursive;
-	font-size: 20px;
-	padding-left: 20px;
+   height: 50px;
+   width: 300px;
+   margin: 7px auto;
+   border: none;
+   background-color: #3E3B3B ;   
+   font-family: 'Nova Round', cursive;
+   font-size: 20px;
+   padding-left: 20px;
 
 }
 
 .font {
-	position: relative;
-    top: 59px;
-    right: 182px;
-    background-color:#353434;
-    padding: 18px;
-    border-right: 4px solid #464444;
+   position: relative;
+   top: 59px;
+   right: 182px;
+   background-color:#353434 ;
+   padding: 18px;
+   border-right: 4px solid #464444 ;
 
 }
 
 .user-input{
-	position: relative;
-	top:40px;
+   position: relative;
+   top:40px;
 
 }
 
 .lock {
-	position: relative;
-    top: 58px;
-    right: 182px;
-    background-color:#353434;
-    padding: 18px;
-    border-right: 4px solid #464444;
+   position: relative;
+   top: 58px;
+   right: 182px;
+   background-color:#353434 ;
+   padding: 18px;
+   border-right: 4px solid #464444 ;
 
 
 }
 
 #login-password{
-    height: 50px;
-    width: 300px;
-    border: none;margin: 6px auto;
-    background-color: #3E3B3B;
-    font-family: 'Nova Round', cursive;
-    font-size: 20px;
-    padding-left: 20px;
+   height: 50px;
+   width: 300px;
+   border: none;margin: 6px auto;
+   background-color: #3E3B3B ;
+   font-family: 'Nova Round', cursive;
+   font-size: 20px;
+   padding-left: 20px;
 
 }
 
 
 button{
-	height: 50px;
-    width: 350px;
-	border: none;
-	background:rgb(62,133,209);
-	color: black;
-	width: 360px;
-    margin-right: 50px;
-    margin-top: 10px;
-    font-family: 'Nova Round', cursive;
-    font-size: 20px;
-    padding-left: 20px;
+   height: 50px;
+   width: 350px;
+   border: none;
+   background:rgb(62,133,209);
+   color: black;
+   width: 360px;
+   margin-right: 50px;
+   margin-top: 10px;
+   font-family: 'Nova Round', cursive;
+   font-size: 20px;
+   padding-left: 20px;
 }
 
-/************************
-End of LOGIN FORM
-***************************/
-
-
-
-
-
-
-
-
-
-
+/*********************
+END OF LOGIN FORM
+*********************/

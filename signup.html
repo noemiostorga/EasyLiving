@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>User</title>
-<link href="./css/signup.css">
+<link rel="stylesheet" href="./css/signup.css">
 </head>
 <body>
 
@@ -15,19 +15,29 @@
         <form class="signup-form">
             <h1>Sign Up!</h1>
             <div class="error" style="display:none"></div>
-            <div><input type="text" id="signup-firstName" placeholder="First Name"></div>
-            <div><input type="text" id="signup-lastName" placeholder="Last Name"></div>
-            <div><input type="text" id="signup-email" placeholder="email@"></div>
-            <div><input type="password" id="signup-password" placeholder="password"></div>
-            <div><input type="password" id="signup-confirm" placeholder="confirm password"></div>
-            <div>Account Type</div>
-            <div>
-                <input type="radio" name="account-type" value="host">Host 
-                <input type="radio" name="account-type" value="renter">Renter
+
+            <div><input type="text" class="userType" id="signup-firstName" placeholder="First Name"></div>
+            <div><input type="text" class="userType" id="signup-lastName" placeholder="Last Name"></div>
+
+            <div><input type="text" class="userType" id="signup-email" placeholder="email@"></div>
+
+            <div><input type="password" class="userType" id="signup-password" placeholder="password"></div>
+
+            <div><input type="password" class="userType"id="signup-confirm" placeholder="confirm password"></div>
+
+            <div class="accountType">
+                <p>Account Type</p>
+
+            
+                    <input type="radio" name="account-type" value="host" class="accountBtn">Host 
+                    <input type="radio" name="account-type" value="renter" class="accountBtn">Renter
+            
+
+                <div id="inputBtn">
+                    <button>signup</button>
+                </div> 
             </div>
-            <div id="inputBtn">
-            <button>signup</button>
-            </div> 
+
         </form>
     </div>
 </script>
