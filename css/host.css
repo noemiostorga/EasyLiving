@@ -116,6 +116,16 @@ button{
    padding-left: 20px;
 }
 
+/***************
+QUESTIONAIRE
+******************/
+
+
+.userprofile-form{   
+   text-align: center;
+   color: red;
+}
+
 /*********************
 END OF LOGIN FORM
 *********************/

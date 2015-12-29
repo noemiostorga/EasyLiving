@@ -16,7 +16,7 @@ Main header
     padding-top: 60px;
     font-size: 30px;
     position: relative;
-    border-bottom: 20px solid rgb(116,135,135);
+    border-bottom: 20px solid rgb(54,52,52);
 }
 
 .trans-container{
@@ -48,7 +48,7 @@ h1{
 }
 
 .signUp:hover{
-     background: rgba(156,193,194,1);
+     background: rgb(41,106,191);
 }
 
 .signUp a{
@@ -69,14 +69,14 @@ h1{
 }
 
 .loginBtn:hover{
-    background: rgba(156,193,194,1);
+    background: rgb(41,106,191);
 }
 
 
 
 .loginBtn a {
     text-decoration: none;
-    color: rgb(52, 67, 67);
+    color:  #464041;
     transition:color .7s ease;
 }
 
@@ -117,7 +117,7 @@ CONTACT
 .contact-section{
     width: 100%;
     min-height: 550px;
-    background: rgba(52, 67, 67,1);
+    background: rgb(54,52,52);
 }
 
 .center{
@@ -130,15 +130,21 @@ CONTACT
 
 .center input {
     height: 40px;
-    width: 37%;
+    width: 37.5%;
     border-radius: 3px;
     border: none;
     display: inline;
-    background: rgba(72, 87, 87,.7);
+    background: rgb(153,153,153);
     padding-left: 20px;
+    color: black;
 
 }
 
+
+.center input::-webkit-input-placeholder { /* Chrome */
+  color: #464041;
+  transition: opacity 1s ease-in-out;
+} 
 
 
 
@@ -158,7 +164,7 @@ CONTACT
 }
 
 .center button:hover{
-    background: rgb(22,103,209);
+    background: rgb(41,106,191);
 }
 
 .contact{
@@ -170,22 +176,25 @@ CONTACT
 
 .message{
     position: inline-block;
-    width: 78%;
+    width: 77%;
     padding-left: 25px;
     height: 150px;
     border-radius: 5px;
     border: none;
     margin: 20px auto;
-    background: rgba(72, 87, 87,.7);
+    background: rgb(153,153,153);
 }
 
-
+.message::-webkit-input-placeholder { /* Chrome */
+  color: #464041;
+  transition: opacity 1s ease-in-out;
+} 
 
 /**********
 FOOTER
 ***********/
 #footer{
-    background:rgb(116,135,135);
+    background:rgb(28,27,27);
 
 
 }
