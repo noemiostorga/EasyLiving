@@ -187,7 +187,6 @@ CONTACT
 
 .message::-webkit-input-placeholder { /* Chrome */
   color: #464041;
-  transition: opacity 1s ease-in-out;
 } 
 
 /**********

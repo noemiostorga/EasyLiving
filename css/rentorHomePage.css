@@ -1,3 +1,30 @@
+
+body{
+	background: grey;
+	font-family: sans-serif;
+}
+
+.renterhome-nav{
+	width: 100%;
+	border-bottom: 1px solid black;
+
+
+}
+
+.rentersPro{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.renterhome-nav a {
+	color: white;
+}
+
+.renterhome-nav a:hover {
+	color: blue;
+}
+
 .renterhome-nav{
 	width: 80%;
 	text-align: center;
@@ -16,7 +43,6 @@
 .renterhome-nav li a{
 	text-decoration: none;
 }
-
 
 
 
@@ -41,4 +67,19 @@
 	width: 10px;
 
 }
+
+.favorites li{
+	list-style: none;
+	display: inline;
+	padding-left: 10px;
+}
+
+.favorites li img {
+	height: 200px;
+	width: 250px;
+	display: inline-block;
+	position: relative;
+}
+
+
 
