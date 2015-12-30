@@ -4,10 +4,20 @@ body{
 /*****************
 Main header
 ***************/
+iframe{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
 #background {
-    background: rgba(213,213,213,1);
-    background-size: 100%;
-    background-attachment: fixed;
     text-align: center;
     color:#FFF;
     width:100%;
@@ -17,10 +27,11 @@ Main header
     font-size: 30px;
     position: relative;
     border-bottom: 20px solid rgb(54,52,52);
+    z-index: 2;
 }
 
 .trans-container{
-    background: rgba(111,111,111,.4);
+    background: rgba(200,200,200,.8);
     width: 50%;
     padding: 1% 0% 3% 0%;
     margin: 0px auto;
