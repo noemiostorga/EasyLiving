@@ -4,6 +4,7 @@ body{
 /*****************
 Main header
 ***************/
+
 iframe{
     min-width: 100%; !important;
     min-height: 100%; !important;
@@ -50,7 +51,7 @@ h1{
     float: right;
     position: relative;
     bottom: 45px;
-    right: 15px;
+    right: 50px;
     background: transparent;
     border:1px solid rgba(156,193,194,.5);
     transition: background 1s ease;
