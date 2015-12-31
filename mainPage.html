@@ -36,7 +36,7 @@
         <div id="gallery" class="revealOnScroll" data-animation="lightSpeedIn">
             <p> Rooms for you</p>
 
-            <ul class="photos animated shake">
+            <ul class="photos animated fadeInDown">
 
                 <div class="revealOnScroll" data-timeout="400">
                     <li> 
@@ -99,8 +99,18 @@
 </script>
 -->
         
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/rentor-HomePage.js"></script>
-<script src="js/mainPage.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="dist/jquery.viewportchecker.min.js"></script>
+    <script src="js/rentor-HomePage.js"></script>
+    <script src="js/mainPage.js"></script>  
+    <script src="js/animate.js"></script>
 </body>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('.dummy').viewportChecker();
+        });
+    </script>
 </html>

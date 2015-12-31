@@ -141,6 +141,13 @@ ul.photos{
     width: 300px;
 }
 
+.hidden{
+    opacity: 0;
+}
+
+.vidible{
+    opacity: 1;
+}
 /******************
 CONTACT
 *******************/
