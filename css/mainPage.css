@@ -36,6 +36,7 @@ iframe{
     margin: 0px auto;
     position: relative;
     top: 100px;
+    box-shadow: 10px 10px 15px rgba(150,150,150,.4);
 }
 
 h1{
@@ -53,12 +54,13 @@ h1{
     bottom: 45px;
     right: 50px;
     background: transparent;
-    border:1px solid rgba(156,193,194,.5);
-    transition: background 1s ease;
+    border:1px solid white;
+    transition: background 1s ease,border 1s ease;
 }
 
 .signUp:hover{
-     background: rgb(41,106,191);
+     background: rgba(42,111,201,.5);
+     border: 1px solid rgba(42,111,201,.7);
 }
 
 .signUp a{
@@ -74,14 +76,15 @@ h1{
 
 .loginBtn{
     border: none;
-    border-bottom: 3px solid black;
+    border: 1px solid white;
     background: transparent;
-    transition:background .7s ease, border 1s  ease;
+    transition:background .7s ease,border 1s ease;
 }
 
 .loginBtn:hover{
-    background: rgb(41,106,191);
-    border-bottom: none;
+     background: rgba(42,111,201,.5);
+     border: 1px solid rgba(42,111,201,.7);
+
 }
 
 
@@ -107,9 +110,21 @@ GALLERY
     margin: 0px auto;
 }
 
+#gallery p {
+    text-align: center;
+    width: 30%;
+    border-bottom: 2px solid black;
+    margin: 0px auto; 
+    font-size: 2em;
+    position: relative;
+    top: 15px;
+    padding: 10px;
+
+}
+
 ul.photos{
     padding: 0px;
-    margin: 50px auto;
+    margin: 60px auto;
     width: 85%;
  
 }
