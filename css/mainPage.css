@@ -67,11 +67,12 @@ h1{
     color: white;
     text-decoration: none;
     font-size: .8em;
-    transition:color 1s ease;
+    transition:color 1s ease, font-size 1s ease;
 }
 
 .signUp a:hover{
     color: white;
+    font-size: .9em;  
 }
 
 .loginBtn{
@@ -92,11 +93,13 @@ h1{
 .loginBtn a {
     text-decoration: none;
     color:  white;
-    transition:color .7s ease;
+    font-size: 1em;
+    transition:color .7s ease,font-size 1s ease;
 }
 
 .loginBtn a:hover {
     color: white;
+    font-size: 1.1em;
 }
 
 
@@ -141,13 +144,7 @@ ul.photos{
     width: 300px;
 }
 
-.hidden{
-    opacity: 0;
-}
 
-.vidible{
-    opacity: 1;
-}
 /******************
 CONTACT
 *******************/

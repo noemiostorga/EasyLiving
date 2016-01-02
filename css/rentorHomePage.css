@@ -81,5 +81,11 @@ body{
 	position: relative;
 }
 
-
+#disqus_thread{
+	width: 75%;
+	margin: 0px auto;
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+}
 
