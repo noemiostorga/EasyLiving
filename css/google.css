@@ -1,3 +1,18 @@
+/*******************
+DRAW MAP
+*****************/
+#drawmap {
+    height: 500px;
+    width: 80%;
+    margin: 40px auto;
+}
+
+
+
+
+/*******************
+MARKER MAP
+*****************/
 #map {
     height: 500px;
     width: 80%;
@@ -9,3 +24,4 @@ p{
 	border-top: 10px solid black;
 	margin-top: 50px;
 }
+
