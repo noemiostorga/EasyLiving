@@ -1,25 +1,68 @@
-function initMap() {
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat:36.1215, lng:-115.1739},
-    scrollwheel: false,
-    zoom:11
-  });
-
-  var houses ={lat: 36.1406013, lng: -115.3161044};
-
-  // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: houses,
-    scrollwheel: false,
-    zoom: 11
-  });
-
-  // Create a marker and set its position.
-  var marker = new google.maps.Marker({
-    map: map,
-    position: houses,
-    title: 'Hello World!'
-  });
-}
+   
+ function initMap(){  
+  var markers = [
+    {
+      
+        "lat": '36.1146832',
+        "lng": '-115.2555595',
+        "description": 'This house is cool '
+    },
+    {
+       
+        "lat": '36.1252147',
+        "lng": '-115.291785',
+        "description": 'this is not his crib fyi.'
+    },
+    {
+    
+        "lat": '36.1448303',
+        "lng": '-115.302484',
+        "description": 'dummy lat and lng.'
+    },
+    {
+        
+        "lat": '36.1446858',
+        "lng": '-115.1753368',
+        "description": 'testing 4.'
+    },
+    {
+        
+        "lat": '36.0338694',
+        "lng": '-115.2676475',
+        "description": 'empty space.'
+    }
+    ];
+    window.onload = function () {
+        LoadMap();
+    }
+    function LoadMap() {
+        var mapOptions = {
+            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
  
+     
+        var infoWindow = new google.maps.InfoWindow();
+ 
+        for (var i = 0; i < markers.length; i++) {
+            var data = markers[i];
+            var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: data.title
+            });
+ 
+            (function (marker, data) {
+                google.maps.event.addListener(marker, "click", function (e) {
+
+                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.open(map, marker);
+                });
+            })(marker, data);
+        }
+    }
+
+  }
