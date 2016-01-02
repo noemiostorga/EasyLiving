@@ -289,22 +289,22 @@ ul{
 
 #main{
 
-    width: 70%;
     margin: 0 auto;
     padding-left: 50px;
     padding-top: 20px;
     margin-top: 40px;
-    background-color: #353434;
-    border-right: 3px solid #464444;
-    border-left: 3px solid #464444;
-    border-top: 3px solid #464444;
-    border-bottom: 3px solid #464444;
+    
 }
 
 textarea{
     height: 200px;
     width: 600px;
     background-color:rgba(255, 255, 255, 0.8);
+    border-right: 3px solid #464444;
+    border-left: 3px solid #464444;
+    border-top: 3px solid #464444;
+    border-bottom: 3px solid #464444;
+
 
 }
 
@@ -312,21 +312,47 @@ textarea{
     width: 300px;
     height: 60px;
     background-color:rgba(255, 255, 255, 0.8);
+    font-size: 23px;
+    border-right: 3px solid #464444;
+    border-left: 3px solid #464444;
+    border-top: 3px solid #464444;
+    border-bottom: 3px solid #464444;
 }
 
 h3{
     color:#C0C0C0;
-    font-size: 30px;
+    font-size: 23px;
+    
 }
 
 span{
     color:#C0C0C0;
+    font-size: 23px;
 }
 
 h2{
     text-align: center;
     color:#C0C0C0;
+    font-size: 30px;
 }
+
+.restrictions{
+    margin-top: 20px;
+
+
+}
+
+.amenities{
+    margin-top: 20px;
+}
+
+.border{
+    border-right: 3px solid #464444;
+    border-left: 3px solid #464444;
+    border-top: 3px solid #464444;
+    border-bottom: 3px solid #464444;
+}
+
 
 /***************************
 FOOTER
