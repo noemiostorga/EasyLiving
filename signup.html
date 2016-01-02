@@ -50,9 +50,11 @@
     <form class="userprofile-form">
 
         <h3>Gender</h3><br>
-        {{#gender}}
-        <input type="radio" name="gender" value="{{.}}"> {{.}} <br>
-        {{/gender}}
+        <div class="genderQ">
+            {{#gender}}
+            <input type="radio" name="gender" value="{{.}}"> {{.}} <br>
+            {{/gender}}
+        </div>
 
         <h3>Sexual Orientation</h3><br>
         {{#orientation}}

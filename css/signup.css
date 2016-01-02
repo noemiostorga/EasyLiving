@@ -67,11 +67,19 @@ body{
 QUESTIONAIRE
 ********/
 form.userprofile-form{
-	height: 500px;
+	height: 800px;
     width: 360px;
     margin: 0 auto;
     text-align: center;
+    background: white;
 }
 
+.genderQ{
+	top: 0px;
+}
+
+.genderQ:active{
+	top: -50px;
+}
 
 
