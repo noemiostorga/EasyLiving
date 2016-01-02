@@ -1,6 +1,3 @@
-   
- 
-
 
  function initMap(){  
   var markers = [
@@ -8,7 +5,7 @@
       
         "lat": '36.1146832',
         "lng": '-115.2555595',
-        "description": 'This house is cool '
+        "description": 'personality type? '
     },
     {
        
@@ -61,7 +58,7 @@
             (function (marker, data) {
                 google.maps.event.addListener(marker, "click", function (e) {
 
-                    infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + data.description + "</div>");
+                    infoWindow.setContent("<a href='detailRoom.html'>" + "<div class='housePre'>" + data.description + "</div>" + '</a>');
                     infoWindow.open(map, marker);
                 });
             })(marker, data);

@@ -1,3 +1,5 @@
+
+
 /*******************
 DRAW MAP
 *****************/
@@ -25,3 +27,10 @@ p{
 	margin-top: 50px;
 }
 
+
+.housePre{
+	height: 400px;
+	width: 400px;
+	background: url('http://weknowyourdreams.com/images/bedroom/bedroom-01.jpg') no-repeat;
+	background-size: 100% 100%;
+}
