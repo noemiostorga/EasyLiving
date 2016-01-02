@@ -1,26 +1,50 @@
 body {
-    background-image: url("../images/002-wall-pattern-background-texture.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/JICXS.jpg");
+    background-repeat: repeat;
     background-size: 100%;
+    font-family: 'Nova Round', cursive;
     }
-    
-/************************
-LOGIN FORM
-***************************/
-.error{
+
+    .error{
     font-family: 'Nova Round', cursive;
     font-size: 20px;
     height: 50px;
     width: 300px;
 }
 
+#title{ 
+    font-size:35px;
+    color:#C0C0C0;
+    font-family: 'Nova Round', cursive;
+    margin-left:16px;
+    border-bottom:3.5px solid rgb(62,133,209);
+
+}
+
+#title a{
+    text-decoration: none;
+    padding-right: 50px;
+    color:#C0C0C0;
+    
+}
+
+#title li {
+    display:inline;
+    width: 50px;
+
+}
+    
+/************************
+LOGIN FORM
+***************************/
+
+
 .login{
     margin: 0px auto;
     color:#9C9898;
-    background:#353434;
     min-height: 500px;
     position: relative;
-    padding: 5%;
+    padding: 10%;
 }
 
 .login-form{
@@ -42,6 +66,7 @@ LOGIN FORM
 .input{
     margin-top:-50px;
     margin-left: 40px;
+
 }
 
 #login-username {
@@ -112,71 +137,15 @@ LOGIN FORM
 END LOGIN FORM
 ***************************/
 
-/**********************
-HOST DASHBOARD
-**********************/
-.show-bg-image{
-    
-    background-image: url("../images/2715172.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    }
-
-#mainapp{
-    
-    margin:0px auto;
-    padding: 1%;
-    position: relative;
-    font-family: 'Nova Round', cursive;
-    font-size: 10px;
-    
-    
-}
-
-.host-content {
-    margin-top: 176px;
-    width: 60%;
-    margin: 180px auto;
-}
-
-.host-form h1 {
-    color:#020202;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-}
-
-h3{ 
-    font-size:50px;
-    color:#C0C0C0;
-    font-family: 'Nova Round', cursive;
-    margin-left:40px;
-}
-
-.create-listing-btn{
-    height: 50px;
-    width: 250px;
-    display: block;
-    border: none;
-    background:rgb(62,133,209);
-    color: black;
-    font-family: 'Nova Round', cursive;
-    font-size: 20px;
-    border-top-right-radius:16px;
-    border-top-left-radius:16px;
-    border-bottom-right-radius:16px;
-    border-bottom-left-radius:16px;
-    margin:0 auto;
-}
-
-/***************************
-END HOST DASHBOARD
-****************************/
-
 
 /***************************
 LISTING TEMPLATE
 ****************************/
+h1{
+
+  font-family: 'Nova Round', cursive; 
+  font-size: 30px; 
+}
 
 .form-title {
     color:rgba(255, 255, 255, 0.8);
@@ -184,7 +153,7 @@ LISTING TEMPLATE
     border-bottom: 2px solid;
     text-align: center;
     height: 65px;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .create-listing-form{
@@ -257,12 +226,17 @@ span{
 }
 
 .create-listing-content {
-    width: 60%;
+    width: 45%;
     margin: 0 auto;
+    margin-top: 40px;
     background-color: #353434;
     font-size: 20px;
     margin-bottom: 20px;
     color:white;
+    border-right: 3px solid #464444;
+    border-left: 3px solid #464444;
+    border-top: 3px solid #464444;
+    border-bottom: 3px solid #464444;
 }
 
 .create-listing-form label {
@@ -284,4 +258,118 @@ span{
     color:white;
 
 }
+/***************************
+END LISTING TEMPLATE
+****************************/
+
+/***************************
+HOST NAVBAR
+****************************/
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 20px;
+    margin-left: -4px;
+}
+
+#navbar li {
+    display:inline;
+    width: 50px;
+
+}
+
+#navbar a{
+    text-decoration: none;
+    padding:40px;
+}
+
+#main{
+
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-top: 40px;
+    background-color: #353434;
+    border-right: 3px solid #464444;
+    border-left: 3px solid #464444;
+    border-top: 3px solid #464444;
+    border-bottom: 3px solid #464444;
+}
+
+textarea{
+    height: 200px;
+    width: 600px;
+    background-color:rgba(255, 255, 255, 0.8);
+
+}
+
+.room-title{
+    width: 300px;
+    height: 60px;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+h3{
+    color:#C0C0C0;
+    font-size: 30px;
+}
+
+span{
+    color:#C0C0C0;
+}
+
+h2{
+    text-align: center;
+    color:#C0C0C0;
+}
+
+/***************************
+FOOTER
+****************************/
+
+
+#footer{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+
+#footer h3{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+}
+
+#footer p{
+    display: inline-block;
+    color: white;
+    position: relative;
+    top: 10px;
+    padding-left: 10px;
+}
+
+#footer a{
+    margin: 10px auto;
+    color: white;
+    font-size: 2em;
+    padding-left: 25px;
+    position: relative;
+    top: 15px;
+}
+
+#footer a:hover{
+    color: rgb(62,133,209);
+}
+
+
+/***************************
+END FOOTER
+****************************/
+
 

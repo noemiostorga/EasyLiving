@@ -9,24 +9,11 @@
     <link rel="stylesheet" href="css/host.css">
 </head>
 <body>
-    <div id="navBar">
-        <h3 id="title">Easy Living </h3>
+    <div id="navbar">
     </div> 
     <div id="mainapp">
         <div class="content"></div>
     </div>
-
-    <script type="x-tmpl-mustache" id="host-view-template-no-listing">
-        <div class="host-content">
-            <form class="host-form">
-                <h1>Host Dashboard</h1>
-                <div class="error" style="display:none"></div>
-                
-                <button class="create-listing-btn">Create Listing</button>
-            </form>
-        </div>
-    </script>
-
 
     <script type="x-tmpl-mustache" id="signup-template">
         <div class="signup">
@@ -113,22 +100,29 @@
         </div>
     </script>
 
+    <script type="x-tmpl-mustache" id="navbar-template">
+        <div id="title">
+            <nav>
+                <ul>
+                    <li><a href="Easy Living">Easy Living</a></li>
+                    <li><a href="Messages">Messages</a></li>
+                    <li><a href="Add">Add</a></li>
+                    <li><a href="Edit">Edit</a></li>
+                    <li><a href="Log Out">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </script>
+
     <script type="x-tmpl-mustache" id="host-view-template">
-        <div id="main">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="Easy Living">Easy Living</a></li>
-                        <li><a href="Messages">Messages</a></li>
-                        <li><a href="Add">Add</a></li><li><a href="Edit">Edit</a></li>
-                    </ul>
-                </nav>
-            </div>
-                
+    <h2> Lets us know about your place</h2>
+        <div id="main">   
             <div class="main-left">
-                <h2> Host Settings </h2>
+                
                 <h3 class ="title">Listing Title</h3>
-                <div><input type="text" value="{{room.title}}"></div>
+                <div>
+                    <input class ="room-title"type="text" value="{{room.title}}">
+                </div>
                 <div>
                     <h3>Room Description</h3>
                     <div>
@@ -138,7 +132,8 @@
                 <div>
                     <span>Amenities</span>
                     {{#amenities}}
-                        <div><input type="checkbox" name="{{value}}" value="{{value}}" {{#value}}checked{{/value}}> {{description}} </div>
+                </div>
+                <div><input type="checkbox" name="{{value}}" value="{{value}}" {{#value}}checked{{/value}}> {{description}} 
                     {{/amenities}}
                 </div>
                 <div>
@@ -147,7 +142,6 @@
                         <div>
                             <input type="checkbox" name="{{value}}" value="{{value}}"{{#value}}checked{{/value}}>
                             {{description}}
-                        </div>
                     {{/restrictions}}
                 </div>
                 <div>
@@ -163,53 +157,57 @@
                     <h3>Sqft</h3>
                     <input type="number" name="sqft" value="{{room.sqft}}"> </div>
                 </div>
-            </div>
+           
         <!--create bar -->
-            <div>
-                <h3>Zip Code</h3>
                 <div>
-                    <input type="text" name="zipcode" value="{{room.zipCode}}">
+                    <h3>Zip Code</h3>
+                    <div>
+                        <input type="text" name="zipcode" value="{{room.zipCode}}">
+                    </div>
                 </div>
-            </div>
 
-            <div class="map">
-                <h3> Google map</h3>
-                <img class="placeit" src="http://placehold.it/350x150" />
-            </div>
+                <div class="map">
+                    <h3> Google map</h3>
+                    <img class="placeit" src="http://placehold.it/350x150" />
+                </div>
 
-                <h3>Photos</h3>
+                <div>
+                    <h3>Review the contract</h3>
+                    <a href="#">Contract</a>
+                    <!--add hellosign with contract -->
+                </div>
 
-            <div id="photos">
-                <a href="#" id="upload_widget_opener">Upload multiple images</a>
-            </div>
-            <div>
-                <h3>Review the contract</h3>
-                <a href="#">Contract</a>
-                <!--add hellosign with contract -->
-            <div>
-                <a href="#"><Background check></a>
-                <!--Provide links where they can do this-->
-            </div> 
+                    <h3>Photos</h3>
 
-            <div class="photos-container">
-                <img src="http://placehold.it/350x250">
-                <img src="http://placehold.it/350x250">
-                <img src="http://placehold.it/350x250">
-                <img src="http://placehold.it/350x250">
-            </div>
+                <div id="photos">
+                    <a href="#" id="upload_widget_opener">Upload multiple images</a>
+                </div>
+                
 
 
-            <div>
-               <h3>Ratings</h3>
-            </div>
+                <div class="photos-container">
+                    <img src="http://placehold.it/350x250">
+                    <img src="http://placehold.it/350x250">
+                    <img src="http://placehold.it/350x250">
+                    <img src="http://placehold.it/350x250">
+                </div>
+
+                <div>
+                    <a href="#"><Background check></a>
+                    <!--Provide links where they can do this-->
+                </div> 
+                <div>
+                   <h3>Ratings</h3>
+                </div>
+            </div> <!--closing for main left-->
         </div> <!--closing main -->
 
-        <div id="footer">
-            <a href="http://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
-            <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
-            <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
-            <p>&copy; Easy Living 2015</p>
-        </div>
+<div id="footer">
+    <a href="http://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
+    <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+    <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+    <p>&copy; Easy Living 2015</p>
+</div>
     </script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -222,8 +220,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 
-    <!--<script src="js/cloudinary.js"></script>-->
-    <script src="js/rentor-HomePage.js"></script>
+    <script src="js/cloudinary.js"></script>
+
     <script src="js/host.js"></script>
         
 </body>

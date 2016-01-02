@@ -214,22 +214,20 @@
               hostViewHtml = Mustache.render(template, {"room": room,
                     "amenities": amenities,
                     "restrictions": restrictions});
+              self.$el.html(hostViewHtml);
             } else {
-              var template = $("#host-view-template-no-listing").text();
-              hostViewHtml = template;
+              self.undelegateEvents();
+              new CreateListingView()
             }
-
-            self.$el.html(hostViewHtml);
-            self.delegateEvents();
+            new NavBarView()
           },
 
          error: function() {
             console.log("Error querying Room object for user");
             console.log(error);
           }
-        })
+        });
 
-        $('body').addClass('show-bg-image');
         return false;
       }
   });
@@ -437,6 +435,22 @@
       }
     }
 
+  });
+
+  var NavBarView = Backbone.View.extend({
+    el: "#navbar",
+
+    initialize: function() {
+      this.render();
+    },
+
+    render: function() {
+      var template = $("#navbar-template").text();
+      var templateHtml = Mustache.render(template, {
+  
+      });
+      this.$el.html(templateHtml);
+    }
   });
 
  new AppView();
