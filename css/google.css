@@ -28,9 +28,46 @@ p{
 }
 
 
+
+/*******************
+INFO BOX
+*****************/
+.MapDescription{
+	width: 100%;
+	height: 40px;
+	background: rgba(0,0,0,.5);
+	padding-bottom: 50px;
+	color: white;
+	text-align: justify;
+}
+
+.googleDescription{
+	text-decoration: none;
+	color: black;
+	font-size: 2em;
+	width: 100%;
+	height: 30px;
+
+}
+
+
 .housePre{
-	height: 400px;
+	height: 350px;
 	width: 400px;
 	background: url('http://weknowyourdreams.com/images/bedroom/bedroom-01.jpg') no-repeat;
 	background-size: 100% 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
