@@ -428,8 +428,16 @@
     },
 
     render: function() {
-      if (Parse.User.current()) {
-        new ManageHostView();
+      var curUser = Parse.User.current();
+      if (curUser) {
+        if (curUser.accountType === "host") {
+          new ManageHostView();
+        } 
+        if(curUser.accountType === "renter"){
+          new ManageHostView();
+          console.log("host view");
+        }
+
       } else {
         window.location = "mainPage.html";
       }
