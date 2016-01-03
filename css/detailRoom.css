@@ -1,13 +1,29 @@
-
-.DetImg img{
-	height: 100px;
-	width: 200px;
+.DetImg{
+	width: 37%;
+	margin: 0 auto;
 }
 
+.DetImg img{
+	height: 400px;
+	width: 450px;
+	margin: 0 auto;
 
+}
 
-/*.DetailImg{
-	background: red;
-	height: 33px;
-	width: 50%;
-}*/
+.roomPrice{
+	font-weight: bold;
+	font-size: 2em;
+	display: inline;
+
+}
+
+.stripe{
+	display: inline;
+	float: right;
+}
+
+.RoomInfo{
+	margin-top: 30px;
+	width: 28.125em;
+
+}

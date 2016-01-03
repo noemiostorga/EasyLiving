@@ -3,14 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-<link href="./css/detailRoom.css" />
+<link rel="stylesheet" href="./css/detailRoom.css" />
 </head>
 
 <body>
+<nav>
 	
-	<div class="DetImg">
-		<img src="http://www.stanleyhotel.com/uploads/content-photos/lodge-room.jpg"/>
+</nav>	
 
+	<div class="DetImg" >
+		<img  src="http://weknowyourdreams.com/images/bedroom/bedroom-01.jpg"/>
+		
+		<div class="RoomInfo">
+			<p class="roomPrice">$400</p> 
+				<form action="" method="POST" class="stripe">
+				  <script
+				    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+				    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+				    data-amount="40000"
+				    data-name="Demo Site"
+				    data-description="2 widgets ($400.00)"
+				    data-image="http://www.i2symbol.com/images/symbols/style-letters/circled_latin_capital_letter_e_u24BA_icon_128x128.png"
+				    data-locale="auto">
+			 	 </script>
+				</form>
+		</div>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, totam soluta corporis doloremque, vel incidunt porro est saepe necessitatibus sequi minus earum. Perferendis ullam eius laudantium, rerum sequi maxime. Nulla.</p>
 	</div>	
 
@@ -22,16 +39,38 @@
 	<p>rating</p>
 	<p>contract for rentor<p>
 	<p>calendar</p>
-	<p>message disquis</p>
 
 
 
 
+	<div id="disqus_thread"></div>
+	<script>
+	/**
+	* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+	*/
+	/*
+	var disqus_config = function () {
+	this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+	this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+	var d = document, s = d.createElement('script');
+
+	s.src = '//easylivinges.disqus.com/embed.js';
+
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+	})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/rentor-HomePage.js"></script>
 	<script src="js/mainPage.js"></script>  
+	<script id="dsq-count-scr" src="//easylivinges.disqus.com/count.js" async></script>
 </body>
 </html>
