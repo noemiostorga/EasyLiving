@@ -138,6 +138,30 @@
 
   });
 
+  /*var ManageRenterView = Backbone.View.extend({
+    events: {
+      "submit form.renter-form": "createListing",
+    },
+
+    el: ".content",
+
+    initialize: function(){
+      _.bindAll(this, "createListing"),
+      this.render();
+    },
+
+    createListing: function(e){
+      new CreateListingView();
+      this.undelegateEvents();
+      return false;
+    },
+
+    render: function(){
+
+    }
+
+  })*/
+
 
   var ManageHostView = Backbone.View.extend({
       events: {
@@ -432,13 +456,13 @@
       if (curUser) {
         if (curUser.accountType === "host") {
           new ManageHostView();
-        } 
-        if(curUser.accountType === "renter"){
-          new ManageHostView();
-          console.log("host view");
+        }
+        else(curUser.accountType === "renter") {
+          new ManageRenterView();
         }
 
-      } else {
+      } 
+      else {
         window.location = "mainPage.html";
       }
     }
