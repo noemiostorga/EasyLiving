@@ -1,192 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Host home page</title>
-    <link link rel="stylesheet" href="normalize.css">
+    <title>Edit Listing</title>
+     <link link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Nova+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/host.css">
 </head>
 <body>
-    <div id="navbar">
-    </div> 
-    <div id="mainapp">
-        <div class="content"></div>
+    <h2>Your Place</h2>
+    <div id="main">   
+        <div class="main-left">
+            <div id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="mainPage.html">Easy Living</a></li>
+                        <li><a href="mainPage.html">Create Listing</a></li>
+                        <li><a href="editlisting.html">Edit Listing</a></li>
+                        <li><a href="https://www.hellosign.com/sign/a6a6710e401b970ae32631bf800c881a159f727b">Review Contract</a></li>
+                        <li><a href="logout.html">Log Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" id="upload_widget_opener">Upload multiple images</a>
+            <div id="photos">
+            </div>
+            <div class="photo-description">Room Description</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt mollitia ut laudantium amet similique dicta, ullam at laborum, deleniti, nobis necessitatibus blanditiis magnam. Tenetur officiis quam, consectetur quo, labore molestiae.
+                </div>
+        </div>
     </div>
-
-    <script type="x-tmpl-mustache" id="signup-template">
-        <div class="signup">
-            <form class="signup-form">
-                <h1>Sign Up!</h1>
-                <div class="error" style="display:none"></div>
-                <div><input type="text" id="signup-firstName" placeholder="First Name"></div>
-                <div><input type="text" id="signup-lastName" placeholder="Last Name"></div>
-                <div><input type="text" id="signup-email" placeholder="email@"></div>
-                <div><input type="password" id="signup-password" placeholder="password"></div>
-                <div><input type="password" id="signup-confirm" placeholder="confirm password"></div>
-                <div>Account Type</div>
-                <div>
-                    <input type="radio" name="account-type" value="host">Host 
-                    <input type="radio" name="account-type" value="renter">Renter
-                </div>
-                <div>
-                    <button>Sign up</button> or <a href="#login" class="login">Login</a>
-                </div> 
-            </form>
+    <div id="disqus_thread"></div>
+    <script type="x-tmpl-mustache" id="roomimages-template">
+        <div class="photos-container">
+            {{#roomImageUrls}}
+            <img src="{{.}}">
+            {{/roomImageUrls}}
         </div>
     </script>
+    <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
 
-    <script type="x-tmpl-mustache" id="userProfile-template">
+        s.src = '//instafun.disqus.com/embed.js';
 
-    <div class="questionaire">
-        <form class="userprofile-form">
-
-            <h3>Gender</h3><br>
-            {{#gender}}
-            <input type="radio" name="gender" value="{{.}}"> {{.}} <br>
-            {{/gender}}
-
-            <h3>Sexual Orientation</h3><br>
-            {{#orientation}}
-            <input type="radio" name="orientation" value="{{.}}"> {{.}} <br>
-            {{/orientation}}
-
-            <h3>Occupation</h3><br>
-            {{#occupation}}
-                <input type="radio" name="occupation" value="{{.}}"> {{.}} <br>
-            {{/occupation}}
-
-            <h3> Age </h3><br>
-            {{#ageGroup}}
-                <input type="radio" name="agegroup" value="{{.}}"> {{.}} <br>
-            {{/ageGroup}}
-
-            <!-- upload user photo option! -->
-            <div id="inputBtn">
-            <button>Continue</button>
-            </div>  
-        </form>
-    </div>
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
     </script>
-
-
-    <script type="x-tmpl-mustache" id="create-listing-template">
-        <div class="create-listing-content">
-            <h1 class="form-title">Listing Information</h1>
-            <form class="create-listing-form">
-                <div class="error" style="display:none"></div>
-                {{#fields}}
-                <div>
-                    <input type class="fields" ="{{type}}" name="{{name}}" placeholder="{{description}}">
-                </div>
-                {{/fields}}
-                <div>
-                    <textarea name="description" placeholder="Tell us more about your space..."></textarea>
-                </div>
-                <div class="info">
-                    <span>Amenities</span>
-                    {{#amenities}}
-                        <div><label><input type="checkbox" name="{{value}}" value="{{value}}"> {{description}}</label></div>
-                    {{/amenities}}
-                </div>
-                <div class="info">
-                    <span>Restrictions</span>
-                    {{#restrictions}}
-                        <div><label><input type="checkbox" name="{{value}}" value="{{value}}"> {{description}}</label></div>
-                    {{/restrictions}}
-                </div>
-                <div>
-                    <button class="listing-btn">Create Listing</button>
-                </div>  
-            </form>
-        </div>
-    </script>
-
-    <script type="x-tmpl-mustache" id="navbar-template">
-        <div id="title">
-            <nav>
-                <ul>
-                    <li><a href="Easy Living">Easy Living</a></li>
-                    <li><a href="Messages">Messages</a></li>
-                    <li><a href="Add">Add</a></li>
-                    <li><a href="Edit">Edit</a></li>
-                    <li><a href="Log Out">Log Out</a></li>
-                </ul>
-            </nav>
-        </div>
-    </script>
-
-    <script type="x-tmpl-mustache" id="host-view-template">
-    <h2> Lets us know about your place</h2>
-        <div id="main">   
-            <div class="main-left">
-                <h3 class ="title">Listing Title</h3>
-                <div>
-                    <input class ="room-title"type="text" value="{{room.title}}">
-                </div>
-                <div>
-                    <h3>Room Description</h3>
-                    <div>
-                        <textarea name="description" placeholder="Tell us more about your space...">{{room.description}}</textarea>
-                    </div>
-                </div>
-               
-                    <div class="amenities">
-                        <span>Amenities</span>
-                        {{#amenities}}
-                    </div>
-                    <div><input type="checkbox" name="{{value}}" value="{{value}}" {{#value}}checked{{/value}}> {{description}} 
-                        {{/amenities}}
-                    </div>
-
-                    <div class="restrictions">
-                        <span>Restrictions</span>
-                        {{#restrictions}}
-                    </div>
-                    <div>
-                        <input type="checkbox" name="{{value}}" value="{{value}}"{{#value}}checked{{/value}}>
-                            {{description}}
-                            {{/restrictions}}
-                    </div>
-                <div>
-                    <h3> Move in Date</h3>
-                     <a class="calendar" href="#"><i class="fa fa-building"></i>Calendar</a>
-
-                </div>
-                <div>
-                    <h3>Price</h3>
-                    <input class="border" type="number" name="price" value="{{room.price}}"> </div>
-                </div>
-               <div>
-                    <h3>Sqft</h3>
-                    <input class="border" type="number" name="sqft" value="{{room.sqft}}"> </div>
-            
-           
-        <!--create bar -->
-                <div>
-                    <h3>Zip Code</h3>
-                    <div>
-                        <input class="border" type="text" name="zipcode" value="{{room.zipCode}}">
-                    </div>
-                </div>
-
-                <div class="map">
-                    <h3> Google map</h3>
-                    <img class="placeit" src="http://placehold.it/350x150" />
-                </div>
-
-             
-            </div> <!--closing for main left-->
-        </div> <!--closing main -->
-
-<div id="footer">
-    <a href="http://www.facebook.com"><i class="fa fa-facebook-official"></i></a>
-    <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
-    <a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
-    <p>&copy; Easy Living 2015</p>
-</div>
-    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>     
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
@@ -200,11 +72,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
 
-    <script src='jquery.cloudinary.js' type='text/javascript'></script>
+    <script id="dsq-count-scr" src="//easylivin.disqus.com/count.js" async></script>
+
+    <script src='//widget.cloudinary.com/global/all.js' type='text/javascript'></script>
 
     <script src="js/cloudinary.js"></script>
-
-    <script src="js/host.js"></script>
-        
 </body>
 </html>
