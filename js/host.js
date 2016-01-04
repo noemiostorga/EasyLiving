@@ -74,7 +74,7 @@
         });
 
         this.$(".create-listing-form button").attr("disabled", "disabled");
-
+        
         return false;
       },
 
@@ -129,7 +129,8 @@
 
         }
 
-
+        $('body').removeClass('show-bg-image');
+        //$(this.el).addClass('create-listing-content');
         var listingTemplate = $("#create-listing-template").text();
         var templateHtml = Mustache.render(listingTemplate, data);
         this.$el.html(templateHtml);
@@ -182,6 +183,7 @@
       },
 
       render: function() {
+
         var self = this;
 
         var user = Parse.User.current();
@@ -236,22 +238,20 @@
               hostViewHtml = Mustache.render(template, {"room": room,
                     "amenities": amenities,
                     "restrictions": restrictions});
+              self.$el.html(hostViewHtml);
             } else {
-              var template = $("#host-view-template-no-listing").text();
-              hostViewHtml = template;
+              self.undelegateEvents();
+              new CreateListingView()
             }
-
-            self.$el.html(hostViewHtml);
-            self.delegateEvents();
+            new NavBarView()
           },
 
          error: function() {
             console.log("Error querying Room object for user");
             console.log(error);
           }
-        })
+        });
 
-        this.delegateEvents();
         return false;
       }
   });
@@ -467,6 +467,22 @@
       }
     }
 
+  });
+
+  var NavBarView = Backbone.View.extend({
+    el: "#navbar",
+
+    initialize: function() {
+      this.render();
+    },
+
+    render: function() {
+      var template = $("#navbar-template").text();
+      var templateHtml = Mustache.render(template, {
+  
+      });
+      this.$el.html(templateHtml);
+    }
   });
 
  new AppView();
