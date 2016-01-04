@@ -1,20 +1,54 @@
+/*
+going from top right
+
+top:
+rgb(209,209,209)
+rgb(145,182,183)
+rgb(68,128,132)
+
+bottom:
+rgb(176,145,57)
+rgb(3,44,73)
+rgb(38,37,34)
+*/
+
+
 body{
-	background: rgb(153,153,153);
+	background: white;
+
+}
+
+.arrowCon{
+	height: 400px;
+	width: 30%;
+	position: relative;
+	display: inline;
+	bottom: 350px;
+	left: 40px;
+}
+
+.arrow{
+	font-size: 3em;
+	color: rgb(3,44,73);
+	transition: font-size .5s;
+}
+
+.arrow:hover{
+	font-size: 3.1em;
 }
 
 .signup{
-	font-family: sans-serif;
-	font-weight: lighter;
+	font-family: 'Raleway', sans-serif;
 	min-height: 300px;
-	width: 80%;
+	width: 50%;
 	margin: 50px auto;
-	background: rgb(24,24,24);
-	border-top:10px solid rgb(54,52,52);
-	border-bottom:10px solid rgb(54,52,52);
-	border-radius: 10px; 
-	border-top-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-	box-shadow: 10px 10px 5px #666666;
+	background: rgb(145,182,183);
+	border-top:5px outset rgb(68,128,132);
+	border-bottom:5px inset rgb(68,128,132);
+	border-left:1px outset rgb(68,128,132);
+	border-right:1px outset rgb(68,128,132);
+	border-radius: 20px; 
+	box-shadow: 10px 10px 20px #666666;
 }
 
 
@@ -22,22 +56,33 @@ body{
 .signup-form{
     width: 80%;
 	margin: 50px auto;
-    color: rgb(153,153,153);
+    color: rgb(38,37,34);
     text-align: center;
 }
 
 
 
 .userType{
-	width: 30%;
+	width: 50%;
 	margin-top: 10px;
 	padding-left: 10px;
 	border-radius: 2px;
-	border: none;
-	background: rgb(47,45,45);
+	background: white;
+	border: 2px inset rgba(68,128,132,.5);
+	border-radius: 5px;
 	height: 25px;
-	color: white;
+	color: black;
 	font-size: 1.1em;
+	transition: width .7s ease;
+}
+
+
+.userType:active{
+	width: 55%;
+}
+
+.userType:hover{
+	width: 55%;
 }
 
 .accountType{
@@ -60,8 +105,13 @@ body{
 	margin-top: 15px;
 	font-size: 1.1em;
   	color: white;
-	background: rgb(41,106,191);
+	background: rgb(68,128,132);
+	font-family: 'Raleway', sans-serif;
+	transition: background .7s ease;
+}
 
+#inputBtn button:hover{
+	background:rgb(176,145,57);
 }
 /**************
 QUESTIONAIRE
