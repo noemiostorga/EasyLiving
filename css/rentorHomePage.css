@@ -3,72 +3,51 @@ body{
 	font-family: sans-serif;
 }
 
-.logo{
-	float: left;
-	color: blue;
-	font-size: 1.4em;
+.renterNav a{
+	padding-left: 30px;
+	font-size: 2em;
 	text-decoration: none;
+	color: rgb(3,44,73);
 }
 
-.renterhome-nav{
-	width: 100%;
-	border-bottom: 1px solid black;
-
-
+.renterNav a:hover{
+	color:rgb(68,128,132);
 }
 
-.rentersPro{
+
+
+
+/***************
+Other Carasouel
+*************/
+.otherImg{
+	height: 200px;
+	width: 200px;
+}
+
+.otherCarousel {
+	height: 600px;
 	width: 80%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.renterhome-nav a {
-	color: white;
-}
-
-.renterhome-nav a:hover {
-	color: blue;
-}
-
-.renterhome-nav{
-	width: 80%;
-	text-align: center;
 	margin: 0px auto;
-	color: black;
-
+	display: block;
 }
 
-.renterhome-nav ul li{
-	list-style: none;
-	display: inline;
-	padding-left: 20px;
-	font-size: 1.5em;
-}
-
-.renterhome-nav li a{
-	text-decoration: none;
-}
-
-
-
-.other li {
+.otherCarousel li {
 	list-style: none;
 	display: inline;
 	padding-left: 10px;
 }
 
-.other li img {
+.otherCarousel li img {
 	height: 200px;
 	width: 250px;
 	display: inline-block;
 	position: relative;
 }
 
-.other img:after {
+.otherCarousel img:after {
 	content: " ";
 	background: red;
-	position: absolute;
 	height: 20px;
 	width: 10px;
 
