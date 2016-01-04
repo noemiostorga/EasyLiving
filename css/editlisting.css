@@ -1,6 +1,5 @@
 body {
-    background-image: url("../images/JICXS.jpg");
-    background-repeat: repeat;
+    color:rgb(209 209 209);
     background-size: 100%;
     font-family: 'Nova Round', cursive;
     }
@@ -39,21 +38,19 @@ LOGIN FORM
 ***************************/
 .login{
     margin: 0px auto;
-    color:#9C9898;
     min-height: 500px;
-    position: relative;
     padding: 10%;
 }
 
 .login-form{
-    background-color:#252424;
+    background-color:rgb(145, 182, 183);
     width:600px;
     height: 300px;
     text-align: center;
-    border-top: 6px solid #464444;
-    border-right:3px solid #464444;
-    border-left:3px solid #464444;
-    border-bottom: 3px solid #464444;
+    border-top: 6px solid rgb(68, 128, 132);
+    border-right:3px solid rgb(68, 128, 132);
+    border-left:3px solid rgb(68, 128, 132);
+    border-bottom: 3px solid rgb(68, 128, 132);
     border-top-right-radius:8px;
     border-top-left-radius:8px;
     border-bottom-right-radius:8px;
@@ -72,7 +69,7 @@ LOGIN FORM
     width: 300px;
     margin: 7px auto;
     border: none;
-    background-color: #3E3B3B;   
+    background-color: white;   
     font-family: 'Nova Round', cursive;
     font-size: 20px;
     padding-left: 20px;
@@ -82,10 +79,11 @@ LOGIN FORM
     position: relative;
     top: 59px;
     right: 182px;
-    background-color:#353434;
+    background-color:rgb(68, 128, 132);
     padding: 18px;
-    border-right: 4px solid #464444;
+    border-right: 4px solid rgb(209,209,209);
 }
+
 
 .user-input{
     position: relative;
@@ -96,16 +94,16 @@ LOGIN FORM
     position: relative;
     top: 58px;
     right: 182px;
-    background-color:#353434;
+    background-color:rgb(68, 128, 132);
     padding: 18px;
-    border-right: 4px solid #464444;
+    border-right: 4px solid rgb(209,209,209);
 }
 
 #login-password{
    height: 50px;
    width: 300px;
    border: none;margin: 6px auto;
-   background-color: #3E3B3B ;
+   background-color: white ;
    font-family: 'Nova Round', cursive;
    font-size: 20px;
    padding-left: 20px;
@@ -116,7 +114,7 @@ LOGIN FORM
     height: 50px;
     width: 350px;
     border: none;
-    background:rgb(62,133,209);
+    background:rgb(68, 128, 132);
     color: black;
     width: 365px;
     margin-right: 50px;
