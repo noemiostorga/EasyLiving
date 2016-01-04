@@ -1,7 +1,13 @@
 
 body{
-	background: grey;
 	font-family: sans-serif;
+}
+
+.logo{
+	float: left;
+	color: blue;
+	font-size: 1.4em;
+	text-decoration: none;
 }
 
 .renterhome-nav{
