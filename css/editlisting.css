@@ -63,7 +63,11 @@ h2{
     color:#C0C0C0;
     font-size: 30px;
 }
-
+#photos{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin-left: 16px;
+}
 
 .photos-container{
     margin-left: 25px;
@@ -74,8 +78,8 @@ h2{
     height: 220px;
 }
 
-.margin-left{
-    background-color: white;
+.cloudinary-button{
+   margin-left:16px;
 }
 /***************************
 FOOTER
