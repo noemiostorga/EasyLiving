@@ -1,7 +1,30 @@
 /*************
 
 ****************/
+.googleNav{
+    list-style: none;
+    font-size: 2em;
+    display: inline;
+    margin-left: 105px;
+    width: 30%;	
+}
 
+.googleNav li{
+	display: inline;
+
+}
+
+
+
+.googleNav a{
+	margin-left: 15px;
+	text-decoration: none;
+	color: black;
+}
+
+.googleNav a:hover{
+	color: #4372E5;
+}
 
 
 /*******************

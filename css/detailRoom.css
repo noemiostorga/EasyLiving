@@ -42,6 +42,31 @@ content
 
 }
 
+.SeeListingCon{
+	width: 30%;
+	margin-left: 465px;
+	padding: 20px;
+	top:0px;
+    transition:top .8s ease;
+}
+
+
+.SeeListing{
+    width: 20%;
+    margin: 30px auto;
+    border: none;
+    font-size: 2em;
+    background: rgb(42,111,201);
+    color: white;
+    box-shadow: 0px 10px 25px lightgrey;
+    border-radius: 5px;
+
+}
+
+.SeeListingCon:hover{
+	top: 10px;
+}
+
 #disqus_thread{
 	width: 90%;
 	margin: 0 auto;
