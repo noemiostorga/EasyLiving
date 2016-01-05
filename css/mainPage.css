@@ -1,5 +1,5 @@
 body{
-    margin: 0px auto;
+    font-family: sans-serif;
 }
 /*****************
 Main header
@@ -88,11 +88,10 @@ h1{
 
 }
 
-
-
 .loginBtn a {
     text-decoration: none;
     color:  white;
+        padding: 5px;
     font-size: 1em;
     transition:color .7s ease,font-size 1s ease;
 }
@@ -100,6 +99,7 @@ h1{
 .loginBtn a:hover {
     color: white;
     font-size: 1.1em;
+
 }
 
 

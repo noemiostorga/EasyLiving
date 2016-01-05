@@ -14,7 +14,20 @@ body{
 	color:rgb(68,128,132);
 }
 
+.search{
+	width: 100%;
+	text-align: center;
 
+}
+
+.searchBtn{
+	height: 40px;
+	width: 20%;
+	background: rgb(176,145,57);
+	color: white;
+	border: none;
+	margin: 0px auto;
+}
 
 
 /***************
