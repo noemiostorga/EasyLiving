@@ -1,5 +1,5 @@
 $(document).ready(function(){
 	var t = setInterval(function(){
-		$("#carousel ul").animate({marginLeft: -40},1000, )
+		$("#otherCarousel ul").animate({marginLeft: -480},1000, )
 	}, 5000);
 });
