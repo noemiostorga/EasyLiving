@@ -105,7 +105,7 @@ var CreateUserProfileView = Backbone.View.extend({
       }).then(function(result) {
 
         // on success, move to the next page (dashboard)
-        window.location = "host.html"; 
+        window.location = "index.html"; 
       }, function(error) {
         // on failure, you should do something? Maybe? Dunno.
         console.log("check your infomation")

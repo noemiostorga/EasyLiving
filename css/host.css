@@ -1,67 +1,36 @@
-body {
-    background-image: url("../images/JICXS.jpg");
-    background-repeat: repeat;
-    background-size: 100%;
-    font-family: 'Nova Round', cursive;
-    }
 
-    .error{
-    font-family: 'Nova Round', cursive;
-    font-size: 20px;
-    height: 50px;
-    width: 300px;
-}
-
-#title{ 
-    font-size:35px;
-    color:#C0C0C0;
-    font-family: 'Nova Round', cursive;
-    margin-left:16px;
-    border-bottom:3.5px solid rgb(62,133,209);
-
-}
-
-#title a{
-    text-decoration: none;
-    padding-right: 50px;
-    color:#C0C0C0;
-    
-}
-
-#title li {
-    display:inline;
-    width: 50px;
-
-}
 /***************************
 HOST NAVBAR
 ****************************/
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    height: 50px;
+    font-size: 25px;
+    height: 60px;
+    margin: 0px;
     padding-top: 20px;
-    margin-left: -4px;
+    border-bottom: 5px solid rgb(38,37,34);
 }
 
 #navbar li {
     display:inline;
-    width: 50px;
-
+   
 }
-
 #navbar a{
     text-decoration: none;
     padding:40px;
+    color:rgb(38,37,34);
+}
+
+#navbar{
+    background-color: rgb(145,182,183);
+
 }
 
 h2{
     text-align: center;
-    color:#C0C0C0;
-    font-size: 30px;
+    color:rgb(38,37,34);
+    font-size: 20px;
 }
 #photos{
     padding-top: 80px;
@@ -87,14 +56,13 @@ h2{
 
 }
 
-.cloudinary-button{
-    margin-left: 30px;
-}
 
 .photo-description{
     width: 400px;
 
 }
+
+
 /***************************
 FOOTER
 ****************************/
@@ -105,6 +73,7 @@ FOOTER
     height: 80px;
     position: relative;
     text-align: center;
+    background-color: rgb(38,37,34);
 }
 
 #footer h3{
@@ -115,23 +84,29 @@ FOOTER
 
 #footer p{
     display: inline-block;
-    color: white;
+    color:rgb(68,128,132);
     position: relative;
     top: 10px;
     padding-left: 10px;
 }
 
-#footer a{
+#footer a {
     margin: 10px auto;
-    color: white;
     font-size: 2em;
     padding-left: 25px;
     position: relative;
     top: 15px;
+    color: rgb(68,128,132);
+
 }
 
-.footer a:hover{
-    color: rgb(62,133,209);
+
+.icons{
+    color:rgb(68,128,132);
+}
+
+.icons:hover{
+    color:rgb(176,145,57);
 }
 
 

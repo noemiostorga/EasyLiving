@@ -1,10 +1,10 @@
-body {
-    color:rgb(209 209 209);
-    background-size: 100%;
+html,body{
     font-family: 'Nova Round', cursive;
-    }
+    margin: 0px;
+}
 
-    .error{
+
+.error{
     font-family: 'Nova Round', cursive;
     font-size: 20px;
     height: 50px;
@@ -12,27 +12,28 @@ body {
 }
 
 #title{ 
-    font-size:35px;
-    color:#C0C0C0;
-    font-family: 'Nova Round', cursive;
-    margin-left:16px;
-    border-bottom:3.5px solid rgb(62,133,209);
-
+    background-color: rgb(145,182,183);
 }
-
+    
 #title a{
     text-decoration: none;
-    padding-right: 50px;
-    color:#C0C0C0;
-    
+    padding:40px;
+    color:rgb(38,37,34);
 }
 
 #title li {
     display:inline;
-    width: 50px;
-
 }
-    
+
+ul{
+    list-style-type: none;
+    font-size: 25px;
+    height: 60px;
+    margin: 0px;
+    padding-top: 20px;
+    border-bottom: 5px solid rgb(38,37,34);
+}
+
 /************************
 LOGIN FORM
 ***************************/
@@ -79,7 +80,7 @@ LOGIN FORM
     position: relative;
     top: 59px;
     right: 182px;
-    background-color:rgb(68, 128, 132);
+    background-color:rgb(68,128,132);
     padding: 18px;
     border-right: 4px solid rgb(209,209,209);
 }
@@ -94,7 +95,7 @@ LOGIN FORM
     position: relative;
     top: 58px;
     right: 182px;
-    background-color:rgb(68, 128, 132);
+    background-color:rgb(68,128,132);
     padding: 18px;
     border-right: 4px solid rgb(209,209,209);
 }
@@ -115,7 +116,7 @@ LOGIN FORM
     width: 350px;
     border: none;
     background:rgb(68, 128, 132);
-    color: black;
+    color: rgb(38,37,34);
     width: 365px;
     margin-right: 50px;
     margin-top: 10px;
@@ -124,32 +125,40 @@ LOGIN FORM
     padding-left: 20px;
 
 }
+
+.fa-lock:before{
+    color:rgb(209,209,209);
+}
+
+.fa-user:before {
+    color:rgb(209,209,209);
+}
 /************************
 END LOGIN FORM
 ***************************/
 
 
-/***************************
-LISTING TEMPLATE
-****************************/
+/**********************************
+CREATE LISTING TEMPLATE AND EDIT
+***********************************/
 h1{
 
   font-family: 'Nova Round', cursive; 
   font-size: 30px; 
+  color:rgb(38,37,34);
 }
 
 .form-title {
-    color:rgba(255, 255, 255, 0.8);
+    color:rgb(38,37,34);
     margin-bottom: 20px;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid rgb(38,37,34);
     text-align: center;
     height: 65px;
     padding-top: 20px;
 }
 
 .create-listing-form{
-    width: 37.5%;
-    background-color: #353434;
+    width: 50%;
     height: 900px;
     padding-top: 40px;
     margin:0 auto;
@@ -158,82 +167,79 @@ h1{
     width: 300px;
     height: 35px;
     font-size: 15px;
-    border-top: 4px solid #252424;
-    border-bottom: 2px solid #252424;
-    border-left: 2px solid #252424;
-    border-right: 2px solid #252424;
+    border-top: 3px solid rgb(68,128,132);
+    border-bottom: 2px solid rgb(68,128,132);
+    border-left: 2px solid rgb(68,128,132);
+    border-right: 2px solid rgb(68,128,132);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
     margin-bottom: 10px;
-    background-color:rgba(121, 119, 119, 0.89);
+    background-color:rgb(209,209,209);
 
 }
 .create-listing-form textarea{
     width: 300px;
     height: 90px;
     font-size: 15px;
-    background-color:rgba(121, 119, 119, 0.89);
-    border-top: 4px solid #252424;
-    border-bottom: 2px solid #252424;
-    border-left: 2px solid #252424;
-    border-right: 2px solid #252424;
+    background-color:rgb(209,209,209);
+    border-top: 3px solid rgb(68,128,132);
+    border-bottom: 2px solid rgb(68,128,132);
+    border-left: 2px solid rgb(68,128,132);
+    border-right: 2px solid rgb(68,128,132);
 
 
 }
 
-span{
+.span{
     font-size:35px;
+    color:rgb(38,37,34);
+
 
 }
 
-.listing-btn{
-    font-size:18px;
-    margin: auto;
-    display: block;
-    height: 50px;
-    border-top: 4px solid #252424;
-    border-bottom: 2px solid #252424;
-    border-left: 2px solid #252424;
-    border-right: 2px solid #252424;
+.btn{
+    border-top: 2px solid rgb(38,37,34);
+    border-bottom: 2px solid rgb(38,37,34);
+    border-left: 2px solid rgb(38,37,34);
+    border-right: 2px solid rgb(38,37,34);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    color: black;
-    background-color: rgb(62,133,209);
+    color: rgb(38,37,34);
+    background-color: rgb(68,128,132);
     width: 200px;
     margin-top: 30px;
-
+    margin-bottom: 40px;
+    height: 35px;
 }
-
 
 .info{
     margin: 0 auto;
     font-size: 20px;
     margin-bottom: 20px;
-    color:rgba(255, 255, 255, 0.8);
 }
 
 .create-listing-content {
     width: 45%;
     margin: 0 auto;
     margin-top: 40px;
-    background-color: #353434;
-    font-size: 20px;
+    background-color: rgb(145,182,183);
     margin-bottom: 20px;
-    color:white;
-    border-right: 3px solid #464444;
-    border-left: 3px solid #464444;
-    border-top: 3px solid #464444;
-    border-bottom: 3px solid #464444;
+    color:rgb(38,37,34);
+    border-right: 3px solid rgb(68,128,132);
+    border-left: 3px solid rgb(68,128,132);
+    border-top: 3px solid rgb(68,128,132);
+    border-bottom: 3px solid rgb(68,128,132);
 }
 
 .create-listing-form label {
     display: block;
     padding-left: 15px;
     text-indent: -15px;
+    color:rgb(38,37,34);
 }
 .create-listing-form input[type=checkbox] {
     width: 13px;
@@ -249,34 +255,12 @@ span{
     color:white;
 
 }
-/***************************
-END LISTING TEMPLATE
-****************************/
 
-/***************************
-HOST NAVBAR
-****************************/
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    height: 50px;
-    padding-top: 20px;
-    margin-left: -4px;
-}
-
-#navbar li {
-    display:inline;
-    width: 50px;
+.cloudinary-button{
+    margin-left: 40%;
 
 }
 
-#navbar a{
-    text-decoration: none;
-    padding:40px;
-}
 
 #main{
 
@@ -284,18 +268,28 @@ ul{
     padding-left: 50px;
     padding-top: 20px;
     margin-top: 40px;
-    
+    background-color:rgb(145,182,183);
+    border-top: 6px solid rgb(68, 128, 132);
+    border-right:3px solid rgb(68, 128, 132);
+    border-left:3px solid rgb(68, 128, 132);
+    border-bottom: 3px solid rgb(68, 128, 132);
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+    margin:0 auto;
+    width: 80%;
+    /*background-image:url("../images/o-COLLEGE-ROOMMATES-facebook.jpg");
+    background-repeat: no-repeat;
+    background-position: 71% 200%;
+    z-index: 10px;*/
 }
 
 textarea{
     height: 200px;
-    width: 600px;
-    background-color:rgba(255, 255, 255, 0.8);
-    border-right: 3px solid #464444;
-    border-left: 3px solid #464444;
-    border-top: 3px solid #464444;
-    border-bottom: 3px solid #464444;
-
+    width: 400px;
+    background-color:rgba(209,209,209);
+    
 
 }
 
@@ -304,50 +298,56 @@ textarea{
     height: 60px;
     background-color:rgba(255, 255, 255, 0.8);
     font-size: 23px;
-    border-right: 3px solid #464444;
-    border-left: 3px solid #464444;
-    border-top: 3px solid #464444;
-    border-bottom: 3px solid #464444;
+    
 }
 
 h3{
-    color:#C0C0C0;
+    color:rgb(3, 44, 73);
     font-size: 23px;
     
 }
 
 span{
-    color:#C0C0C0;
+    color:rgb(3, 44, 73);
     font-size: 23px;
 }
 
 h2{
     text-align: center;
-    color:#C0C0C0;
+    color:rgb(3, 44, 73);
     font-size: 30px;
 }
 
 .restrictions{
     margin-top: 20px;
-
-
+    
 }
 
 .amenities{
     margin-top: 20px;
+    
 }
+
 
 .border{
-    border-right: 3px solid #464444;
-    border-left: 3px solid #464444;
-    border-top: 3px solid #464444;
-    border-bottom: 3px solid #464444;
+    margin-bottom: 10px;
+}
+
+.border-zip{
+    margin-bottom: 40px;
 }
 
 
+/*.image{
+    width:600px;
+    height:200px;
+    background-image:url("../images/o-COLLEGE-ROOMMATES-facebook.jpg");
+    z-index: 2;
+}*?
 /***************************
-FOOTER
+END CREATE LISTING TEMPLATE
 ****************************/
+
 #footer{
     width: 100%;
     height: 80px;
@@ -382,15 +382,3 @@ FOOTER
     color: rgb(62,133,209);
 }
 
-/***************************
-END FOOTER
-****************************/
-
-.userprofile-form{   
-   text-align: center;
-   color: red;
-}
-
-/*********************
-END OF LOGIN FORM
-*********************/
