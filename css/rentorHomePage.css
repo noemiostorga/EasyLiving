@@ -34,24 +34,29 @@ body{
 Other Carasouel
 *************/
 .otherCarousel{
-	width: 500px;
+	width: 480px;
+	height: 280px;
 	overflow: hidden;
 }
 
 .otherCarousel ul{
-	width: 480px;
+	width: 1920px;
 	padding: 0px;
 	margin: 0px;
 }
 
 .otherCarousel ul li{
-	width: 400px;
+	width: 480px;
 	text-align: center;
 	height: 280px;
 	list-style: none;
 	float: left;
 }
 
+.otherCarousel li img{
+	height: 300px;
+	width: 400px;
+}
 
 
 /***************
