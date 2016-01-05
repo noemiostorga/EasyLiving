@@ -37,10 +37,11 @@ Other Carasouel
 	width: 480px;
 	height: 280px;
 	overflow: hidden;
+
 }
 
 .otherCarousel ul{
-	width: 1920px;
+	width: 90%;
 	padding: 0px;
 	margin: 0px;
 }
@@ -56,8 +57,13 @@ Other Carasouel
 .otherCarousel li img{
 	height: 300px;
 	width: 400px;
+	opacity: .3;
+	transition: opacity .7s;
 }
 
+.otherCarousel li img:hover{
+	opacity: .8;
+}
 
 /***************
 Fav Carasouel
