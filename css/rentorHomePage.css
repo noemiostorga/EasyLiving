@@ -39,13 +39,13 @@ Other Carasouel
 }
 
 .otherCarousel ul{
-	width: 1920px;
+	width: 480px;
 	padding: 0px;
 	margin: 0px;
 }
 
 .otherCarousel ul li{
-	width: 480px;
+	width: 400px;
 	text-align: center;
 	height: 280px;
 	list-style: none;
