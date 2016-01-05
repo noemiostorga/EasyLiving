@@ -33,37 +33,11 @@ body{
 /***************
 Other Carasouel
 *************/
-.otherImg{
-	height: 200px;
-	width: 200px;
-}
 
-.otherCarousel {
-	height: 600px;
-	width: 80%;
-	margin: 0px auto;
-	display: block;
-}
 
-.otherCarousel li {
-	list-style: none;
-	display: inline;
-	padding-left: 10px;
-}
-
-.otherCarousel li img {
-	height: 200px;
-	width: 250px;
-	display: inline-block;
-	position: relative;
-}
-
-.otherCarousel img:after {
-	content: " ";
-	background: red;
-	height: 20px;
-	width: 10px;
-
+.favorites{
+	text-align: center;
+	padding-top:0px;
 }
 
 .favorites li{
