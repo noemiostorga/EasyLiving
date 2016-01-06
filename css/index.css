@@ -113,8 +113,8 @@ GALLERY
 #gallery{
     position: relative;
     width: 90%;
-    padding-top: 120px;
-    margin: 0px auto;
+    margin: 150px auto;
+
 }
 
 #gallery p {
@@ -139,7 +139,7 @@ ul.photos{
 
 .photos li{
     list-style: none;
-    display: inline;
+    display: inline-block;
 
 }
 
@@ -243,7 +243,7 @@ FOOTER
 
 #footer p{
     display: inline-block;
-    color: white;
+    color: rgb(145,182,183);
     position: relative;
     top: 10px;
     padding-left: 10px;
@@ -251,7 +251,7 @@ FOOTER
 
 #footer a{
     margin: 10px auto;
-    color: white;
+    color: rgb(145,182,183);
     font-size: 2em;
     padding-left: 25px;
     position: relative;
@@ -259,7 +259,7 @@ FOOTER
 }
 
 #footer a:hover{
-    color: rgb(62,133,209);
+    color: rgb(176,145,57);
 }
 
 
