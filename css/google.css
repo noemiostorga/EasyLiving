@@ -60,9 +60,9 @@ DRAW MAP
 .googleDes{
 
 	color: white;
-    padding: 20px;
+    padding: 20px 5px;
     background: rgba(0,0,0,.6);
-    font-size: 2em;
+    font-size: 1.5em;
     left: 115px;
     margin: 10px 0px;
 	text-align: center;
@@ -74,15 +74,30 @@ DRAW MAP
 
 #drawmap {
     height: 400px;
-    width: 700px;
-	margin: 10px auto;
+    width: 600px;
+	margin: 20px auto;
     display: block;
     position: relative;
 
 }
 
+.arrowCon{
+	height: 50px;
+	width:40px;
+	bottom: 400px;
+}
 
+.arrow{
+	float: right;
+	color: rgb(68,128,132);
+	font-size: 2.5em;
+	transition: color 1s, font-size 1s;
+}
 
+.arrow:hover{
+	color: rgb(176,145,57);
+	font-size: 2.7em;
+}
 
 
 /*******************
@@ -97,11 +112,11 @@ MARKER MAP
 
 .goolgeDesTwo{
 	color: white;
-    padding: 20px;
+    padding: 20px 5px;
     background: rgba(0,0,0,.6);
-    font-size: 1.5em;
+    font-size: 1.2em;
     left: 115px;
-    margin: 10px 0px;
+    margin: 20px 0px;
 	text-align: center;
     display: block;
 }
@@ -109,7 +124,7 @@ MARKER MAP
 #map {
     height: 400px;
     width: 700px;
-	margin: 10px auto;
+	margin: 40px auto;
     display: block;
     position: relative;
 }

@@ -102,7 +102,7 @@ $(document).ready(function(){
   drawingManager.setMap(map);
 
   var work = {lat: 36.1583875, lng: -115.1546736};
-  var commonPlace= {lat:36.1252147 , lng:-115.291785 };
+  var commonPlace= {lat:36.1252147 , lng:-115.291785};
   var home = {lat:36.0338694, lng:-115.2676475};
 
   
