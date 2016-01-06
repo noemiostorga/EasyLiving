@@ -1,7 +1,13 @@
 $(document).ready(function(){
+$(".map2").hide();
 
-  console.log("hey");
-$("#")
+$(".arrowCon").click(function(){
+  $(".topMap").hide();
+  $(".map2").show();
+});
+
+ 
+
    
 
 });

@@ -118,15 +118,18 @@ MARKER MAP
 	width: 80%;
 }
 
+
+
 .goolgeDesTwo{
-	color: white;
+    color: white;
     padding: 20px 5px;
     background: rgba(0,0,0,.6);
-    font-size: 1.2em;
+    font-size: 1.5em;
     left: 115px;
-    margin: 20px 0px;
-	text-align: center;
+    margin: 10px 0px;
+    text-align: center;
     display: block;
+
 }
 
 #map {
