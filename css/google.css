@@ -84,14 +84,22 @@ DRAW MAP
 .arrowCon{
 	height: 50px;
 	width:40px;
-	bottom: 400px;
+	bottom: 250px;
+    /* left: 17px; */
+    right: 15px;
+    position: absolute;
+	
 }
 
 .arrow{
-	float: right;
-	color: rgb(68,128,132);
-	font-size: 2.5em;
-	transition: color 1s, font-size 1s;
+    float: right;
+    bottom: 30px;
+    /* left: 17px; */
+    right: 135px;
+    color: rgb(68,128,132);
+    position: absolute;
+    font-size: 2.5em;
+    transition: color 1s, font-size 1s;
 }
 
 .arrow:hover{
