@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/google.css" >
 </head>
 <body>
@@ -16,8 +17,8 @@
 
 	<div class="">
 		<ul>
-				<p class="googleDes">You first draw over the interested area </p>
-			<div id="drawmap"></div>	 
+				<p class="googleDes animated fadeIn">You first draw over the interested area </p>
+			<div class=" animated flipInX" id="drawmap"></div>	 
 		
 			<div id="map"></div>
 				<p>Rooms will pop up and the user will have a quick overview of how long it'll take </p>
@@ -36,6 +37,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUXLL_zf9IlCI6GRYbThgKJCe_6Xq9qL8&signed_in=true&libraries=drawing&callback=initMap"
 	        async defer></script>
+	
+
 	<script src="js/google.js"></script>
 
 
