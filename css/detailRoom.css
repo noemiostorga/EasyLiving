@@ -1,6 +1,45 @@
+body{
+	margin: 0px;
+}
+
+
 /***********
 DetRoomNav
 ************/
+
+.detailRoomNav{
+	width: 100%;
+	padding-top:10px;
+	padding-bottom: 15px;
+	background: rgb(68,128,132);
+}
+
+
+.detailNav{
+	list-style: none;
+    font-size: 25px;
+    display: inline;
+    width: 100%;
+}
+
+.detailNav li{
+	display: inline;
+
+}
+
+.detailNav a{
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+
+.detailNav a:hover{
+	color: #4372E5;
+}
+
+
+
 .arrow{
 	font-size: 1.5em;
 	color: rgba(42,111,201,.7);

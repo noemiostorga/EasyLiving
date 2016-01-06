@@ -1,6 +1,9 @@
+body{
+	background: rgb(209,209,209);
+}
 
 /*************
-
+NAVIGATION
 ****************/
 .googNavCon{
 	width: 100%;
