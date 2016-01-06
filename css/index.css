@@ -36,10 +36,9 @@ iframe{
     margin: 0px auto;
     position: relative;
     color: rgb(3,44,73);
-    top: 100px;
+    top: 8px;
     box-shadow: 10px 10px 15px rgba(150,150,150,.4);
 }
-
 
 
 
@@ -121,11 +120,13 @@ GALLERY
     text-align: center;
     width: 30%;
     border-bottom: 2px solid black;
-    margin: 0px auto; 
+    margin: 50px auto; 
     font-size: 2em;
     position: relative;
     top: 15px;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 60px;
+   
 
 }
 
