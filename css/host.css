@@ -27,21 +27,43 @@ ul{
     color:rgb(38,37,34);
 }
 
+#navbar a:hover{
+    color:rgb(68,128,132);
+
+}
 #navbar{
     background-color: rgb(145,182,183);
 
 }
+
+.main-photo{
+  width: 100%;
+  height: 650px;
+  padding-top: 14px;
+  background-image: url("../images/o-COLLEGE-ROOMMATES-facebook.jpg");
+  background-repeat: no-repeat;
+    
+}
+
 
 h2{
     text-align: center;
     color: rgb(38,37,34);
     font-size: 30px;
     margin-left: 30px;
+    background-color: grey;
+    opacity: 0.8;
+    width: 450px;
+    height: 50px;
+    position: relative;
+    top: 270px;
+    left: 360px;
+
 }
 
 
 #disqus_thread{
-    background-color: white;
+    
     width:80%;
     margin:0 auto;
     margin-top: 80px;
@@ -50,17 +72,31 @@ h2{
 
 }
 
+.disqus-wrapper{
+    background-color:rgb(145,182,183);
+    width: 80%;
+    margin-left: 30px;
+}
+
 .room-description{
-    width: 400px;
+    width: 600px;
+    height:150px;
     margin:0 auto;
     margin-left: 30px;
-    background-color: red;
+
 }
 
 .room{
     margin-left: 30px;
     color: rgb(38,37,34);
     font-size: 30px;
+}
+
+.g-map{
+    margin-left: 30px;
+    padding-top: 40px;
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
 img{
@@ -87,6 +123,7 @@ FOOTER
     position: relative;
     text-align: center;
     background-color: rgb(38,37,34);
+    margin-top: 40px;
 }
 
 #footer h3{
