@@ -1,6 +1,7 @@
-html,body{
+html, body{
     font-family: 'Nova Round', cursive;
     margin: 0px;
+    background-color: rgb(209,209,209);
 }
 
 
@@ -41,6 +42,7 @@ LOGIN FORM
     margin: 0px auto;
     min-height: 500px;
     padding: 10%;
+    background-color: rgb(209,209,209);
 }
 
 .login-form{
