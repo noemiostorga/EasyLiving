@@ -3,7 +3,7 @@ Parse.initialize("8FursUpxatbb97bkZXQo0UOhEveyAvcOU2UNs7ZV", "nCv32lT0DhjotclryS
 $(document).ready(function(event){
     Parse.User.logOut();
     setTimeout(function(){
-        window.location = "mainPage.html";
+        window.location = "index.html";
     }, 1500)
 
 });
