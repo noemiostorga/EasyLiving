@@ -35,12 +35,13 @@ iframe{
     padding: 1% 0% 3% 0%;
     margin: 0px auto;
     position: relative;
+    color: rgb(68,128,132);
     top: 100px;
     box-shadow: 10px 10px 15px rgba(150,150,150,.4);
 }
 
 h1{
-    color: white;
+    color: rgb(68,128,132);
     position: relative;
     margin: 80px auto;
     width: 80%;
@@ -228,39 +229,14 @@ FOOTER
 ***********/
 #footer{
     background:rgb(28,27,27);
-
-
-}
-
-#footer p {
-    padding: none;
-}
-/*--logos--*/
-#options{
-    height:10px;
-    
-}
-
-#options i{
-    width:100px;
-    font-size: 3em;
-    color:black;
-    
-}
-
-
-#footer{
-    width: 100%;
+      width: 100%;
     height: 80px;
     position: relative;
     text-align: center;
 }
 
-#footer h3{
-    position: relative;
-    display: inline-block;
-    width: 100px;
-}
+/*--logos--*/
+
 
 #footer p{
     display: inline-block;
