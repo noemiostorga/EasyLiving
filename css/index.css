@@ -35,13 +35,13 @@ iframe{
     padding: 1% 0% 3% 0%;
     margin: 0px auto;
     position: relative;
-    color: rgb(68,128,132);
+    color: rgb(3,44,73);
     top: 100px;
     box-shadow: 10px 10px 15px rgba(150,150,150,.4);
 }
 
 h1{
-    color: rgb(68,128,132);
+    color: rgb(3,44,73);
     position: relative;
     margin: 80px auto;
     width: 80%;
@@ -108,7 +108,7 @@ h1{
 GALLERY
 *******************/
 #gallery{
-
+    position: relative;
     width: 90%;
     padding-top: 120px;
     margin: 0px auto;

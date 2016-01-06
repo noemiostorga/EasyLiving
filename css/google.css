@@ -42,49 +42,83 @@ NAVIGATION
 /*******************
 DRAW MAP
 *****************/
-#drawmap {
-    height: 500px;
-    width: 60%;
-	display: inline;
+.Maps{
+	width: 90%;
 }
 
-.googleDes{
-	font-family: sans-serif;
-	font-weight: lighter;
-	min-height: 50px;
-	width: 300px;
-	position: relative;
-	z-index: 2;
-	background: rgba(0,0,0,.6);
-	bottom: 400px;
-	display: inline;
-	color: white;
-	font-size: 2em;
+
+.topMap{
+	display: block;
+	margin:0px auto;
+	width: 80%;
 }
+
+
+
+
+
+.googleDes{
+
+/*	width: 300px;*/
+
+	color: white;
+    padding: 20px;
+    
+    background: rgba(0,0,0,.6);
+    font-size: 2em;
+/*    top: 150px;*/
+    left: 115px;
+    margin: 10px 0px;
+	text-align: center;
+    display: block;
+
+ 
+}
+
+
+#drawmap {
+    height: 500px;
+    width: 500px;
+	margin: 10px auto;
+    display: block;
+ 
+    position: relative;
+
+}
+
+
 
 
 
 /*******************
 MARKER MAP
 *****************/
-#map {
-    height: 500px;
-    width: 60%;
-    margin: 40px auto;
+
+.map2{
+	display: block;
+	position: relative;
+	top: 30px;
 }
 
 .goolgeDesTwo{
-	font-family: sans-serif;
-	font-weight: lighter;
-	min-height: 50px;
-	width: 300px;
-	position: relative;
-	z-index: 2;
-	background: rgba(0,0,0,.6);
-	display: inline;
 	color: white;
-	font-size: 1.5em;
+    padding: 30px;
+    width: 300px;
+    background: rgba(0,0,0,.6);
+    font-size: 2em;
+    top: 150px;
+	left: 55px;
+    margin: 0px 0px;
+    position: absolute;
 }
+
+#map {
+    height: 500px;
+    width: 500px;
+    left: 500px;
+}
+
+
 
 
 
@@ -128,7 +162,7 @@ FOOTER
     background:rgb(28,27,27);
     width: 100%;
     height: 80px;
-    position: relative;
+	position: relative;
     text-align: center;
 }
 
