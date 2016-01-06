@@ -1,14 +1,23 @@
+body{
+	background: rgb(209,209,209);
+}
 
 /*************
-
+NAVIGATION
 ****************/
+.googNavCon{
+	width: 98.5%;
+	background: rgb(68,128,132);
+	padding: 10px;
+	
+}
+
 .googleNav{
     list-style: none;
-    font-size: 2em;
+    font-size: 25px;
     display: inline;
-    margin-left: 105px;
-    width: 30%;	
-    background: rgb(68,128,132);
+    width: 100%;	
+    
 }
 
 .googleNav li{
@@ -35,8 +44,8 @@ DRAW MAP
 *****************/
 #drawmap {
     height: 500px;
-    width: 80%;
-    margin: 40px auto;
+    width: 60%;
+	display: inline;
 }
 
 .googleDes{
@@ -44,11 +53,11 @@ DRAW MAP
 	font-weight: lighter;
 	min-height: 50px;
 	width: 300px;
-	position: absolute;
+	position: relative;
 	z-index: 2;
 	background: rgba(0,0,0,.6);
 	bottom: 400px;
-	left: 170px;
+	display: inline;
 	color: white;
 	font-size: 2em;
 }
@@ -60,7 +69,7 @@ MARKER MAP
 *****************/
 #map {
     height: 500px;
-    width: 80%;
+    width: 60%;
     margin: 40px auto;
 }
 
@@ -69,10 +78,10 @@ MARKER MAP
 	font-weight: lighter;
 	min-height: 50px;
 	width: 300px;
-	position: absolute;
+	position: relative;
 	z-index: 2;
 	background: rgba(0,0,0,.6);
-	left: 170px;
+	display: inline;
 	color: white;
 	font-size: 1.5em;
 }
@@ -112,12 +121,40 @@ INFO BOX
 }
 
 
+/******************
+FOOTER
+***********************/
+#footer{
+    background:rgb(28,27,27);
+    width: 100%;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+
+/*--logos--*/
 
 
+#footer p{
+    display: inline-block;
+    color: white;
+    position: relative;
+    top: 10px;
+    padding-left: 10px;
+}
 
+#footer a i{
+    margin: 10px auto;
+    color: white;
+    font-size: 2em;
+    padding-left: 25px;
+    position: relative;
+    top: 15px;
+}
 
-
-
+#footer a i:hover{
+    color: rgb(62,133,209);
+}
 
 
 
