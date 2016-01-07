@@ -158,7 +158,14 @@ INFO BOX
 	text-align: justify;
 	line-height: 30px;
 	display: block;
+    transition: color 1s, background 1s;
 }
+
+.MapDescription:hover{
+    color:  rgb(145,182,183);
+    background: rgba(0,0,0,1);
+}
+
 
 .googleDescription{
 	text-decoration: none;

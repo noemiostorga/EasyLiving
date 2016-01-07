@@ -1,4 +1,4 @@
-
+z
 body{
 	font-family: sans-serif;
 }
@@ -81,7 +81,7 @@ Other Carasouel
 	height: 300px;
 	width: 400px;
 	opacity: .5;
-	transition: opacity .7s;
+	transition: opacity .3s;
 }
 
 .otherCarousel li img:hover{
@@ -121,6 +121,10 @@ Fav Carasouel
 /*********************
 FAVORITE LIST
 *******************/
+.favorites{
+	text-align: center;
+}
+
 .favoriteCon{
     width: 100%;
     min-height: 600px;

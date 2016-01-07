@@ -18,31 +18,31 @@ $(".arrowCon").on("click",function(){
       
         "lat": '36.1146832',
         "lng": '-115.2555595',
-        "description": '<div class="MapDescription">Work: 25 minutes <br> commonPlace: 40 minutes <br> personality: introvert</div>'
+        "description": '<div class="MapDescription">Work: 25 minutes <br> commonPlace: 40 minutes</div>  '
     },
     {
        
         "lat": '36.1252147',
         "lng": '-115.291785',
-        "description": '<div class="MapDescription">Work: 17 minutes <br> commonPlace: 30 minutes <br> personality: outgoing</div>'
+        "description": '<div class="MapDescription">Work: 17 minutes <br> commonPlace: 30 minutes </div>  '
     },
     {
     
         "lat": '36.1448303',
         "lng": '-115.302484',
-        "description": '<div class="MapDescription">Work: 54 minutes <br> commonPlace: 12 minutes <br> personality: amnivert</div>'
+        "description": '<div class="MapDescription">Work: 54 minutes <br> commonPlace: 12 minutes </div> '
     },
     {
         
         "lat": '36.1446858',
         "lng": '-115.1753368',
-        "description": '<div class="MapDescription">Work: 45 minutes <br> commonPlace: 20 minutes <br> personality: nightowl</div>'
+        "description": '<div class="MapDescription">Work: 45 minutes <br> commonPlace: 20 minutes </div> '
     },
     {
         
         "lat": '36.0338694',
         "lng": '-115.2676475',
-        "description": '<div class="MapDescription">Work: 36 minutes <br> commonPlace: 23 minutes <br> personality: earlybird</div>'
+        "description": '<div class="MapDescription">Work: 36 minutes <br> commonPlace: 23 minutes </div> '
     }
     ];
     window.onload = function () {
