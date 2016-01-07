@@ -18,8 +18,10 @@ html, body{
     
 #title a{
     text-decoration: none;
-    padding:40px;
+    margin-left: 50px;
     color:rgb(38,37,34);
+    text-align: center;
+    width: 23%;
 }
 
 #title li {
@@ -281,10 +283,6 @@ h1{
     border-bottom-left-radius:8px;
     margin:0 auto;
     width: 80%;
-    /*background-image:url("../images/o-COLLEGE-ROOMMATES-facebook.jpg");
-    background-repeat: no-repeat;
-    background-position: 71% 200%;
-    z-index: 10px;*/
 }
 
 textarea{
@@ -339,22 +337,28 @@ h2{
     margin-bottom: 40px;
 }
 
-
-/*.image{
-    width:600px;
-    height:200px;
-    background-image:url("../images/o-COLLEGE-ROOMMATES-facebook.jpg");
-    z-index: 2;
-}*?
 /***************************
 END CREATE LISTING TEMPLATE
 ****************************/
+
+/***************
+NAV TEMPLATE 
+****************/
+
+.logout {
+    float: right;
+}
+/***************
+END NAV TEMPLATE 
+****************/
 
 #footer{
     width: 100%;
     height: 80px;
     position: relative;
     text-align: center;
+    background-color: rgb(38,37,34);
+    margin-top: 40px;
 }
 
 #footer h3{
@@ -365,22 +369,33 @@ END CREATE LISTING TEMPLATE
 
 #footer p{
     display: inline-block;
-    color: white;
+    color:rgb(68,128,132);
     position: relative;
     top: 10px;
     padding-left: 10px;
 }
 
-#footer a{
+#footer p:hover{
+color: rgb(176,145,57);
+}
+
+#footer a {
     margin: 10px auto;
-    color: white;
     font-size: 2em;
     padding-left: 25px;
     position: relative;
     top: 15px;
+    color: rgb(68,128,132);
+
 }
 
-#footer a:hover{
-    color: rgb(62,133,209);
+
+.icons{
+    color:rgb(68,128,132);
 }
+
+.icons:hover{
+    color:rgb(176,145,57);
+}
+
 
