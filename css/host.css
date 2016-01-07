@@ -42,7 +42,7 @@ ul{
   padding-top: 14px;
   background-image: url("../images/2008-0712-MPLS-panorama-crop.jpg");
   background-repeat: no-repeat;
-  background-position: 37.1% 50%;
+  background-position: 80.1% 45%;
   border-bottom: 5px solid rgb(38,37,34);
   opacity:0.9;
   
@@ -51,11 +51,12 @@ ul{
 
 h2{
     text-align: center;
-    color:  #212527;
+    color:  #eee;
     font-size: 51px;
     background-color: rgba(128, 128, 128, 0);
     height: 66px;
     padding-top: 82px;
+    text-shadow: 10px 10px 10px black;
 }
 
 

@@ -139,18 +139,10 @@ if (!Parse.User.current()) {
 } else {
   Parse.User.logOut();
   new SignUpView();
-  //new CreateUserProfileView();
+  
 }
 
-/*$('#inputBtn').on ('click',function() {
-     var userProfile = new CreateUserProfileView();
-    CreateUserProfileView.set ({
-      item_url: $("#gender").val(),
-      image_url: $("#orientation").val(),
-      title: $("#occupation").val(),
-      description: $("#ageGroup").val(),
-    })
-  });*/
+
 
 
 
