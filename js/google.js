@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-$(".map2").css({"opacity":"0","visibility": "hidden"});
+
+$(".map2").css({"opacity":"0","visibility": "hidden", "transition": "opacity 1s" });
 
 $(".arrowCon").on("click",function(){
+  $(".arrowCon").remove();
   $(".topMap").hide();
   $(".map2").css({"opacity":"1","visibility": "visible"});
 });

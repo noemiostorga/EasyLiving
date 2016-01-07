@@ -1,5 +1,7 @@
 body{
+    min-height: 200px;
 	background: rgb(209,209,209);
+
 }
 
 /*************
@@ -85,21 +87,21 @@ DRAW MAP
 	height: 50px;
 	width:40px;
 	bottom: 250px;
-    /* left: 17px; */
-    right: 15px;
+
+    right: 85px;
     position: absolute;
 	
 }
 
+
 .arrow{
     float: right;
-    bottom: 30px;
-    /* left: 17px; */
-    right: 135px;
+
     color: rgb(68,128,132);
-    position: absolute;
+
     font-size: 2.5em;
     transition: color 1s, font-size 1s;
+   
 }
 
 .arrow:hover{
@@ -113,7 +115,6 @@ MARKER MAP
 *****************/
 
 .map2{
-	display: block;
 	margin:100px auto;
 	width: 80%;
 }
@@ -129,7 +130,7 @@ MARKER MAP
     margin: 10px 0px;
     text-align: center;
     display: block;
-    
+
 
 }
 
