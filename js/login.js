@@ -23,7 +23,7 @@ var LogInView = Backbone.View.extend({
         if (accountType === "host") {
           window.location = "host.html";
         } else {
-          window.location = "renter-HomePage.html";
+          window.location = "renter.html";
         }
       },
 

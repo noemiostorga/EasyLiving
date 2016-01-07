@@ -1,140 +1,174 @@
-/************************
-DESCRIPTION OF PLACE FORM
-*************************/
-#map{
-   width: 500px;
-   height: 400px;
-   background: #ccc;
+
+body{
+	font-family: 'Nova Round', cursive;
 }
 
-
-
-/************************
-DESCRIPTION OF PLACE FORM
-*************************/
-
-/*nav*/
-.place_description{
-	border: 1px solid black;
-	background: red;
-	width: 40%;
-}
-
-
-/************************
-OWNER HOME PAGE
-*************************/
-.owner-home{
-	border: 4px solid black;
-	position: relative;
-	width: 100%;
-
-}
-.ownerhome-nav{
-	width: 100%;
-	background: blue;
-	text-align: center;
-}
-
-/*left*/
-.main-left{
-	float: left;
-	background: yellow;
-	width: 25%;
-}
-
-
-
-/*right*/
-.main-right{
-	float: right;
-	background: purple; 
-	width: 75%;
-}	
-
-.owner-setting{
-	position: relative;
-	background: orange;
-	width: 100%;
-}
-
-
-
-
-
-
-
-.ownerhome-nav ul li{
-	list-style: none;
-	display: inline;
-	padding: 5px;
-	color: white;
+.logo{
+	font-size: 25px;
+    padding-right:80px;
 	
 }
+.logo-zip{
+    width: 50px;
 
-/*settings*/
-
-ul.owner-setting{
-	list-style: none;
-	padding: 0px;
 }
 
-.owner-setting ul {
-	padding: 0px;
-}	
-
-.owner-setting{
-	list-style: none;
-	background: orange;
-	width: 100%;
-	font-size: 2em;
-	position: relative;
-	padding: 5px 0px 5px 0px;
+h2{
+    font-size: 20px;
+    margin-left: 30px;
+    color:rgb(38,37,34);
 }
 
-.owner-setting a {
+.renterNav{
+    background: rgb(145,182,183);
+    color: rgb(38,37,34);
+    padding-bottom: 10px;
+	border-bottom: 5px solid rgb(38,37,34);
+    height: 50px;
+    padding-top: 10px;
+}
+
+.renterNav a{
+	padding-left: 30px;
+	font-size: 25px;
 	text-decoration: none;
-
+	color: rgb(38,37,34);
+    
 }
 
-.owner-setting a:hover {
-	font-weight: bold;
+.renterNav a:hover{
+	color:rgb(68,128,132);
 }
 
-/*main-show*/
-.main-show{
-	float: right;
-	width: 75%;
-	background: pink;
-	position: relative;
-}
-
-
-/************************
-RENTEE HOME PAGE
-*************************/
-.Renteehome-page{
-	position: relative;
+.search{
 	width: 100%;
-	border: 1px solid black;
+	text-align: center;
+	position: absolute;
+
+}
+
+.searchBtn{
+	height: 45px;
+	width: 1;
+	background: rgb(176,145,57);
+	color: white;
+	border: none;
+	margin: 110px auto;
+
 }
 
 
-/************************
-USER PROFILE FORM
-*************************/
-.userProfile_Rentee{
-	background: red;
-	width: 40%;
-	border:1px solid black;
+/***************
+Other Carasouel
+*************/
+.overlay{
+	height: 280px;
+	width: 480px;
+	background: rgba(176,145,57,.4);
+	color: white;
+	border: none;
+	margin: 0px auto;
+}
+
+.otherCarousel{
+	width: 480px;
+	height: 280px;
+	overflow: hidden;
+
+}
+
+.otherCarousel ul{
+	width: 90%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.otherCarousel ul li{
+	width: 480px;
+	text-align: center;
+	height: 280px;
+	list-style: none;
+	float: left;
+}
+
+.otherCarousel li img{
+	height: 300px;
+	width: 400px;
+	opacity: .5;
+	transition: opacity .7s;
+}
+
+.otherCarousel li img:hover{
+	opacity: .8;
+}
+
+/***************
+Fav Carasouel
+*************/
+
+.favImgCon{
+	min-height: 600px;
+	width: 80%;
+	margin: 0px auto;
+}
+
+.favUl{
+	height:;
+}
+
+.favUl li{
+	list-style: none;
+	display: inline;
+}
+
+.favUl li img{
+	height: 200px;
+	width: 300px;
+	transition: height 1s, width 1s;
+}
+
+.favUl li img:hover{
+	height: 250px;
+	width: 350px;
 }
 
 
 
+/*********************
+FOOTER
+*******************/
+
+#footer{
+    background:rgb(28,27,27);
+    width: 100%;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+
+/*--logos--*/
 
 
+#footer p{
+    display: inline-block;
+    color:rgb(68,128,132);
+    position: relative;
+    top: 10px;
+    padding-left: 10px;
+}
 
+#footer a i{
+    margin: 10px auto;
+    color: rgb(68,128,132);
+    font-size: 2em;
+    padding-left: 25px;
+    position: relative;
+    top: 15px;
+}
 
+#footer a i:hover{
+    color: rgb(176,145,57);
+}
 
 
 
