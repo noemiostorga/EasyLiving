@@ -47,7 +47,7 @@ DetRoomNav
 
 .logo{
     font-size: 25px;
-    padding-right:278px;
+    padding-right:140px;
 }
 
 
@@ -144,15 +144,19 @@ FOOTER
 
 #footer p{
     display: inline-block;
-    color: white;
+    color:rgb(68,128,132);
     position: relative;
     top: 10px;
     padding-left: 10px;
 }
 
+#footer p:hover{
+color: rgb(176,145,57);
+}
+
 #footer a i{
     margin: 10px auto;
-    color: white;
+    color: rgb(68,128,132);
     font-size: 2em;
     padding-left: 25px;
     position: relative;
@@ -160,5 +164,4 @@ FOOTER
 }
 
 #footer a i:hover{
-    color: rgb(62,133,209);
-}
+   color: rgb(176,145,57);

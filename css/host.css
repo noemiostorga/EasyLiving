@@ -147,6 +147,10 @@ FOOTER
     padding-left: 10px;
 }
 
+#footer p:hover{
+color: rgb(176,145,57);
+}
+
 #footer a {
     margin: 10px auto;
     font-size: 2em;
