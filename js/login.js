@@ -19,8 +19,12 @@ var LogInView = Backbone.View.extend({
     
     Parse.User.logIn(username, password, {
       success: function(user) {
-        window.location = "host.html";
-        self.undelegateEvents();
+        var accountType = user.get("accountType");
+        if (accountType === "host") {
+          window.location = "host.html";
+        } else {
+          window.location = "renter-HomePage.html";
+        }
       },
 
       error: function(user, error) {

@@ -23,7 +23,7 @@ ul{
 }
 #navbar a{
     text-decoration: none;
-    padding:80px;
+    padding:40px;
     color:rgb(38,37,34);
 }
 
@@ -38,14 +38,14 @@ ul{
 
 .main-photo{
   width: 100%;
-  height: 550px;
+  height: 650px;
   padding-top: 14px;
   background-image: url("../images/2008-0712-MPLS-panorama-crop.jpg");
   background-repeat: no-repeat;
-  background-position: 37.1% 50%;
+  background-position: 34% 80%;
   border-bottom: 5px solid rgb(38,37,34);
-  opacity:0.9;
-  
+    
+   
 }   
 
 
@@ -55,22 +55,25 @@ h2{
     font-size: 51px;
     background-color: rgba(128, 128, 128, 0);
     height: 66px;
-    padding-top: 82px;
+    padding-top: 140px;
+
 }
 
 
-#disqus_thread{ 
-    width:90%;
+#disqus_thread{
+    
+    width:80%;
     margin:0 auto;
     margin-top: 80px;
+    margin-left: 30px;
     padding: 20px;
 
 }
 
 .disqus-wrapper{
     background-color:rgb(145,182,183);
-    width: 100%;
-   
+    width: 80%;
+    margin-left: 30px;
 }
 
 .room-description{
@@ -101,10 +104,6 @@ h2{
     padding-bottom: 20px;
 }
 
-.map iframe{
-    margin-left: 30px;
-}
-
 img{
     width: 400px;
     height: 300px;
@@ -118,6 +117,11 @@ img{
 
 }
 
+
+
+iframe{
+    margin-left: 30px;
+}
 
 /***************************
 FOOTER

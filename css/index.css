@@ -56,8 +56,8 @@ h1{
     position: relative;
     bottom: 45px;
     right: 50px;
-    background:rgb(176,145,57);
-    border:1px solid rgb(176,145,57);
+    background:rgb(68,128,132);
+    border:1px solid black;
     transition: background 1s ease,border 1s ease;
 }
 
@@ -80,8 +80,8 @@ h1{
 
 .loginBtn{
     border: none;
-    border: 1px solid rgb(176,145,57);
-    background:rgb(176,145,57);
+    border: 1px solid black;
+    background:rgb(68,128,132);
     transition:background .7s ease,border 1s ease;
 }
 
@@ -125,7 +125,7 @@ GALLERY
     position: relative;
     top: 15px;
     padding-bottom: 10px;
-    padding-top: 60px;
+    padding-top: 70px;
    
 
 }
@@ -250,7 +250,7 @@ FOOTER
 
 #footer p{
     display: inline-block;
-    color:rgb(176,145,57);
+    color:rgb(68, 128, 132);
     position: relative;
     top: 10px;
     padding-left: 10px;
@@ -258,7 +258,7 @@ FOOTER
 
 #footer a{
     margin: 10px auto;
-    color:rgb(176,145,57);
+    color:rgb(68, 128, 132);
     font-size: 2em;
     padding-left: 25px;
     position: relative;
@@ -266,7 +266,7 @@ FOOTER
 }
 
 #footer a:hover{
-    color: rgb(68, 128, 132);
+    color: rgb(176,145,57);
 }
 
 
