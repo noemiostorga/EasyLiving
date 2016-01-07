@@ -1,13 +1,11 @@
 $(document).ready(function(){
-$(".map2").hide();
 
-$(".arrowCon").click(function(){
+$(".map2").css({"opacity":"0","visibility": "hidden"});
+
+$(".arrowCon").on("click",function(){
   $(".topMap").hide();
-  $(".map2").show();
+  $(".map2").css({"opacity":"1","visibility": "visible"});
 });
-
- 
-
    
 
 });
