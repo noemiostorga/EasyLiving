@@ -122,15 +122,21 @@ Fav Carasouel
 FAVORITE LIST
 *******************/
 .favoriteCon{
-	width: 90%;
-	min-height: 600px;
-	margin: 20px auto;
+    width: 100%;
+    min-height: 600px;
+    margin: 0px auto;
+
+}
+
+ul.favoriteList{
+	padding: 0px;
+    width: 80%;
+    margin: 0px auto;
 
 }
 
 .favoriteList{
-	width: 90%;
-    margin: 50px 100px;
+	margin: 0px auto;
 }
 
 .favoriteList li{
@@ -139,13 +145,24 @@ FAVORITE LIST
 	padding: 5px 5px 5px 5px;
 }
 
-.favoriteList li img{
-	height: 200px;
-    width: 250px;
-    margin: 10px 5px;
-	
+.favoriteList li p{
+	list-style: none;
+	display: inline-block;
+	padding: 5px 5px 5px 5px;
 }
 
+.favoriteList li img{
+	height: 250px;
+    width: 275px;	
+}
+
+.favoriteList li i{
+    color: red;
+    position: relative;
+    font-size: 35px;
+    left: -50px;
+    bottom: 15px;
+}
 /*********************
 FOOTER
 *******************/
