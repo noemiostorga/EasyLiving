@@ -126,10 +126,13 @@ form.userprofile-form{
 
 .genderQ{
 	top: 0px;
+	background: red;
 }
 
 .genderQ:active{
 	top: -50px;
 }
+
+
 
 
