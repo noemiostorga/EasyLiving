@@ -205,36 +205,45 @@ INFO BOX
 /******************
 FOOTER
 ***********************/
+
+
 #footer{
     background:rgb(28,27,27);
     width: 100%;
     height: 80px;
-	position: relative;
+    position: relative;
     text-align: center;
 }
-
-/*--logos--*/
 
 
 #footer p{
     display: inline-block;
-    color: white;
+    color:rgb(68,128,132);
     position: relative;
     top: 10px;
     padding-left: 10px;
 }
 
+/*--logos--*/
+
+#footer p:hover{
+color: rgb(176,145,57);
+}
+
+
 #footer a i{
     margin: 10px auto;
-    color: white;
+    color: rgb(68,128,132);
     font-size: 2em;
     padding-left: 25px;
     position: relative;
     top: 15px;
+    right:20px;
+
 }
 
 #footer a i:hover{
-    color: rgb(62,133,209);
+    color: rgb(176,145,57);
 }
 
 

@@ -51,7 +51,6 @@ var LogInView = Backbone.View.extend({
 if (!Parse.User.current()) {
   new LogInView();
 } else {
-  //window.location = "dashboard.html";
   Parse.User.logOut();
   new LogInView();
 }
